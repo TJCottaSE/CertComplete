@@ -1,0 +1,26 @@
+{
+    "TestNumber": 2374594,
+    "TestName": "Basic Sale 2",
+    "DeviceType": "PAX S300",
+    "TestSequence": [
+        "Sale"
+    ],
+    "TestSequenceData": [
+        {
+            "CardType": "Credit",
+            "TransactionType": "Sale",
+            "PrimaryAmount": 18.99,
+            "SecondaryAmount": 4.99,
+            "TaxAmount": 0,
+            "Clerk": 1455,
+            "Invoice": 104559,
+            "StreetAddress": "65 Main St.",
+            "BillingZipCode": 89101,
+            "DestinationZipCode": 89178,
+            "CustomerFirstName": "John",
+            "CustomerLastName": "Smith",
+            "CustomerReference": "2334DDKPL8",
+            "ProductDescriptor": "Chinese Food"
+        }
+    ]
+}

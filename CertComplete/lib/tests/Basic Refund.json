@@ -1,0 +1,21 @@
+{
+    "TestNumber": 14577600,
+    "TestName": "Basic Refund",
+    "DeviceType": "PAX S300",
+    "TestSequence": [
+        "Refund"
+    ],
+    "TestSequenceData": [
+        {
+            "CardType": "Credit",
+            "TransactionType": "Return",
+            "PrimaryAmount": 16.99,
+            "Clerk": 1455,
+            "Invoice": 104562,
+            "CustomerFirstName": "John",
+            "CustomerLastName": "Smith",
+            "CustomerReference": "2334DDKPL8",
+            "ProductDescriptor": "Chinese Food"
+        }
+    ]
+}

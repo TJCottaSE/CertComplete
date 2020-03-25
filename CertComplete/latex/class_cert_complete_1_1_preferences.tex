@@ -1,0 +1,371 @@
+\hypertarget{class_cert_complete_1_1_preferences}{}\section{Cert\+Complete.\+Preferences Class Reference}
+\label{class_cert_complete_1_1_preferences}\index{Cert\+Complete.\+Preferences@{Cert\+Complete.\+Preferences}}
+Inheritance diagram for Cert\+Complete.\+Preferences\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_cert_complete_1_1_preferences}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_cert_complete_1_1_preferences_a5a7e543437dd3ef1fcde6476be53edaa}{Preferences}} ()
+\begin{DoxyCompactList}\small\item\em Default Constructor \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cert_complete_1_1_preferences_ad2b97416252271eac8181d91641cd5bf}{set\+Colors}} (Color my\+Back\+Color, Color my\+Fore\+Color, Color Variable\+Color, Color String\+Color, Color Numeric\+Color, Color Symbol\+Color)
+\begin{DoxyCompactList}\small\item\em Sets the Colors for the current state. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \mbox{\hyperlink{class_cert_complete_1_1_preferences_a847c9ae1a1666bbdb1beb4b93f1471e7}{Dispose}} (bool disposing)
+\begin{DoxyCompactList}\small\item\em Clean up any resources being used. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+async void \mbox{\hyperlink{class_cert_complete_1_1_preferences_a700e02890b7d9aa6a4425f55c1aee837}{save\+Colors}} ()
+\begin{DoxyCompactList}\small\item\em Saves the colors to a config file. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cert_complete_1_1_preferences_a18a2ea14a6e0668ec90c58c17ecf09f2}{Background\+Color\+\_\+\+Click}} (object sender, Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Launches a Color Picker dialog, then sets the background and saves the settings. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cert_complete_1_1_preferences_a7e222d82f4196b988bbbc57d81558aeb}{Text\+Color\+\_\+\+Click}} (object sender, Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Lauches a Color Picker dialog, then sets the forecolor and saves the settings. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cert_complete_1_1_preferences_ac4075ddbcd2bd199e12a80d238baabb1}{Dark\+\_\+\+Mode\+\_\+\+Click}} (object sender, Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Quick Setting for Dark Mode \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cert_complete_1_1_preferences_a55b9692c6c0dcf42b9eef404f74b6497}{J\+S\+O\+N\+Variable\+Color\+\_\+\+Click}} (object sender, Event\+Args e)
+\item 
+void \mbox{\hyperlink{class_cert_complete_1_1_preferences_a346e95d6b3579179169970a15806c641}{J\+S\+O\+N\+String\+Color\+\_\+\+Click}} (object sender, Event\+Args e)
+\item 
+void \mbox{\hyperlink{class_cert_complete_1_1_preferences_ae642b7a6aa713898c440fbd9d71267ed}{J\+S\+O\+N\+Number\+Color\+\_\+\+Click}} (object sender, Event\+Args e)
+\item 
+void \mbox{\hyperlink{class_cert_complete_1_1_preferences_aaf6ff013f4f7e3948c30dc32cf50383a}{J\+S\+O\+N\+Symbol\+Color\+\_\+\+Click}} (object sender, Event\+Args e)
+\item 
+void \mbox{\hyperlink{class_cert_complete_1_1_preferences_a97d5821ba2fc9ac53d5aefea09da6136}{Save\+\_\+\+Click}} (object sender, Event\+Args e)
+\item 
+void \mbox{\hyperlink{class_cert_complete_1_1_preferences_a7fef9667c42378361d486d06d0ea3407}{Initialize\+Component}} ()
+\begin{DoxyCompactList}\small\item\em Required method for Designer support -\/ do not modify the contents of this method with the code editor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_cert_complete_1_1_settings_handler}{Settings\+Handler}} \mbox{\hyperlink{class_cert_complete_1_1_preferences_a4cc7f09d6878e757d8237310ca1cb8f6}{settings\+Handler}} = \mbox{\hyperlink{class_cert_complete_1_1_settings_handler_a7c4f8eb33b1113986d52942f93e52da8}{Settings\+Handler.\+Instance}}
+\item 
+System.\+Component\+Model.\+I\+Container \mbox{\hyperlink{class_cert_complete_1_1_preferences_a483d1e7aa63cd73f33a27104e5ec4c3c}{components}} = null
+\begin{DoxyCompactList}\small\item\em Required designer variable. \end{DoxyCompactList}\item 
+System.\+Windows.\+Forms.\+Label \mbox{\hyperlink{class_cert_complete_1_1_preferences_a5a1e5270cd4ef66904d2d5c20d561be5}{label1}}
+\item 
+System.\+Windows.\+Forms.\+Label \mbox{\hyperlink{class_cert_complete_1_1_preferences_a1ef64fd61327dac4f800fcb466069bcf}{label2}}
+\item 
+System.\+Windows.\+Forms.\+Button \mbox{\hyperlink{class_cert_complete_1_1_preferences_a251901d49a76fa302cb4cdd44c3434d2}{Background\+Color}}
+\item 
+System.\+Windows.\+Forms.\+Button \mbox{\hyperlink{class_cert_complete_1_1_preferences_a3f12547699fa6359fe413d8d7ea178f4}{Text\+Color}}
+\item 
+System.\+Windows.\+Forms.\+Label \mbox{\hyperlink{class_cert_complete_1_1_preferences_a6b04875be8b9fee7ce05322ef51bde4e}{label3}}
+\item 
+System.\+Windows.\+Forms.\+Button \mbox{\hyperlink{class_cert_complete_1_1_preferences_ad6dfced2a63f41bf9835daf8449cc2fb}{Dark\+\_\+\+Mode}}
+\item 
+System.\+Windows.\+Forms.\+Group\+Box \mbox{\hyperlink{class_cert_complete_1_1_preferences_ac29122ea465987ff051b3371174015c5}{group\+Box1}}
+\item 
+System.\+Windows.\+Forms.\+Label \mbox{\hyperlink{class_cert_complete_1_1_preferences_ab18a4cb4d9ff7356f3dc560a25ff6ae1}{label4}}
+\item 
+System.\+Windows.\+Forms.\+Button \mbox{\hyperlink{class_cert_complete_1_1_preferences_a4a028f3ee95cee390aa39ab5ef18b5d6}{J\+S\+O\+N\+Symbol\+Color}}
+\item 
+System.\+Windows.\+Forms.\+Button \mbox{\hyperlink{class_cert_complete_1_1_preferences_a1e5ab0a4d6d03d7a72575565b0f1afa7}{J\+S\+O\+N\+Number\+Color}}
+\item 
+System.\+Windows.\+Forms.\+Button \mbox{\hyperlink{class_cert_complete_1_1_preferences_a7b8a168de2b803e8fc6ef44a33a6dbe7}{J\+S\+O\+N\+String\+Color}}
+\item 
+System.\+Windows.\+Forms.\+Button \mbox{\hyperlink{class_cert_complete_1_1_preferences_ad90deddcf8c00c327d2cdb3a2ec9ae08}{J\+S\+O\+N\+Variable\+Color}}
+\item 
+System.\+Windows.\+Forms.\+Label \mbox{\hyperlink{class_cert_complete_1_1_preferences_a8377ca10192c18073d3ca11e6101b45c}{label7}}
+\item 
+System.\+Windows.\+Forms.\+Label \mbox{\hyperlink{class_cert_complete_1_1_preferences_ae76ba95477b89c7cf8bdcdeef89074c9}{label6}}
+\item 
+System.\+Windows.\+Forms.\+Label \mbox{\hyperlink{class_cert_complete_1_1_preferences_adcc6592cc33b1464e4217901d416ea49}{label5}}
+\item 
+System.\+Windows.\+Forms.\+Group\+Box \mbox{\hyperlink{class_cert_complete_1_1_preferences_a67db2d00b7a9d7cd1d6b2d53b180da12}{group\+Box2}}
+\item 
+System.\+Windows.\+Forms.\+Menu\+Strip \mbox{\hyperlink{class_cert_complete_1_1_preferences_a220a4223a705544297f65161da8f02a9}{menu\+Strip1}}
+\item 
+System.\+Windows.\+Forms.\+Tool\+Strip\+Menu\+Item \mbox{\hyperlink{class_cert_complete_1_1_preferences_a6fc9d2b1ef371b71da692702ffde6890}{file\+Tool\+Strip\+Menu\+Item}}
+\item 
+System.\+Windows.\+Forms.\+Tool\+Strip\+Menu\+Item \mbox{\hyperlink{class_cert_complete_1_1_preferences_ae4371c8326695d8b15fd9ea7da0d7dad}{save\+Tool\+Strip\+Menu\+Item}}
+\item 
+System.\+Windows.\+Forms.\+Button \mbox{\hyperlink{class_cert_complete_1_1_preferences_a25c8e141f13048880b08b642b3afbf9b}{Save}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_cert_complete_1_1_preferences_a5a7e543437dd3ef1fcde6476be53edaa}\label{class_cert_complete_1_1_preferences_a5a7e543437dd3ef1fcde6476be53edaa}} 
+\index{Cert\+Complete\+::\+Preferences@{Cert\+Complete\+::\+Preferences}!Preferences@{Preferences}}
+\index{Preferences@{Preferences}!Cert\+Complete\+::\+Preferences@{Cert\+Complete\+::\+Preferences}}
+\subsubsection{\texorpdfstring{Preferences()}{Preferences()}}
+{\footnotesize\ttfamily Cert\+Complete.\+Preferences.\+Preferences (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Default Constructor 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_cert_complete_1_1_preferences_a18a2ea14a6e0668ec90c58c17ecf09f2}\label{class_cert_complete_1_1_preferences_a18a2ea14a6e0668ec90c58c17ecf09f2}} 
+\index{Cert\+Complete\+::\+Preferences@{Cert\+Complete\+::\+Preferences}!Background\+Color\+\_\+\+Click@{Background\+Color\+\_\+\+Click}}
+\index{Background\+Color\+\_\+\+Click@{Background\+Color\+\_\+\+Click}!Cert\+Complete\+::\+Preferences@{Cert\+Complete\+::\+Preferences}}
+\subsubsection{\texorpdfstring{Background\+Color\+\_\+\+Click()}{BackgroundColor\_Click()}}
+{\footnotesize\ttfamily void Cert\+Complete.\+Preferences.\+Background\+Color\+\_\+\+Click (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Launches a Color Picker dialog, then sets the background and saves the settings. 
+
+\mbox{\Hypertarget{class_cert_complete_1_1_preferences_ac4075ddbcd2bd199e12a80d238baabb1}\label{class_cert_complete_1_1_preferences_ac4075ddbcd2bd199e12a80d238baabb1}} 
+\index{Cert\+Complete\+::\+Preferences@{Cert\+Complete\+::\+Preferences}!Dark\+\_\+\+Mode\+\_\+\+Click@{Dark\+\_\+\+Mode\+\_\+\+Click}}
+\index{Dark\+\_\+\+Mode\+\_\+\+Click@{Dark\+\_\+\+Mode\+\_\+\+Click}!Cert\+Complete\+::\+Preferences@{Cert\+Complete\+::\+Preferences}}
+\subsubsection{\texorpdfstring{Dark\+\_\+\+Mode\+\_\+\+Click()}{Dark\_Mode\_Click()}}
+{\footnotesize\ttfamily void Cert\+Complete.\+Preferences.\+Dark\+\_\+\+Mode\+\_\+\+Click (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Quick Setting for Dark Mode 
+
+\mbox{\Hypertarget{class_cert_complete_1_1_preferences_a847c9ae1a1666bbdb1beb4b93f1471e7}\label{class_cert_complete_1_1_preferences_a847c9ae1a1666bbdb1beb4b93f1471e7}} 
+\index{Cert\+Complete\+::\+Preferences@{Cert\+Complete\+::\+Preferences}!Dispose@{Dispose}}
+\index{Dispose@{Dispose}!Cert\+Complete\+::\+Preferences@{Cert\+Complete\+::\+Preferences}}
+\subsubsection{\texorpdfstring{Dispose()}{Dispose()}}
+{\footnotesize\ttfamily override void Cert\+Complete.\+Preferences.\+Dispose (\begin{DoxyParamCaption}\item[{bool}]{disposing }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Clean up any resources being used. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em disposing} & true if managed resources should be disposed; otherwise, false.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_cert_complete_1_1_preferences_a7fef9667c42378361d486d06d0ea3407}\label{class_cert_complete_1_1_preferences_a7fef9667c42378361d486d06d0ea3407}} 
+\index{Cert\+Complete\+::\+Preferences@{Cert\+Complete\+::\+Preferences}!Initialize\+Component@{Initialize\+Component}}
+\index{Initialize\+Component@{Initialize\+Component}!Cert\+Complete\+::\+Preferences@{Cert\+Complete\+::\+Preferences}}
+\subsubsection{\texorpdfstring{Initialize\+Component()}{InitializeComponent()}}
+{\footnotesize\ttfamily void Cert\+Complete.\+Preferences.\+Initialize\+Component (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Required method for Designer support -\/ do not modify the contents of this method with the code editor. 
+
+\mbox{\Hypertarget{class_cert_complete_1_1_preferences_ae642b7a6aa713898c440fbd9d71267ed}\label{class_cert_complete_1_1_preferences_ae642b7a6aa713898c440fbd9d71267ed}} 
+\index{Cert\+Complete\+::\+Preferences@{Cert\+Complete\+::\+Preferences}!J\+S\+O\+N\+Number\+Color\+\_\+\+Click@{J\+S\+O\+N\+Number\+Color\+\_\+\+Click}}
+\index{J\+S\+O\+N\+Number\+Color\+\_\+\+Click@{J\+S\+O\+N\+Number\+Color\+\_\+\+Click}!Cert\+Complete\+::\+Preferences@{Cert\+Complete\+::\+Preferences}}
+\subsubsection{\texorpdfstring{J\+S\+O\+N\+Number\+Color\+\_\+\+Click()}{JSONNumberColor\_Click()}}
+{\footnotesize\ttfamily void Cert\+Complete.\+Preferences.\+J\+S\+O\+N\+Number\+Color\+\_\+\+Click (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_cert_complete_1_1_preferences_a346e95d6b3579179169970a15806c641}\label{class_cert_complete_1_1_preferences_a346e95d6b3579179169970a15806c641}} 
+\index{Cert\+Complete\+::\+Preferences@{Cert\+Complete\+::\+Preferences}!J\+S\+O\+N\+String\+Color\+\_\+\+Click@{J\+S\+O\+N\+String\+Color\+\_\+\+Click}}
+\index{J\+S\+O\+N\+String\+Color\+\_\+\+Click@{J\+S\+O\+N\+String\+Color\+\_\+\+Click}!Cert\+Complete\+::\+Preferences@{Cert\+Complete\+::\+Preferences}}
+\subsubsection{\texorpdfstring{J\+S\+O\+N\+String\+Color\+\_\+\+Click()}{JSONStringColor\_Click()}}
+{\footnotesize\ttfamily void Cert\+Complete.\+Preferences.\+J\+S\+O\+N\+String\+Color\+\_\+\+Click (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_cert_complete_1_1_preferences_aaf6ff013f4f7e3948c30dc32cf50383a}\label{class_cert_complete_1_1_preferences_aaf6ff013f4f7e3948c30dc32cf50383a}} 
+\index{Cert\+Complete\+::\+Preferences@{Cert\+Complete\+::\+Preferences}!J\+S\+O\+N\+Symbol\+Color\+\_\+\+Click@{J\+S\+O\+N\+Symbol\+Color\+\_\+\+Click}}
+\index{J\+S\+O\+N\+Symbol\+Color\+\_\+\+Click@{J\+S\+O\+N\+Symbol\+Color\+\_\+\+Click}!Cert\+Complete\+::\+Preferences@{Cert\+Complete\+::\+Preferences}}
+\subsubsection{\texorpdfstring{J\+S\+O\+N\+Symbol\+Color\+\_\+\+Click()}{JSONSymbolColor\_Click()}}
+{\footnotesize\ttfamily void Cert\+Complete.\+Preferences.\+J\+S\+O\+N\+Symbol\+Color\+\_\+\+Click (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_cert_complete_1_1_preferences_a55b9692c6c0dcf42b9eef404f74b6497}\label{class_cert_complete_1_1_preferences_a55b9692c6c0dcf42b9eef404f74b6497}} 
+\index{Cert\+Complete\+::\+Preferences@{Cert\+Complete\+::\+Preferences}!J\+S\+O\+N\+Variable\+Color\+\_\+\+Click@{J\+S\+O\+N\+Variable\+Color\+\_\+\+Click}}
+\index{J\+S\+O\+N\+Variable\+Color\+\_\+\+Click@{J\+S\+O\+N\+Variable\+Color\+\_\+\+Click}!Cert\+Complete\+::\+Preferences@{Cert\+Complete\+::\+Preferences}}
+\subsubsection{\texorpdfstring{J\+S\+O\+N\+Variable\+Color\+\_\+\+Click()}{JSONVariableColor\_Click()}}
+{\footnotesize\ttfamily void Cert\+Complete.\+Preferences.\+J\+S\+O\+N\+Variable\+Color\+\_\+\+Click (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_cert_complete_1_1_preferences_a97d5821ba2fc9ac53d5aefea09da6136}\label{class_cert_complete_1_1_preferences_a97d5821ba2fc9ac53d5aefea09da6136}} 
+\index{Cert\+Complete\+::\+Preferences@{Cert\+Complete\+::\+Preferences}!Save\+\_\+\+Click@{Save\+\_\+\+Click}}
+\index{Save\+\_\+\+Click@{Save\+\_\+\+Click}!Cert\+Complete\+::\+Preferences@{Cert\+Complete\+::\+Preferences}}
+\subsubsection{\texorpdfstring{Save\+\_\+\+Click()}{Save\_Click()}}
+{\footnotesize\ttfamily void Cert\+Complete.\+Preferences.\+Save\+\_\+\+Click (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_cert_complete_1_1_preferences_a700e02890b7d9aa6a4425f55c1aee837}\label{class_cert_complete_1_1_preferences_a700e02890b7d9aa6a4425f55c1aee837}} 
+\index{Cert\+Complete\+::\+Preferences@{Cert\+Complete\+::\+Preferences}!save\+Colors@{save\+Colors}}
+\index{save\+Colors@{save\+Colors}!Cert\+Complete\+::\+Preferences@{Cert\+Complete\+::\+Preferences}}
+\subsubsection{\texorpdfstring{save\+Colors()}{saveColors()}}
+{\footnotesize\ttfamily async void Cert\+Complete.\+Preferences.\+save\+Colors (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Saves the colors to a config file. 
+
+\mbox{\Hypertarget{class_cert_complete_1_1_preferences_ad2b97416252271eac8181d91641cd5bf}\label{class_cert_complete_1_1_preferences_ad2b97416252271eac8181d91641cd5bf}} 
+\index{Cert\+Complete\+::\+Preferences@{Cert\+Complete\+::\+Preferences}!set\+Colors@{set\+Colors}}
+\index{set\+Colors@{set\+Colors}!Cert\+Complete\+::\+Preferences@{Cert\+Complete\+::\+Preferences}}
+\subsubsection{\texorpdfstring{set\+Colors()}{setColors()}}
+{\footnotesize\ttfamily void Cert\+Complete.\+Preferences.\+set\+Colors (\begin{DoxyParamCaption}\item[{Color}]{my\+Back\+Color,  }\item[{Color}]{my\+Fore\+Color,  }\item[{Color}]{Variable\+Color,  }\item[{Color}]{String\+Color,  }\item[{Color}]{Numeric\+Color,  }\item[{Color}]{Symbol\+Color }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the Colors for the current state. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em my\+Back\+Color} & The background color\\
+\hline
+{\em my\+Fore\+Color} & The text color\\
+\hline
+{\em Variable\+Color} & The J\+S\+ON variable color\\
+\hline
+{\em String\+Color} & The J\+S\+ON string color\\
+\hline
+{\em Numeric\+Color} & The J\+S\+ON number color\\
+\hline
+{\em Symbol\+Color} & The J\+S\+ON symbol color\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_cert_complete_1_1_preferences_a7e222d82f4196b988bbbc57d81558aeb}\label{class_cert_complete_1_1_preferences_a7e222d82f4196b988bbbc57d81558aeb}} 
+\index{Cert\+Complete\+::\+Preferences@{Cert\+Complete\+::\+Preferences}!Text\+Color\+\_\+\+Click@{Text\+Color\+\_\+\+Click}}
+\index{Text\+Color\+\_\+\+Click@{Text\+Color\+\_\+\+Click}!Cert\+Complete\+::\+Preferences@{Cert\+Complete\+::\+Preferences}}
+\subsubsection{\texorpdfstring{Text\+Color\+\_\+\+Click()}{TextColor\_Click()}}
+{\footnotesize\ttfamily void Cert\+Complete.\+Preferences.\+Text\+Color\+\_\+\+Click (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Lauches a Color Picker dialog, then sets the forecolor and saves the settings. 
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_cert_complete_1_1_preferences_a251901d49a76fa302cb4cdd44c3434d2}\label{class_cert_complete_1_1_preferences_a251901d49a76fa302cb4cdd44c3434d2}} 
+\index{Cert\+Complete\+::\+Preferences@{Cert\+Complete\+::\+Preferences}!Background\+Color@{Background\+Color}}
+\index{Background\+Color@{Background\+Color}!Cert\+Complete\+::\+Preferences@{Cert\+Complete\+::\+Preferences}}
+\subsubsection{\texorpdfstring{Background\+Color}{BackgroundColor}}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Button Cert\+Complete.\+Preferences.\+Background\+Color\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_cert_complete_1_1_preferences_a483d1e7aa63cd73f33a27104e5ec4c3c}\label{class_cert_complete_1_1_preferences_a483d1e7aa63cd73f33a27104e5ec4c3c}} 
+\index{Cert\+Complete\+::\+Preferences@{Cert\+Complete\+::\+Preferences}!components@{components}}
+\index{components@{components}!Cert\+Complete\+::\+Preferences@{Cert\+Complete\+::\+Preferences}}
+\subsubsection{\texorpdfstring{components}{components}}
+{\footnotesize\ttfamily System.\+Component\+Model.\+I\+Container Cert\+Complete.\+Preferences.\+components = null\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Required designer variable. 
+
+\mbox{\Hypertarget{class_cert_complete_1_1_preferences_ad6dfced2a63f41bf9835daf8449cc2fb}\label{class_cert_complete_1_1_preferences_ad6dfced2a63f41bf9835daf8449cc2fb}} 
+\index{Cert\+Complete\+::\+Preferences@{Cert\+Complete\+::\+Preferences}!Dark\+\_\+\+Mode@{Dark\+\_\+\+Mode}}
+\index{Dark\+\_\+\+Mode@{Dark\+\_\+\+Mode}!Cert\+Complete\+::\+Preferences@{Cert\+Complete\+::\+Preferences}}
+\subsubsection{\texorpdfstring{Dark\+\_\+\+Mode}{Dark\_Mode}}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Button Cert\+Complete.\+Preferences.\+Dark\+\_\+\+Mode\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_cert_complete_1_1_preferences_a6fc9d2b1ef371b71da692702ffde6890}\label{class_cert_complete_1_1_preferences_a6fc9d2b1ef371b71da692702ffde6890}} 
+\index{Cert\+Complete\+::\+Preferences@{Cert\+Complete\+::\+Preferences}!file\+Tool\+Strip\+Menu\+Item@{file\+Tool\+Strip\+Menu\+Item}}
+\index{file\+Tool\+Strip\+Menu\+Item@{file\+Tool\+Strip\+Menu\+Item}!Cert\+Complete\+::\+Preferences@{Cert\+Complete\+::\+Preferences}}
+\subsubsection{\texorpdfstring{file\+Tool\+Strip\+Menu\+Item}{fileToolStripMenuItem}}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Tool\+Strip\+Menu\+Item Cert\+Complete.\+Preferences.\+file\+Tool\+Strip\+Menu\+Item\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_cert_complete_1_1_preferences_ac29122ea465987ff051b3371174015c5}\label{class_cert_complete_1_1_preferences_ac29122ea465987ff051b3371174015c5}} 
+\index{Cert\+Complete\+::\+Preferences@{Cert\+Complete\+::\+Preferences}!group\+Box1@{group\+Box1}}
+\index{group\+Box1@{group\+Box1}!Cert\+Complete\+::\+Preferences@{Cert\+Complete\+::\+Preferences}}
+\subsubsection{\texorpdfstring{group\+Box1}{groupBox1}}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Group\+Box Cert\+Complete.\+Preferences.\+group\+Box1\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_cert_complete_1_1_preferences_a67db2d00b7a9d7cd1d6b2d53b180da12}\label{class_cert_complete_1_1_preferences_a67db2d00b7a9d7cd1d6b2d53b180da12}} 
+\index{Cert\+Complete\+::\+Preferences@{Cert\+Complete\+::\+Preferences}!group\+Box2@{group\+Box2}}
+\index{group\+Box2@{group\+Box2}!Cert\+Complete\+::\+Preferences@{Cert\+Complete\+::\+Preferences}}
+\subsubsection{\texorpdfstring{group\+Box2}{groupBox2}}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Group\+Box Cert\+Complete.\+Preferences.\+group\+Box2\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_cert_complete_1_1_preferences_a1e5ab0a4d6d03d7a72575565b0f1afa7}\label{class_cert_complete_1_1_preferences_a1e5ab0a4d6d03d7a72575565b0f1afa7}} 
+\index{Cert\+Complete\+::\+Preferences@{Cert\+Complete\+::\+Preferences}!J\+S\+O\+N\+Number\+Color@{J\+S\+O\+N\+Number\+Color}}
+\index{J\+S\+O\+N\+Number\+Color@{J\+S\+O\+N\+Number\+Color}!Cert\+Complete\+::\+Preferences@{Cert\+Complete\+::\+Preferences}}
+\subsubsection{\texorpdfstring{J\+S\+O\+N\+Number\+Color}{JSONNumberColor}}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Button Cert\+Complete.\+Preferences.\+J\+S\+O\+N\+Number\+Color\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_cert_complete_1_1_preferences_a7b8a168de2b803e8fc6ef44a33a6dbe7}\label{class_cert_complete_1_1_preferences_a7b8a168de2b803e8fc6ef44a33a6dbe7}} 
+\index{Cert\+Complete\+::\+Preferences@{Cert\+Complete\+::\+Preferences}!J\+S\+O\+N\+String\+Color@{J\+S\+O\+N\+String\+Color}}
+\index{J\+S\+O\+N\+String\+Color@{J\+S\+O\+N\+String\+Color}!Cert\+Complete\+::\+Preferences@{Cert\+Complete\+::\+Preferences}}
+\subsubsection{\texorpdfstring{J\+S\+O\+N\+String\+Color}{JSONStringColor}}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Button Cert\+Complete.\+Preferences.\+J\+S\+O\+N\+String\+Color\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_cert_complete_1_1_preferences_a4a028f3ee95cee390aa39ab5ef18b5d6}\label{class_cert_complete_1_1_preferences_a4a028f3ee95cee390aa39ab5ef18b5d6}} 
+\index{Cert\+Complete\+::\+Preferences@{Cert\+Complete\+::\+Preferences}!J\+S\+O\+N\+Symbol\+Color@{J\+S\+O\+N\+Symbol\+Color}}
+\index{J\+S\+O\+N\+Symbol\+Color@{J\+S\+O\+N\+Symbol\+Color}!Cert\+Complete\+::\+Preferences@{Cert\+Complete\+::\+Preferences}}
+\subsubsection{\texorpdfstring{J\+S\+O\+N\+Symbol\+Color}{JSONSymbolColor}}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Button Cert\+Complete.\+Preferences.\+J\+S\+O\+N\+Symbol\+Color\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_cert_complete_1_1_preferences_ad90deddcf8c00c327d2cdb3a2ec9ae08}\label{class_cert_complete_1_1_preferences_ad90deddcf8c00c327d2cdb3a2ec9ae08}} 
+\index{Cert\+Complete\+::\+Preferences@{Cert\+Complete\+::\+Preferences}!J\+S\+O\+N\+Variable\+Color@{J\+S\+O\+N\+Variable\+Color}}
+\index{J\+S\+O\+N\+Variable\+Color@{J\+S\+O\+N\+Variable\+Color}!Cert\+Complete\+::\+Preferences@{Cert\+Complete\+::\+Preferences}}
+\subsubsection{\texorpdfstring{J\+S\+O\+N\+Variable\+Color}{JSONVariableColor}}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Button Cert\+Complete.\+Preferences.\+J\+S\+O\+N\+Variable\+Color\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_cert_complete_1_1_preferences_a5a1e5270cd4ef66904d2d5c20d561be5}\label{class_cert_complete_1_1_preferences_a5a1e5270cd4ef66904d2d5c20d561be5}} 
+\index{Cert\+Complete\+::\+Preferences@{Cert\+Complete\+::\+Preferences}!label1@{label1}}
+\index{label1@{label1}!Cert\+Complete\+::\+Preferences@{Cert\+Complete\+::\+Preferences}}
+\subsubsection{\texorpdfstring{label1}{label1}}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Label Cert\+Complete.\+Preferences.\+label1\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_cert_complete_1_1_preferences_a1ef64fd61327dac4f800fcb466069bcf}\label{class_cert_complete_1_1_preferences_a1ef64fd61327dac4f800fcb466069bcf}} 
+\index{Cert\+Complete\+::\+Preferences@{Cert\+Complete\+::\+Preferences}!label2@{label2}}
+\index{label2@{label2}!Cert\+Complete\+::\+Preferences@{Cert\+Complete\+::\+Preferences}}
+\subsubsection{\texorpdfstring{label2}{label2}}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Label Cert\+Complete.\+Preferences.\+label2\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_cert_complete_1_1_preferences_a6b04875be8b9fee7ce05322ef51bde4e}\label{class_cert_complete_1_1_preferences_a6b04875be8b9fee7ce05322ef51bde4e}} 
+\index{Cert\+Complete\+::\+Preferences@{Cert\+Complete\+::\+Preferences}!label3@{label3}}
+\index{label3@{label3}!Cert\+Complete\+::\+Preferences@{Cert\+Complete\+::\+Preferences}}
+\subsubsection{\texorpdfstring{label3}{label3}}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Label Cert\+Complete.\+Preferences.\+label3\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_cert_complete_1_1_preferences_ab18a4cb4d9ff7356f3dc560a25ff6ae1}\label{class_cert_complete_1_1_preferences_ab18a4cb4d9ff7356f3dc560a25ff6ae1}} 
+\index{Cert\+Complete\+::\+Preferences@{Cert\+Complete\+::\+Preferences}!label4@{label4}}
+\index{label4@{label4}!Cert\+Complete\+::\+Preferences@{Cert\+Complete\+::\+Preferences}}
+\subsubsection{\texorpdfstring{label4}{label4}}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Label Cert\+Complete.\+Preferences.\+label4\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_cert_complete_1_1_preferences_adcc6592cc33b1464e4217901d416ea49}\label{class_cert_complete_1_1_preferences_adcc6592cc33b1464e4217901d416ea49}} 
+\index{Cert\+Complete\+::\+Preferences@{Cert\+Complete\+::\+Preferences}!label5@{label5}}
+\index{label5@{label5}!Cert\+Complete\+::\+Preferences@{Cert\+Complete\+::\+Preferences}}
+\subsubsection{\texorpdfstring{label5}{label5}}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Label Cert\+Complete.\+Preferences.\+label5\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_cert_complete_1_1_preferences_ae76ba95477b89c7cf8bdcdeef89074c9}\label{class_cert_complete_1_1_preferences_ae76ba95477b89c7cf8bdcdeef89074c9}} 
+\index{Cert\+Complete\+::\+Preferences@{Cert\+Complete\+::\+Preferences}!label6@{label6}}
+\index{label6@{label6}!Cert\+Complete\+::\+Preferences@{Cert\+Complete\+::\+Preferences}}
+\subsubsection{\texorpdfstring{label6}{label6}}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Label Cert\+Complete.\+Preferences.\+label6\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_cert_complete_1_1_preferences_a8377ca10192c18073d3ca11e6101b45c}\label{class_cert_complete_1_1_preferences_a8377ca10192c18073d3ca11e6101b45c}} 
+\index{Cert\+Complete\+::\+Preferences@{Cert\+Complete\+::\+Preferences}!label7@{label7}}
+\index{label7@{label7}!Cert\+Complete\+::\+Preferences@{Cert\+Complete\+::\+Preferences}}
+\subsubsection{\texorpdfstring{label7}{label7}}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Label Cert\+Complete.\+Preferences.\+label7\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_cert_complete_1_1_preferences_a220a4223a705544297f65161da8f02a9}\label{class_cert_complete_1_1_preferences_a220a4223a705544297f65161da8f02a9}} 
+\index{Cert\+Complete\+::\+Preferences@{Cert\+Complete\+::\+Preferences}!menu\+Strip1@{menu\+Strip1}}
+\index{menu\+Strip1@{menu\+Strip1}!Cert\+Complete\+::\+Preferences@{Cert\+Complete\+::\+Preferences}}
+\subsubsection{\texorpdfstring{menu\+Strip1}{menuStrip1}}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Menu\+Strip Cert\+Complete.\+Preferences.\+menu\+Strip1\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_cert_complete_1_1_preferences_a25c8e141f13048880b08b642b3afbf9b}\label{class_cert_complete_1_1_preferences_a25c8e141f13048880b08b642b3afbf9b}} 
+\index{Cert\+Complete\+::\+Preferences@{Cert\+Complete\+::\+Preferences}!Save@{Save}}
+\index{Save@{Save}!Cert\+Complete\+::\+Preferences@{Cert\+Complete\+::\+Preferences}}
+\subsubsection{\texorpdfstring{Save}{Save}}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Button Cert\+Complete.\+Preferences.\+Save\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_cert_complete_1_1_preferences_ae4371c8326695d8b15fd9ea7da0d7dad}\label{class_cert_complete_1_1_preferences_ae4371c8326695d8b15fd9ea7da0d7dad}} 
+\index{Cert\+Complete\+::\+Preferences@{Cert\+Complete\+::\+Preferences}!save\+Tool\+Strip\+Menu\+Item@{save\+Tool\+Strip\+Menu\+Item}}
+\index{save\+Tool\+Strip\+Menu\+Item@{save\+Tool\+Strip\+Menu\+Item}!Cert\+Complete\+::\+Preferences@{Cert\+Complete\+::\+Preferences}}
+\subsubsection{\texorpdfstring{save\+Tool\+Strip\+Menu\+Item}{saveToolStripMenuItem}}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Tool\+Strip\+Menu\+Item Cert\+Complete.\+Preferences.\+save\+Tool\+Strip\+Menu\+Item\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_cert_complete_1_1_preferences_a4cc7f09d6878e757d8237310ca1cb8f6}\label{class_cert_complete_1_1_preferences_a4cc7f09d6878e757d8237310ca1cb8f6}} 
+\index{Cert\+Complete\+::\+Preferences@{Cert\+Complete\+::\+Preferences}!settings\+Handler@{settings\+Handler}}
+\index{settings\+Handler@{settings\+Handler}!Cert\+Complete\+::\+Preferences@{Cert\+Complete\+::\+Preferences}}
+\subsubsection{\texorpdfstring{settings\+Handler}{settingsHandler}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_cert_complete_1_1_settings_handler}{Settings\+Handler}} Cert\+Complete.\+Preferences.\+settings\+Handler = \mbox{\hyperlink{class_cert_complete_1_1_settings_handler_a7c4f8eb33b1113986d52942f93e52da8}{Settings\+Handler.\+Instance}}\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_cert_complete_1_1_preferences_a3f12547699fa6359fe413d8d7ea178f4}\label{class_cert_complete_1_1_preferences_a3f12547699fa6359fe413d8d7ea178f4}} 
+\index{Cert\+Complete\+::\+Preferences@{Cert\+Complete\+::\+Preferences}!Text\+Color@{Text\+Color}}
+\index{Text\+Color@{Text\+Color}!Cert\+Complete\+::\+Preferences@{Cert\+Complete\+::\+Preferences}}
+\subsubsection{\texorpdfstring{Text\+Color}{TextColor}}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Button Cert\+Complete.\+Preferences.\+Text\+Color\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_preferences_8cs}{Preferences.\+cs}}\item 
+\mbox{\hyperlink{_preferences_8_designer_8cs}{Preferences.\+Designer.\+cs}}\end{DoxyCompactItemize}

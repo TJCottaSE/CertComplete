@@ -1,0 +1,1 @@
+call C:\Users\t_cota\source\repos\CertComplete\CertComplete\docScript.bat

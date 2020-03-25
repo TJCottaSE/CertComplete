@@ -1,0 +1,741 @@
+\hypertarget{class_cert_complete_1_1_cert_complete}{}\section{Cert\+Complete.\+Cert\+Complete Class Reference}
+\label{class_cert_complete_1_1_cert_complete}\index{Cert\+Complete.\+Cert\+Complete@{Cert\+Complete.\+Cert\+Complete}}
+Inheritance diagram for Cert\+Complete.\+Cert\+Complete\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_cert_complete_1_1_cert_complete}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_cert_complete_1_1_cert_complete_aca2e4b4895fb938a23b6e056971e2a78}{Cert\+Complete}} ()
+\begin{DoxyCompactList}\small\item\em Default Constructor \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cert_complete_1_1_cert_complete_a99edec1e7fba6c4e77fdbff75eb449d1}{save\+Receipts}} (string receipt\+Data)
+\begin{DoxyCompactList}\small\item\em Exports the current receipt data as a P\+DF. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cert_complete_1_1_cert_complete_a94ff8515ddfaf33d6f77ed9aa4ec497b}{save\+Receipts}} (string receipt\+Data, Newtonsoft.\+Json.\+Linq.\+J\+Array signature\+Cords)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ \mbox{\hyperlink{class_cert_complete_1_1_transaction}{Transaction}} $>$ \mbox{\hyperlink{class_cert_complete_1_1_cert_complete_aabe5ae4beadab7c6de98de3b47baf498}{session\+Transactions}} = new List$<$\mbox{\hyperlink{class_cert_complete_1_1_transaction}{Transaction}}$>$()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static readonly string \mbox{\hyperlink{class_cert_complete_1_1_cert_complete_ae07487144f4788f7dd165a05fa41f1d3}{V\+E\+R\+S\+I\+O\+N\+\_\+\+N\+U\+M\+B\+ER}} = \char`\"{}0.\+2.\+3 (beta)\char`\"{}
+\item 
+static readonly string \mbox{\hyperlink{class_cert_complete_1_1_cert_complete_ad961ad31303bfdb2496fd44d45745ff1}{S300\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+C\+O\+N\+F\+IG}} = \char`\"{}.\textbackslash{}\textbackslash{}lib\textbackslash{}\textbackslash{}settings\textbackslash{}\textbackslash{}\+P\+A\+X\+\_\+\+S300\+\_\+\+C\+O\+N\+F\+I\+G.\+json\char`\"{}
+\item 
+static readonly string \mbox{\hyperlink{class_cert_complete_1_1_cert_complete_a73c72e8c2abd32a4327f63905994e6cf}{I\+N\+N\+O\+W\+I\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+C\+O\+N\+F\+IG}} = \char`\"{}.\textbackslash{}\textbackslash{}lib\textbackslash{}\textbackslash{}settings\textbackslash{}\textbackslash{}\+I\+N\+N\+O\+W\+I\+\_\+\+C\+H\+E\+C\+O\+U\+T\+M\+\_\+\+C\+O\+N\+F\+I\+G.\+json\char`\"{}
+\item 
+static readonly string \mbox{\hyperlink{class_cert_complete_1_1_cert_complete_a192cfecad203105cb51d9690cd239ad1}{A\+P\+P\+L\+I\+C\+A\+T\+I\+O\+N\+\_\+\+P\+R\+E\+F\+E\+R\+E\+N\+C\+ES}} = \char`\"{}.\textbackslash{}\textbackslash{}lib\textbackslash{}\textbackslash{}settings\textbackslash{}\textbackslash{}\+A\+P\+P\+\_\+\+S\+E\+T\+T\+I\+N\+G\+S.\+json\char`\"{}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \mbox{\hyperlink{class_cert_complete_1_1_cert_complete_af5c626434cd663b9c85b3fd89362718b}{Dispose}} (bool disposing)
+\begin{DoxyCompactList}\small\item\em Clean up any resources being used. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_cert_complete_1_1_cert_complete_a111983d372181505a83c4c05fd2927db}{s300\+Tool\+Strip\+Menu\+Item\+\_\+\+Click}} (object sender, Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Activates the device configuraiton window for the P\+AX S300 Device \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cert_complete_1_1_cert_complete_af32ec63eabf58c1f8bab45e9a21ec01b}{chec\+Out\+Tool\+Strip\+Menu\+Item\+\_\+\+Click}} (object sender, Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Activates the device configuration window for the Innowi Chec\+Out M Device \end{DoxyCompactList}\item 
+async void \mbox{\hyperlink{class_cert_complete_1_1_cert_complete_a60cf99433d4cf3dcf57bedc1e5556b9e}{run\+\_\+\+Click}} (object sender, Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Runs the test using the predifined parameters from the left text box with the appropriate device from the radio button selectors. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cert_complete_1_1_cert_complete_a4a2828f6d9a0651f6b0c1c41acced8c3}{create\+List\+Box\+Item}} (string request\+J\+S\+ON, int sequence\+Number, string response\+Details)
+\begin{DoxyCompactList}\small\item\em Creates a transaction item to be added to the \mbox{\hyperlink{class_cert_complete_1_1_transaction}{Transaction}} History \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cert_complete_1_1_cert_complete_a2eb0c31c2103df9e168a415ef8b5388f}{exit\+Tool\+Strip\+Menu\+Item\+\_\+\+Click}} (object sender, Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Exits the Program. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cert_complete_1_1_cert_complete_a03ef12ca613588ff661204dcaf08505a}{copy\+Tool\+Strip\+Menu\+Item\+\_\+\+Click}} (object sender, Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Copies the text from the Request Details Pane to the clipboard \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cert_complete_1_1_cert_complete_ac678e87c8fcaa0d6408476e76ac975e4}{cut\+Tool\+Strip\+Menu\+Item\+\_\+\+Click}} (object sender, Event\+Args e)
+\begin{DoxyCompactList}\small\item\em N\+OT I\+M\+P\+L\+E\+M\+E\+N\+T\+ED AT T\+H\+IS T\+I\+ME. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cert_complete_1_1_cert_complete_a70a729491aaf8b3158747d67b6999117}{about\+Tool\+Strip\+Menu\+Item\+\_\+\+Click}} (object sender, Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Displays the About Window \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cert_complete_1_1_cert_complete_a917367d3079b5e2dc1bf10548e5e9ef5}{save\+Tool\+Strip\+Menu\+Item\+\_\+\+Click}} (object sender, Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Save Test Handler File-\/$>$Save-\/$>$Test \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cert_complete_1_1_cert_complete_ac5edc7874ac8469eae717cf5af09de47}{test\+Tool\+Strip\+Menu\+Item1\+\_\+\+Click}} (object sender, Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Import Test Handler File-\/$>$Import-\/$>$Test \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cert_complete_1_1_cert_complete_a11656358c9c66db6838e114db57168e5}{test\+Tool\+Strip\+Menu\+Item\+\_\+\+Click}} (object sender, Event\+Args e)
+\begin{DoxyCompactList}\small\item\em New Test Handler File-\/$>$New-\/$>$Test \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cert_complete_1_1_cert_complete_a82a50e75ef8803ad3b7e9cefe953b85e}{tran\+History\+\_\+\+Draw\+Item}} (object sender, Draw\+Item\+Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Overrides the draw list item defualt to do color context highlighting \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cert_complete_1_1_cert_complete_a494e48d4d48ad64b6295e6079739d816}{color\+Code\+Text}} (ref Rich\+Text\+Box box, string raw\+String)
+\item 
+void \mbox{\hyperlink{class_cert_complete_1_1_cert_complete_ad4e5d3e29abb99e435da02d9a7416f45}{docs\+Tool\+Strip\+Menu\+Item\+\_\+\+Click}} (object sender, Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Opens the development docs in the default html handler. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cert_complete_1_1_cert_complete_a86dc2e3426fdc2c94543671d511eaecb}{preferences\+Tool\+Strip\+Menu\+Item\+\_\+\+Click}} (object sender, Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Opens the application preferences window. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cert_complete_1_1_cert_complete_af368ca0602e04e35583426ffe31b2807}{set\+Colors}} ()
+\begin{DoxyCompactList}\small\item\em Sets the Color Look and Feel of the Screen \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cert_complete_1_1_cert_complete_ab58d18e2c6b7ee27e5bec914d303fca0}{Cancel\+\_\+\+Click}} (object sender, Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Stops the current thread from talking with a device \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cert_complete_1_1_cert_complete_accf52b3ddec796d4a4a19bddf50813b2}{Initialize\+Component}} ()
+\begin{DoxyCompactList}\small\item\em Required method for Designer support -\/ do not modify the contents of this method with the code editor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_cert_complete_1_1_settings_handler}{Settings\+Handler}} \mbox{\hyperlink{class_cert_complete_1_1_cert_complete_a43be90efbcc884bafc8b07f821c48b6b}{settings\+Handler}} = \mbox{\hyperlink{class_cert_complete_1_1_settings_handler_a7c4f8eb33b1113986d52942f93e52da8}{Settings\+Handler.\+Instance}}
+\item 
+Cancellation\+Token\+Source \mbox{\hyperlink{class_cert_complete_1_1_cert_complete_a788052da36a4c2ce24199a262cebfec8}{source}}
+\item 
+Cancellation\+Token \mbox{\hyperlink{class_cert_complete_1_1_cert_complete_aad34f573c91ef12a2d4fc81afd12b0d2}{token}}
+\item 
+Newtonsoft.\+Json.\+Linq.\+J\+Object \mbox{\hyperlink{class_cert_complete_1_1_cert_complete_a843ac34ed8e64b4c34419457ddc770ab}{parameters}} = null
+\item 
+Newtonsoft.\+Json.\+Linq.\+J\+Token \mbox{\hyperlink{class_cert_complete_1_1_cert_complete_ad5d2d2d98102b330f95d658a185d8bfd}{tests}} = null
+\item 
+Newtonsoft.\+Json.\+Linq.\+J\+Token \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_cert_complete_1_1_cert_complete_a20e1caea6cfe04d96bc96d678af0d3a2}{test\+Array}} = null
+\item 
+System.\+Component\+Model.\+I\+Container \mbox{\hyperlink{class_cert_complete_1_1_cert_complete_a18b5a668a8e8d49eed05cff490058208}{components}} = null
+\begin{DoxyCompactList}\small\item\em Required designer variable. \end{DoxyCompactList}\item 
+System.\+Windows.\+Forms.\+Menu\+Strip \mbox{\hyperlink{class_cert_complete_1_1_cert_complete_a03112ef58c5d94b4a428f822efd937a2}{menu\+Strip1}}
+\item 
+System.\+Windows.\+Forms.\+Tool\+Strip\+Menu\+Item \mbox{\hyperlink{class_cert_complete_1_1_cert_complete_a158ee264c36d528ceed80853069846b0}{file\+Tool\+Strip\+Menu\+Item}}
+\item 
+System.\+Windows.\+Forms.\+Tool\+Strip\+Menu\+Item \mbox{\hyperlink{class_cert_complete_1_1_cert_complete_ab1e6973dc161b91a23050e18c4838705}{new\+Tool\+Strip\+Menu\+Item}}
+\item 
+System.\+Windows.\+Forms.\+Tool\+Strip\+Menu\+Item \mbox{\hyperlink{class_cert_complete_1_1_cert_complete_a0e264ac32de8dadd9c7c4c61671aec03}{test\+Tool\+Strip\+Menu\+Item}}
+\item 
+System.\+Windows.\+Forms.\+Tool\+Strip\+Menu\+Item \mbox{\hyperlink{class_cert_complete_1_1_cert_complete_adadd62da8a950273d32a601995be172d}{import\+Tool\+Strip\+Menu\+Item}}
+\item 
+System.\+Windows.\+Forms.\+Tool\+Strip\+Menu\+Item \mbox{\hyperlink{class_cert_complete_1_1_cert_complete_a231635f4b70814e3b8e13a58c1fcb6f7}{test\+Tool\+Strip\+Menu\+Item1}}
+\item 
+System.\+Windows.\+Forms.\+Tool\+Strip\+Menu\+Item \mbox{\hyperlink{class_cert_complete_1_1_cert_complete_ac8e71505fc559814f6d0e23f2c67ba91}{save\+Tool\+Strip\+Menu\+Item}}
+\item 
+System.\+Windows.\+Forms.\+Tool\+Strip\+Menu\+Item \mbox{\hyperlink{class_cert_complete_1_1_cert_complete_abfdc08fb1d4e22c6cd157c1727fd9d75}{exit\+Tool\+Strip\+Menu\+Item}}
+\item 
+System.\+Windows.\+Forms.\+Tool\+Strip\+Menu\+Item \mbox{\hyperlink{class_cert_complete_1_1_cert_complete_a639e868e61b8d868d7322c17ac8e84a9}{edit\+Tool\+Strip\+Menu\+Item}}
+\item 
+System.\+Windows.\+Forms.\+Tool\+Strip\+Menu\+Item \mbox{\hyperlink{class_cert_complete_1_1_cert_complete_ad0543650b83ed2dbe6090eaaaa16e44c}{cut\+Tool\+Strip\+Menu\+Item}}
+\item 
+System.\+Windows.\+Forms.\+Tool\+Strip\+Menu\+Item \mbox{\hyperlink{class_cert_complete_1_1_cert_complete_ae69da7db68f18929d02c8781070fbc24}{copy\+Tool\+Strip\+Menu\+Item}}
+\item 
+System.\+Windows.\+Forms.\+Tool\+Strip\+Menu\+Item \mbox{\hyperlink{class_cert_complete_1_1_cert_complete_a0beabb140e581a2090a6d4d4c6c447e5}{paste\+Tool\+Strip\+Menu\+Item}}
+\item 
+System.\+Windows.\+Forms.\+Tool\+Strip\+Menu\+Item \mbox{\hyperlink{class_cert_complete_1_1_cert_complete_a5d1d13a89fd672b44a98961a80c8a219}{help\+Tool\+Strip\+Menu\+Item}}
+\item 
+System.\+Windows.\+Forms.\+Tool\+Strip\+Menu\+Item \mbox{\hyperlink{class_cert_complete_1_1_cert_complete_a6fc7fa494117f5dd920b1dfbbf4c3799}{about\+Tool\+Strip\+Menu\+Item}}
+\item 
+System.\+Windows.\+Forms.\+Tool\+Strip\+Menu\+Item \mbox{\hyperlink{class_cert_complete_1_1_cert_complete_a16ac892442f05f6ffa8a0e2268372734}{docs\+Tool\+Strip\+Menu\+Item}}
+\item 
+System.\+Windows.\+Forms.\+Tool\+Strip\+Menu\+Item \mbox{\hyperlink{class_cert_complete_1_1_cert_complete_ad76ef267004a2881670e37ad056c23fc}{update\+Tool\+Strip\+Menu\+Item}}
+\item 
+System.\+Windows.\+Forms.\+Tool\+Strip\+Menu\+Item \mbox{\hyperlink{class_cert_complete_1_1_cert_complete_a07f81d00a0cf24b0c03055f3dea6e307}{device\+Configuration\+Tool\+Strip\+Menu\+Item}}
+\item 
+System.\+Windows.\+Forms.\+Tool\+Strip\+Menu\+Item \mbox{\hyperlink{class_cert_complete_1_1_cert_complete_a0a24d60f7e6d1bda7c2ba93d31c9a114}{p\+A\+X\+Tool\+Strip\+Menu\+Item}}
+\item 
+System.\+Windows.\+Forms.\+Tool\+Strip\+Menu\+Item \mbox{\hyperlink{class_cert_complete_1_1_cert_complete_adbe8c1e96b923c33474254fff4f99b63}{s300\+Tool\+Strip\+Menu\+Item}}
+\item 
+System.\+Windows.\+Forms.\+Label \mbox{\hyperlink{class_cert_complete_1_1_cert_complete_a2069bd962e50e8a9235af3b9faf9efb1}{label1}}
+\item 
+System.\+Windows.\+Forms.\+Label \mbox{\hyperlink{class_cert_complete_1_1_cert_complete_a44dfd0561d28a4c66e5c2ecb2c742088}{Activity}}
+\item 
+System.\+Windows.\+Forms.\+Table\+Layout\+Panel \mbox{\hyperlink{class_cert_complete_1_1_cert_complete_ac7810cb16e4147c70162cc6c80fc5517}{table\+Layout\+Panel1}}
+\item 
+System.\+Windows.\+Forms.\+Rich\+Text\+Box \mbox{\hyperlink{class_cert_complete_1_1_cert_complete_a629eb45333d126be3b651969b37b5308}{request\+Data}}
+\item 
+System.\+Windows.\+Forms.\+Rich\+Text\+Box \mbox{\hyperlink{class_cert_complete_1_1_cert_complete_aed4c3b9360f819cb59cc6720c4dd77d9}{result\+Data}}
+\item 
+System.\+Windows.\+Forms.\+Text\+Box \mbox{\hyperlink{class_cert_complete_1_1_cert_complete_a05a613a39788f778c3877b7f73b87992}{text\+Box1}}
+\item 
+System.\+Windows.\+Forms.\+Text\+Box \mbox{\hyperlink{class_cert_complete_1_1_cert_complete_a422c8734723a40be96e034f9ac7b5ad8}{text\+Box2}}
+\item 
+System.\+Windows.\+Forms.\+Text\+Box \mbox{\hyperlink{class_cert_complete_1_1_cert_complete_a38b6d7ce26a08d48b88e8a6ba70223c0}{text\+Box3}}
+\item 
+System.\+Windows.\+Forms.\+Text\+Box \mbox{\hyperlink{class_cert_complete_1_1_cert_complete_ae5e7f4a6656f82746e7aa684a97c655f}{text\+Box4}}
+\item 
+System.\+Windows.\+Forms.\+List\+Box \mbox{\hyperlink{class_cert_complete_1_1_cert_complete_a3d2276274977225d308b5eb6195e4da7}{tran\+History}}
+\item 
+System.\+Windows.\+Forms.\+Radio\+Button \mbox{\hyperlink{class_cert_complete_1_1_cert_complete_a4e90f2e4b3d0c471d47e482dc6657db8}{P\+A\+X\+\_\+\+S300}}
+\item 
+System.\+Windows.\+Forms.\+Group\+Box \mbox{\hyperlink{class_cert_complete_1_1_cert_complete_ae14932068d3be5c2e99ae3b1fe88a9d4}{group\+Box1}}
+\item 
+System.\+Windows.\+Forms.\+Panel \mbox{\hyperlink{class_cert_complete_1_1_cert_complete_a92cad43818b4e7f496378be9e785202d}{panel1}}
+\item 
+System.\+Windows.\+Forms.\+Button \mbox{\hyperlink{class_cert_complete_1_1_cert_complete_a027a03bc6f41269be77b5744b346cbd6}{run}}
+\item 
+System.\+Windows.\+Forms.\+Check\+Box \mbox{\hyperlink{class_cert_complete_1_1_cert_complete_aa4d58d6977809cef2216480e619a13d9}{Print\+Receipt}}
+\item 
+System.\+Windows.\+Forms.\+Tool\+Strip\+Menu\+Item \mbox{\hyperlink{class_cert_complete_1_1_cert_complete_a925b71e3f63e4616655e8cee3e1f57ad}{preferences\+Tool\+Strip\+Menu\+Item}}
+\item 
+System.\+Windows.\+Forms.\+Check\+Box \mbox{\hyperlink{class_cert_complete_1_1_cert_complete_a3e10741e6e8e5b596bfd906e2c019095}{No\+Sig}}
+\item 
+System.\+Windows.\+Forms.\+Tool\+Strip\+Menu\+Item \mbox{\hyperlink{class_cert_complete_1_1_cert_complete_a18ae691771ff00c5f54a317ba0d33cff}{innowi\+Tool\+Strip\+Menu\+Item}}
+\item 
+System.\+Windows.\+Forms.\+Tool\+Strip\+Menu\+Item \mbox{\hyperlink{class_cert_complete_1_1_cert_complete_a12b8a2dc095fdab7219eaa010d583dfa}{chec\+Out\+Tool\+Strip\+Menu\+Item}}
+\item 
+System.\+Windows.\+Forms.\+Radio\+Button \mbox{\hyperlink{class_cert_complete_1_1_cert_complete_a0451827808baa78395a25f451356dee0}{Innowi\+\_\+\+Chec\+Out}}
+\item 
+System.\+Windows.\+Forms.\+Button \mbox{\hyperlink{class_cert_complete_1_1_cert_complete_ac41ab197a4da99aef6ba87b66f64dce1}{Cancel}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_cert_complete_1_1_cert_complete_aca2e4b4895fb938a23b6e056971e2a78}\label{class_cert_complete_1_1_cert_complete_aca2e4b4895fb938a23b6e056971e2a78}} 
+\index{Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}!Cert\+Complete@{Cert\+Complete}}
+\index{Cert\+Complete@{Cert\+Complete}!Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}}
+\subsubsection{\texorpdfstring{Cert\+Complete()}{CertComplete()}}
+{\footnotesize\ttfamily Cert\+Complete.\+Cert\+Complete.\+Cert\+Complete (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Default Constructor 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_cert_complete_1_1_cert_complete_a70a729491aaf8b3158747d67b6999117}\label{class_cert_complete_1_1_cert_complete_a70a729491aaf8b3158747d67b6999117}} 
+\index{Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}!about\+Tool\+Strip\+Menu\+Item\+\_\+\+Click@{about\+Tool\+Strip\+Menu\+Item\+\_\+\+Click}}
+\index{about\+Tool\+Strip\+Menu\+Item\+\_\+\+Click@{about\+Tool\+Strip\+Menu\+Item\+\_\+\+Click}!Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}}
+\subsubsection{\texorpdfstring{about\+Tool\+Strip\+Menu\+Item\+\_\+\+Click()}{aboutToolStripMenuItem\_Click()}}
+{\footnotesize\ttfamily void Cert\+Complete.\+Cert\+Complete.\+about\+Tool\+Strip\+Menu\+Item\+\_\+\+Click (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Displays the About Window 
+
+\mbox{\Hypertarget{class_cert_complete_1_1_cert_complete_ab58d18e2c6b7ee27e5bec914d303fca0}\label{class_cert_complete_1_1_cert_complete_ab58d18e2c6b7ee27e5bec914d303fca0}} 
+\index{Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}!Cancel\+\_\+\+Click@{Cancel\+\_\+\+Click}}
+\index{Cancel\+\_\+\+Click@{Cancel\+\_\+\+Click}!Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}}
+\subsubsection{\texorpdfstring{Cancel\+\_\+\+Click()}{Cancel\_Click()}}
+{\footnotesize\ttfamily void Cert\+Complete.\+Cert\+Complete.\+Cancel\+\_\+\+Click (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Stops the current thread from talking with a device 
+
+\mbox{\Hypertarget{class_cert_complete_1_1_cert_complete_af32ec63eabf58c1f8bab45e9a21ec01b}\label{class_cert_complete_1_1_cert_complete_af32ec63eabf58c1f8bab45e9a21ec01b}} 
+\index{Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}!chec\+Out\+Tool\+Strip\+Menu\+Item\+\_\+\+Click@{chec\+Out\+Tool\+Strip\+Menu\+Item\+\_\+\+Click}}
+\index{chec\+Out\+Tool\+Strip\+Menu\+Item\+\_\+\+Click@{chec\+Out\+Tool\+Strip\+Menu\+Item\+\_\+\+Click}!Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}}
+\subsubsection{\texorpdfstring{chec\+Out\+Tool\+Strip\+Menu\+Item\+\_\+\+Click()}{checOutToolStripMenuItem\_Click()}}
+{\footnotesize\ttfamily void Cert\+Complete.\+Cert\+Complete.\+chec\+Out\+Tool\+Strip\+Menu\+Item\+\_\+\+Click (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Activates the device configuration window for the Innowi Chec\+Out M Device 
+
+\mbox{\Hypertarget{class_cert_complete_1_1_cert_complete_a494e48d4d48ad64b6295e6079739d816}\label{class_cert_complete_1_1_cert_complete_a494e48d4d48ad64b6295e6079739d816}} 
+\index{Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}!color\+Code\+Text@{color\+Code\+Text}}
+\index{color\+Code\+Text@{color\+Code\+Text}!Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}}
+\subsubsection{\texorpdfstring{color\+Code\+Text()}{colorCodeText()}}
+{\footnotesize\ttfamily void Cert\+Complete.\+Cert\+Complete.\+color\+Code\+Text (\begin{DoxyParamCaption}\item[{ref Rich\+Text\+Box}]{box,  }\item[{string}]{raw\+String }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_cert_complete_1_1_cert_complete_a03ef12ca613588ff661204dcaf08505a}\label{class_cert_complete_1_1_cert_complete_a03ef12ca613588ff661204dcaf08505a}} 
+\index{Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}!copy\+Tool\+Strip\+Menu\+Item\+\_\+\+Click@{copy\+Tool\+Strip\+Menu\+Item\+\_\+\+Click}}
+\index{copy\+Tool\+Strip\+Menu\+Item\+\_\+\+Click@{copy\+Tool\+Strip\+Menu\+Item\+\_\+\+Click}!Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}}
+\subsubsection{\texorpdfstring{copy\+Tool\+Strip\+Menu\+Item\+\_\+\+Click()}{copyToolStripMenuItem\_Click()}}
+{\footnotesize\ttfamily void Cert\+Complete.\+Cert\+Complete.\+copy\+Tool\+Strip\+Menu\+Item\+\_\+\+Click (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Copies the text from the Request Details Pane to the clipboard 
+
+\mbox{\Hypertarget{class_cert_complete_1_1_cert_complete_a4a2828f6d9a0651f6b0c1c41acced8c3}\label{class_cert_complete_1_1_cert_complete_a4a2828f6d9a0651f6b0c1c41acced8c3}} 
+\index{Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}!create\+List\+Box\+Item@{create\+List\+Box\+Item}}
+\index{create\+List\+Box\+Item@{create\+List\+Box\+Item}!Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}}
+\subsubsection{\texorpdfstring{create\+List\+Box\+Item()}{createListBoxItem()}}
+{\footnotesize\ttfamily void Cert\+Complete.\+Cert\+Complete.\+create\+List\+Box\+Item (\begin{DoxyParamCaption}\item[{string}]{request\+J\+S\+ON,  }\item[{int}]{sequence\+Number,  }\item[{string}]{response\+Details }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Creates a transaction item to be added to the \mbox{\hyperlink{class_cert_complete_1_1_transaction}{Transaction}} History 
+
+
+\begin{DoxyParams}{Parameters}
+{\em request\+J\+S\+ON} & The request body in J\+S\+ON\\
+\hline
+{\em sequence\+Number} & Integer number representing which step in the sequence it is.\\
+\hline
+{\em response\+Details} & The response details returned from Shift4 to the P\+AX A\+PI.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_cert_complete_1_1_cert_complete_ac678e87c8fcaa0d6408476e76ac975e4}\label{class_cert_complete_1_1_cert_complete_ac678e87c8fcaa0d6408476e76ac975e4}} 
+\index{Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}!cut\+Tool\+Strip\+Menu\+Item\+\_\+\+Click@{cut\+Tool\+Strip\+Menu\+Item\+\_\+\+Click}}
+\index{cut\+Tool\+Strip\+Menu\+Item\+\_\+\+Click@{cut\+Tool\+Strip\+Menu\+Item\+\_\+\+Click}!Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}}
+\subsubsection{\texorpdfstring{cut\+Tool\+Strip\+Menu\+Item\+\_\+\+Click()}{cutToolStripMenuItem\_Click()}}
+{\footnotesize\ttfamily void Cert\+Complete.\+Cert\+Complete.\+cut\+Tool\+Strip\+Menu\+Item\+\_\+\+Click (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+N\+OT I\+M\+P\+L\+E\+M\+E\+N\+T\+ED AT T\+H\+IS T\+I\+ME. 
+
+\mbox{\Hypertarget{class_cert_complete_1_1_cert_complete_af5c626434cd663b9c85b3fd89362718b}\label{class_cert_complete_1_1_cert_complete_af5c626434cd663b9c85b3fd89362718b}} 
+\index{Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}!Dispose@{Dispose}}
+\index{Dispose@{Dispose}!Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}}
+\subsubsection{\texorpdfstring{Dispose()}{Dispose()}}
+{\footnotesize\ttfamily override void Cert\+Complete.\+Cert\+Complete.\+Dispose (\begin{DoxyParamCaption}\item[{bool}]{disposing }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Clean up any resources being used. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em disposing} & true if managed resources should be disposed; otherwise, false.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_cert_complete_1_1_cert_complete_ad4e5d3e29abb99e435da02d9a7416f45}\label{class_cert_complete_1_1_cert_complete_ad4e5d3e29abb99e435da02d9a7416f45}} 
+\index{Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}!docs\+Tool\+Strip\+Menu\+Item\+\_\+\+Click@{docs\+Tool\+Strip\+Menu\+Item\+\_\+\+Click}}
+\index{docs\+Tool\+Strip\+Menu\+Item\+\_\+\+Click@{docs\+Tool\+Strip\+Menu\+Item\+\_\+\+Click}!Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}}
+\subsubsection{\texorpdfstring{docs\+Tool\+Strip\+Menu\+Item\+\_\+\+Click()}{docsToolStripMenuItem\_Click()}}
+{\footnotesize\ttfamily void Cert\+Complete.\+Cert\+Complete.\+docs\+Tool\+Strip\+Menu\+Item\+\_\+\+Click (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Opens the development docs in the default html handler. 
+
+\mbox{\Hypertarget{class_cert_complete_1_1_cert_complete_a2eb0c31c2103df9e168a415ef8b5388f}\label{class_cert_complete_1_1_cert_complete_a2eb0c31c2103df9e168a415ef8b5388f}} 
+\index{Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}!exit\+Tool\+Strip\+Menu\+Item\+\_\+\+Click@{exit\+Tool\+Strip\+Menu\+Item\+\_\+\+Click}}
+\index{exit\+Tool\+Strip\+Menu\+Item\+\_\+\+Click@{exit\+Tool\+Strip\+Menu\+Item\+\_\+\+Click}!Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}}
+\subsubsection{\texorpdfstring{exit\+Tool\+Strip\+Menu\+Item\+\_\+\+Click()}{exitToolStripMenuItem\_Click()}}
+{\footnotesize\ttfamily void Cert\+Complete.\+Cert\+Complete.\+exit\+Tool\+Strip\+Menu\+Item\+\_\+\+Click (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Exits the Program. 
+
+\mbox{\Hypertarget{class_cert_complete_1_1_cert_complete_accf52b3ddec796d4a4a19bddf50813b2}\label{class_cert_complete_1_1_cert_complete_accf52b3ddec796d4a4a19bddf50813b2}} 
+\index{Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}!Initialize\+Component@{Initialize\+Component}}
+\index{Initialize\+Component@{Initialize\+Component}!Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}}
+\subsubsection{\texorpdfstring{Initialize\+Component()}{InitializeComponent()}}
+{\footnotesize\ttfamily void Cert\+Complete.\+Cert\+Complete.\+Initialize\+Component (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Required method for Designer support -\/ do not modify the contents of this method with the code editor. 
+
+\mbox{\Hypertarget{class_cert_complete_1_1_cert_complete_a86dc2e3426fdc2c94543671d511eaecb}\label{class_cert_complete_1_1_cert_complete_a86dc2e3426fdc2c94543671d511eaecb}} 
+\index{Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}!preferences\+Tool\+Strip\+Menu\+Item\+\_\+\+Click@{preferences\+Tool\+Strip\+Menu\+Item\+\_\+\+Click}}
+\index{preferences\+Tool\+Strip\+Menu\+Item\+\_\+\+Click@{preferences\+Tool\+Strip\+Menu\+Item\+\_\+\+Click}!Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}}
+\subsubsection{\texorpdfstring{preferences\+Tool\+Strip\+Menu\+Item\+\_\+\+Click()}{preferencesToolStripMenuItem\_Click()}}
+{\footnotesize\ttfamily void Cert\+Complete.\+Cert\+Complete.\+preferences\+Tool\+Strip\+Menu\+Item\+\_\+\+Click (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Opens the application preferences window. 
+
+\mbox{\Hypertarget{class_cert_complete_1_1_cert_complete_a60cf99433d4cf3dcf57bedc1e5556b9e}\label{class_cert_complete_1_1_cert_complete_a60cf99433d4cf3dcf57bedc1e5556b9e}} 
+\index{Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}!run\+\_\+\+Click@{run\+\_\+\+Click}}
+\index{run\+\_\+\+Click@{run\+\_\+\+Click}!Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}}
+\subsubsection{\texorpdfstring{run\+\_\+\+Click()}{run\_Click()}}
+{\footnotesize\ttfamily async void Cert\+Complete.\+Cert\+Complete.\+run\+\_\+\+Click (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Runs the test using the predifined parameters from the left text box with the appropriate device from the radio button selectors. 
+
+\mbox{\Hypertarget{class_cert_complete_1_1_cert_complete_a111983d372181505a83c4c05fd2927db}\label{class_cert_complete_1_1_cert_complete_a111983d372181505a83c4c05fd2927db}} 
+\index{Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}!s300\+Tool\+Strip\+Menu\+Item\+\_\+\+Click@{s300\+Tool\+Strip\+Menu\+Item\+\_\+\+Click}}
+\index{s300\+Tool\+Strip\+Menu\+Item\+\_\+\+Click@{s300\+Tool\+Strip\+Menu\+Item\+\_\+\+Click}!Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}}
+\subsubsection{\texorpdfstring{s300\+Tool\+Strip\+Menu\+Item\+\_\+\+Click()}{s300ToolStripMenuItem\_Click()}}
+{\footnotesize\ttfamily void Cert\+Complete.\+Cert\+Complete.\+s300\+Tool\+Strip\+Menu\+Item\+\_\+\+Click (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Activates the device configuraiton window for the P\+AX S300 Device 
+
+\mbox{\Hypertarget{class_cert_complete_1_1_cert_complete_a99edec1e7fba6c4e77fdbff75eb449d1}\label{class_cert_complete_1_1_cert_complete_a99edec1e7fba6c4e77fdbff75eb449d1}} 
+\index{Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}!save\+Receipts@{save\+Receipts}}
+\index{save\+Receipts@{save\+Receipts}!Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}}
+\subsubsection{\texorpdfstring{save\+Receipts()}{saveReceipts()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Cert\+Complete.\+Cert\+Complete.\+save\+Receipts (\begin{DoxyParamCaption}\item[{string}]{receipt\+Data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Exports the current receipt data as a P\+DF. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em receipt\+Data} & A string representation of the receipts.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_cert_complete_1_1_cert_complete_a94ff8515ddfaf33d6f77ed9aa4ec497b}\label{class_cert_complete_1_1_cert_complete_a94ff8515ddfaf33d6f77ed9aa4ec497b}} 
+\index{Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}!save\+Receipts@{save\+Receipts}}
+\index{save\+Receipts@{save\+Receipts}!Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}}
+\subsubsection{\texorpdfstring{save\+Receipts()}{saveReceipts()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Cert\+Complete.\+Cert\+Complete.\+save\+Receipts (\begin{DoxyParamCaption}\item[{string}]{receipt\+Data,  }\item[{Newtonsoft.\+Json.\+Linq.\+J\+Array}]{signature\+Cords }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_cert_complete_1_1_cert_complete_a917367d3079b5e2dc1bf10548e5e9ef5}\label{class_cert_complete_1_1_cert_complete_a917367d3079b5e2dc1bf10548e5e9ef5}} 
+\index{Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}!save\+Tool\+Strip\+Menu\+Item\+\_\+\+Click@{save\+Tool\+Strip\+Menu\+Item\+\_\+\+Click}}
+\index{save\+Tool\+Strip\+Menu\+Item\+\_\+\+Click@{save\+Tool\+Strip\+Menu\+Item\+\_\+\+Click}!Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}}
+\subsubsection{\texorpdfstring{save\+Tool\+Strip\+Menu\+Item\+\_\+\+Click()}{saveToolStripMenuItem\_Click()}}
+{\footnotesize\ttfamily void Cert\+Complete.\+Cert\+Complete.\+save\+Tool\+Strip\+Menu\+Item\+\_\+\+Click (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Save Test Handler File-\/$>$Save-\/$>$Test 
+
+\mbox{\Hypertarget{class_cert_complete_1_1_cert_complete_af368ca0602e04e35583426ffe31b2807}\label{class_cert_complete_1_1_cert_complete_af368ca0602e04e35583426ffe31b2807}} 
+\index{Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}!set\+Colors@{set\+Colors}}
+\index{set\+Colors@{set\+Colors}!Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}}
+\subsubsection{\texorpdfstring{set\+Colors()}{setColors()}}
+{\footnotesize\ttfamily void Cert\+Complete.\+Cert\+Complete.\+set\+Colors (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Sets the Color Look and Feel of the Screen 
+
+
+\begin{DoxyParams}{Parameters}
+{\em colors} & An Array of colors.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_cert_complete_1_1_cert_complete_ac5edc7874ac8469eae717cf5af09de47}\label{class_cert_complete_1_1_cert_complete_ac5edc7874ac8469eae717cf5af09de47}} 
+\index{Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}!test\+Tool\+Strip\+Menu\+Item1\+\_\+\+Click@{test\+Tool\+Strip\+Menu\+Item1\+\_\+\+Click}}
+\index{test\+Tool\+Strip\+Menu\+Item1\+\_\+\+Click@{test\+Tool\+Strip\+Menu\+Item1\+\_\+\+Click}!Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}}
+\subsubsection{\texorpdfstring{test\+Tool\+Strip\+Menu\+Item1\+\_\+\+Click()}{testToolStripMenuItem1\_Click()}}
+{\footnotesize\ttfamily void Cert\+Complete.\+Cert\+Complete.\+test\+Tool\+Strip\+Menu\+Item1\+\_\+\+Click (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Import Test Handler File-\/$>$Import-\/$>$Test 
+
+\mbox{\Hypertarget{class_cert_complete_1_1_cert_complete_a11656358c9c66db6838e114db57168e5}\label{class_cert_complete_1_1_cert_complete_a11656358c9c66db6838e114db57168e5}} 
+\index{Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}!test\+Tool\+Strip\+Menu\+Item\+\_\+\+Click@{test\+Tool\+Strip\+Menu\+Item\+\_\+\+Click}}
+\index{test\+Tool\+Strip\+Menu\+Item\+\_\+\+Click@{test\+Tool\+Strip\+Menu\+Item\+\_\+\+Click}!Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}}
+\subsubsection{\texorpdfstring{test\+Tool\+Strip\+Menu\+Item\+\_\+\+Click()}{testToolStripMenuItem\_Click()}}
+{\footnotesize\ttfamily void Cert\+Complete.\+Cert\+Complete.\+test\+Tool\+Strip\+Menu\+Item\+\_\+\+Click (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+New Test Handler File-\/$>$New-\/$>$Test 
+
+\mbox{\Hypertarget{class_cert_complete_1_1_cert_complete_a82a50e75ef8803ad3b7e9cefe953b85e}\label{class_cert_complete_1_1_cert_complete_a82a50e75ef8803ad3b7e9cefe953b85e}} 
+\index{Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}!tran\+History\+\_\+\+Draw\+Item@{tran\+History\+\_\+\+Draw\+Item}}
+\index{tran\+History\+\_\+\+Draw\+Item@{tran\+History\+\_\+\+Draw\+Item}!Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}}
+\subsubsection{\texorpdfstring{tran\+History\+\_\+\+Draw\+Item()}{tranHistory\_DrawItem()}}
+{\footnotesize\ttfamily void Cert\+Complete.\+Cert\+Complete.\+tran\+History\+\_\+\+Draw\+Item (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Draw\+Item\+Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Overrides the draw list item defualt to do color context highlighting 
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_cert_complete_1_1_cert_complete_a6fc7fa494117f5dd920b1dfbbf4c3799}\label{class_cert_complete_1_1_cert_complete_a6fc7fa494117f5dd920b1dfbbf4c3799}} 
+\index{Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}!about\+Tool\+Strip\+Menu\+Item@{about\+Tool\+Strip\+Menu\+Item}}
+\index{about\+Tool\+Strip\+Menu\+Item@{about\+Tool\+Strip\+Menu\+Item}!Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}}
+\subsubsection{\texorpdfstring{about\+Tool\+Strip\+Menu\+Item}{aboutToolStripMenuItem}}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Tool\+Strip\+Menu\+Item Cert\+Complete.\+Cert\+Complete.\+about\+Tool\+Strip\+Menu\+Item\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_cert_complete_1_1_cert_complete_a44dfd0561d28a4c66e5c2ecb2c742088}\label{class_cert_complete_1_1_cert_complete_a44dfd0561d28a4c66e5c2ecb2c742088}} 
+\index{Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}!Activity@{Activity}}
+\index{Activity@{Activity}!Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}}
+\subsubsection{\texorpdfstring{Activity}{Activity}}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Label Cert\+Complete.\+Cert\+Complete.\+Activity\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_cert_complete_1_1_cert_complete_a192cfecad203105cb51d9690cd239ad1}\label{class_cert_complete_1_1_cert_complete_a192cfecad203105cb51d9690cd239ad1}} 
+\index{Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}!A\+P\+P\+L\+I\+C\+A\+T\+I\+O\+N\+\_\+\+P\+R\+E\+F\+E\+R\+E\+N\+C\+ES@{A\+P\+P\+L\+I\+C\+A\+T\+I\+O\+N\+\_\+\+P\+R\+E\+F\+E\+R\+E\+N\+C\+ES}}
+\index{A\+P\+P\+L\+I\+C\+A\+T\+I\+O\+N\+\_\+\+P\+R\+E\+F\+E\+R\+E\+N\+C\+ES@{A\+P\+P\+L\+I\+C\+A\+T\+I\+O\+N\+\_\+\+P\+R\+E\+F\+E\+R\+E\+N\+C\+ES}!Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}}
+\subsubsection{\texorpdfstring{A\+P\+P\+L\+I\+C\+A\+T\+I\+O\+N\+\_\+\+P\+R\+E\+F\+E\+R\+E\+N\+C\+ES}{APPLICATION\_PREFERENCES}}
+{\footnotesize\ttfamily readonly string Cert\+Complete.\+Cert\+Complete.\+A\+P\+P\+L\+I\+C\+A\+T\+I\+O\+N\+\_\+\+P\+R\+E\+F\+E\+R\+E\+N\+C\+ES = \char`\"{}.\textbackslash{}\textbackslash{}lib\textbackslash{}\textbackslash{}settings\textbackslash{}\textbackslash{}\+A\+P\+P\+\_\+\+S\+E\+T\+T\+I\+N\+G\+S.\+json\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_cert_complete_1_1_cert_complete_ac41ab197a4da99aef6ba87b66f64dce1}\label{class_cert_complete_1_1_cert_complete_ac41ab197a4da99aef6ba87b66f64dce1}} 
+\index{Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}!Cancel@{Cancel}}
+\index{Cancel@{Cancel}!Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}}
+\subsubsection{\texorpdfstring{Cancel}{Cancel}}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Button Cert\+Complete.\+Cert\+Complete.\+Cancel\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_cert_complete_1_1_cert_complete_a12b8a2dc095fdab7219eaa010d583dfa}\label{class_cert_complete_1_1_cert_complete_a12b8a2dc095fdab7219eaa010d583dfa}} 
+\index{Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}!chec\+Out\+Tool\+Strip\+Menu\+Item@{chec\+Out\+Tool\+Strip\+Menu\+Item}}
+\index{chec\+Out\+Tool\+Strip\+Menu\+Item@{chec\+Out\+Tool\+Strip\+Menu\+Item}!Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}}
+\subsubsection{\texorpdfstring{chec\+Out\+Tool\+Strip\+Menu\+Item}{checOutToolStripMenuItem}}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Tool\+Strip\+Menu\+Item Cert\+Complete.\+Cert\+Complete.\+chec\+Out\+Tool\+Strip\+Menu\+Item\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_cert_complete_1_1_cert_complete_a18b5a668a8e8d49eed05cff490058208}\label{class_cert_complete_1_1_cert_complete_a18b5a668a8e8d49eed05cff490058208}} 
+\index{Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}!components@{components}}
+\index{components@{components}!Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}}
+\subsubsection{\texorpdfstring{components}{components}}
+{\footnotesize\ttfamily System.\+Component\+Model.\+I\+Container Cert\+Complete.\+Cert\+Complete.\+components = null\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Required designer variable. 
+
+\mbox{\Hypertarget{class_cert_complete_1_1_cert_complete_ae69da7db68f18929d02c8781070fbc24}\label{class_cert_complete_1_1_cert_complete_ae69da7db68f18929d02c8781070fbc24}} 
+\index{Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}!copy\+Tool\+Strip\+Menu\+Item@{copy\+Tool\+Strip\+Menu\+Item}}
+\index{copy\+Tool\+Strip\+Menu\+Item@{copy\+Tool\+Strip\+Menu\+Item}!Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}}
+\subsubsection{\texorpdfstring{copy\+Tool\+Strip\+Menu\+Item}{copyToolStripMenuItem}}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Tool\+Strip\+Menu\+Item Cert\+Complete.\+Cert\+Complete.\+copy\+Tool\+Strip\+Menu\+Item\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_cert_complete_1_1_cert_complete_ad0543650b83ed2dbe6090eaaaa16e44c}\label{class_cert_complete_1_1_cert_complete_ad0543650b83ed2dbe6090eaaaa16e44c}} 
+\index{Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}!cut\+Tool\+Strip\+Menu\+Item@{cut\+Tool\+Strip\+Menu\+Item}}
+\index{cut\+Tool\+Strip\+Menu\+Item@{cut\+Tool\+Strip\+Menu\+Item}!Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}}
+\subsubsection{\texorpdfstring{cut\+Tool\+Strip\+Menu\+Item}{cutToolStripMenuItem}}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Tool\+Strip\+Menu\+Item Cert\+Complete.\+Cert\+Complete.\+cut\+Tool\+Strip\+Menu\+Item\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_cert_complete_1_1_cert_complete_a07f81d00a0cf24b0c03055f3dea6e307}\label{class_cert_complete_1_1_cert_complete_a07f81d00a0cf24b0c03055f3dea6e307}} 
+\index{Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}!device\+Configuration\+Tool\+Strip\+Menu\+Item@{device\+Configuration\+Tool\+Strip\+Menu\+Item}}
+\index{device\+Configuration\+Tool\+Strip\+Menu\+Item@{device\+Configuration\+Tool\+Strip\+Menu\+Item}!Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}}
+\subsubsection{\texorpdfstring{device\+Configuration\+Tool\+Strip\+Menu\+Item}{deviceConfigurationToolStripMenuItem}}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Tool\+Strip\+Menu\+Item Cert\+Complete.\+Cert\+Complete.\+device\+Configuration\+Tool\+Strip\+Menu\+Item\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_cert_complete_1_1_cert_complete_a16ac892442f05f6ffa8a0e2268372734}\label{class_cert_complete_1_1_cert_complete_a16ac892442f05f6ffa8a0e2268372734}} 
+\index{Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}!docs\+Tool\+Strip\+Menu\+Item@{docs\+Tool\+Strip\+Menu\+Item}}
+\index{docs\+Tool\+Strip\+Menu\+Item@{docs\+Tool\+Strip\+Menu\+Item}!Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}}
+\subsubsection{\texorpdfstring{docs\+Tool\+Strip\+Menu\+Item}{docsToolStripMenuItem}}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Tool\+Strip\+Menu\+Item Cert\+Complete.\+Cert\+Complete.\+docs\+Tool\+Strip\+Menu\+Item\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_cert_complete_1_1_cert_complete_a639e868e61b8d868d7322c17ac8e84a9}\label{class_cert_complete_1_1_cert_complete_a639e868e61b8d868d7322c17ac8e84a9}} 
+\index{Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}!edit\+Tool\+Strip\+Menu\+Item@{edit\+Tool\+Strip\+Menu\+Item}}
+\index{edit\+Tool\+Strip\+Menu\+Item@{edit\+Tool\+Strip\+Menu\+Item}!Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}}
+\subsubsection{\texorpdfstring{edit\+Tool\+Strip\+Menu\+Item}{editToolStripMenuItem}}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Tool\+Strip\+Menu\+Item Cert\+Complete.\+Cert\+Complete.\+edit\+Tool\+Strip\+Menu\+Item\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_cert_complete_1_1_cert_complete_abfdc08fb1d4e22c6cd157c1727fd9d75}\label{class_cert_complete_1_1_cert_complete_abfdc08fb1d4e22c6cd157c1727fd9d75}} 
+\index{Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}!exit\+Tool\+Strip\+Menu\+Item@{exit\+Tool\+Strip\+Menu\+Item}}
+\index{exit\+Tool\+Strip\+Menu\+Item@{exit\+Tool\+Strip\+Menu\+Item}!Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}}
+\subsubsection{\texorpdfstring{exit\+Tool\+Strip\+Menu\+Item}{exitToolStripMenuItem}}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Tool\+Strip\+Menu\+Item Cert\+Complete.\+Cert\+Complete.\+exit\+Tool\+Strip\+Menu\+Item\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_cert_complete_1_1_cert_complete_a158ee264c36d528ceed80853069846b0}\label{class_cert_complete_1_1_cert_complete_a158ee264c36d528ceed80853069846b0}} 
+\index{Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}!file\+Tool\+Strip\+Menu\+Item@{file\+Tool\+Strip\+Menu\+Item}}
+\index{file\+Tool\+Strip\+Menu\+Item@{file\+Tool\+Strip\+Menu\+Item}!Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}}
+\subsubsection{\texorpdfstring{file\+Tool\+Strip\+Menu\+Item}{fileToolStripMenuItem}}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Tool\+Strip\+Menu\+Item Cert\+Complete.\+Cert\+Complete.\+file\+Tool\+Strip\+Menu\+Item\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_cert_complete_1_1_cert_complete_ae14932068d3be5c2e99ae3b1fe88a9d4}\label{class_cert_complete_1_1_cert_complete_ae14932068d3be5c2e99ae3b1fe88a9d4}} 
+\index{Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}!group\+Box1@{group\+Box1}}
+\index{group\+Box1@{group\+Box1}!Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}}
+\subsubsection{\texorpdfstring{group\+Box1}{groupBox1}}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Group\+Box Cert\+Complete.\+Cert\+Complete.\+group\+Box1\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_cert_complete_1_1_cert_complete_a5d1d13a89fd672b44a98961a80c8a219}\label{class_cert_complete_1_1_cert_complete_a5d1d13a89fd672b44a98961a80c8a219}} 
+\index{Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}!help\+Tool\+Strip\+Menu\+Item@{help\+Tool\+Strip\+Menu\+Item}}
+\index{help\+Tool\+Strip\+Menu\+Item@{help\+Tool\+Strip\+Menu\+Item}!Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}}
+\subsubsection{\texorpdfstring{help\+Tool\+Strip\+Menu\+Item}{helpToolStripMenuItem}}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Tool\+Strip\+Menu\+Item Cert\+Complete.\+Cert\+Complete.\+help\+Tool\+Strip\+Menu\+Item\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_cert_complete_1_1_cert_complete_adadd62da8a950273d32a601995be172d}\label{class_cert_complete_1_1_cert_complete_adadd62da8a950273d32a601995be172d}} 
+\index{Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}!import\+Tool\+Strip\+Menu\+Item@{import\+Tool\+Strip\+Menu\+Item}}
+\index{import\+Tool\+Strip\+Menu\+Item@{import\+Tool\+Strip\+Menu\+Item}!Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}}
+\subsubsection{\texorpdfstring{import\+Tool\+Strip\+Menu\+Item}{importToolStripMenuItem}}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Tool\+Strip\+Menu\+Item Cert\+Complete.\+Cert\+Complete.\+import\+Tool\+Strip\+Menu\+Item\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_cert_complete_1_1_cert_complete_a0451827808baa78395a25f451356dee0}\label{class_cert_complete_1_1_cert_complete_a0451827808baa78395a25f451356dee0}} 
+\index{Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}!Innowi\+\_\+\+Chec\+Out@{Innowi\+\_\+\+Chec\+Out}}
+\index{Innowi\+\_\+\+Chec\+Out@{Innowi\+\_\+\+Chec\+Out}!Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}}
+\subsubsection{\texorpdfstring{Innowi\+\_\+\+Chec\+Out}{Innowi\_ChecOut}}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Radio\+Button Cert\+Complete.\+Cert\+Complete.\+Innowi\+\_\+\+Chec\+Out\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_cert_complete_1_1_cert_complete_a73c72e8c2abd32a4327f63905994e6cf}\label{class_cert_complete_1_1_cert_complete_a73c72e8c2abd32a4327f63905994e6cf}} 
+\index{Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}!I\+N\+N\+O\+W\+I\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+C\+O\+N\+F\+IG@{I\+N\+N\+O\+W\+I\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+C\+O\+N\+F\+IG}}
+\index{I\+N\+N\+O\+W\+I\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+C\+O\+N\+F\+IG@{I\+N\+N\+O\+W\+I\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+C\+O\+N\+F\+IG}!Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}}
+\subsubsection{\texorpdfstring{I\+N\+N\+O\+W\+I\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+C\+O\+N\+F\+IG}{INNOWI\_DEVICE\_CONFIG}}
+{\footnotesize\ttfamily readonly string Cert\+Complete.\+Cert\+Complete.\+I\+N\+N\+O\+W\+I\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+C\+O\+N\+F\+IG = \char`\"{}.\textbackslash{}\textbackslash{}lib\textbackslash{}\textbackslash{}settings\textbackslash{}\textbackslash{}\+I\+N\+N\+O\+W\+I\+\_\+\+C\+H\+E\+C\+O\+U\+T\+M\+\_\+\+C\+O\+N\+F\+I\+G.\+json\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_cert_complete_1_1_cert_complete_a18ae691771ff00c5f54a317ba0d33cff}\label{class_cert_complete_1_1_cert_complete_a18ae691771ff00c5f54a317ba0d33cff}} 
+\index{Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}!innowi\+Tool\+Strip\+Menu\+Item@{innowi\+Tool\+Strip\+Menu\+Item}}
+\index{innowi\+Tool\+Strip\+Menu\+Item@{innowi\+Tool\+Strip\+Menu\+Item}!Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}}
+\subsubsection{\texorpdfstring{innowi\+Tool\+Strip\+Menu\+Item}{innowiToolStripMenuItem}}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Tool\+Strip\+Menu\+Item Cert\+Complete.\+Cert\+Complete.\+innowi\+Tool\+Strip\+Menu\+Item\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_cert_complete_1_1_cert_complete_a2069bd962e50e8a9235af3b9faf9efb1}\label{class_cert_complete_1_1_cert_complete_a2069bd962e50e8a9235af3b9faf9efb1}} 
+\index{Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}!label1@{label1}}
+\index{label1@{label1}!Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}}
+\subsubsection{\texorpdfstring{label1}{label1}}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Label Cert\+Complete.\+Cert\+Complete.\+label1\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_cert_complete_1_1_cert_complete_a03112ef58c5d94b4a428f822efd937a2}\label{class_cert_complete_1_1_cert_complete_a03112ef58c5d94b4a428f822efd937a2}} 
+\index{Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}!menu\+Strip1@{menu\+Strip1}}
+\index{menu\+Strip1@{menu\+Strip1}!Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}}
+\subsubsection{\texorpdfstring{menu\+Strip1}{menuStrip1}}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Menu\+Strip Cert\+Complete.\+Cert\+Complete.\+menu\+Strip1\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_cert_complete_1_1_cert_complete_ab1e6973dc161b91a23050e18c4838705}\label{class_cert_complete_1_1_cert_complete_ab1e6973dc161b91a23050e18c4838705}} 
+\index{Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}!new\+Tool\+Strip\+Menu\+Item@{new\+Tool\+Strip\+Menu\+Item}}
+\index{new\+Tool\+Strip\+Menu\+Item@{new\+Tool\+Strip\+Menu\+Item}!Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}}
+\subsubsection{\texorpdfstring{new\+Tool\+Strip\+Menu\+Item}{newToolStripMenuItem}}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Tool\+Strip\+Menu\+Item Cert\+Complete.\+Cert\+Complete.\+new\+Tool\+Strip\+Menu\+Item\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_cert_complete_1_1_cert_complete_a3e10741e6e8e5b596bfd906e2c019095}\label{class_cert_complete_1_1_cert_complete_a3e10741e6e8e5b596bfd906e2c019095}} 
+\index{Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}!No\+Sig@{No\+Sig}}
+\index{No\+Sig@{No\+Sig}!Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}}
+\subsubsection{\texorpdfstring{No\+Sig}{NoSig}}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Check\+Box Cert\+Complete.\+Cert\+Complete.\+No\+Sig\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_cert_complete_1_1_cert_complete_a92cad43818b4e7f496378be9e785202d}\label{class_cert_complete_1_1_cert_complete_a92cad43818b4e7f496378be9e785202d}} 
+\index{Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}!panel1@{panel1}}
+\index{panel1@{panel1}!Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}}
+\subsubsection{\texorpdfstring{panel1}{panel1}}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Panel Cert\+Complete.\+Cert\+Complete.\+panel1\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_cert_complete_1_1_cert_complete_a843ac34ed8e64b4c34419457ddc770ab}\label{class_cert_complete_1_1_cert_complete_a843ac34ed8e64b4c34419457ddc770ab}} 
+\index{Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}!parameters@{parameters}}
+\index{parameters@{parameters}!Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}}
+\subsubsection{\texorpdfstring{parameters}{parameters}}
+{\footnotesize\ttfamily Newtonsoft.\+Json.\+Linq.\+J\+Object Cert\+Complete.\+Cert\+Complete.\+parameters = null\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_cert_complete_1_1_cert_complete_a0beabb140e581a2090a6d4d4c6c447e5}\label{class_cert_complete_1_1_cert_complete_a0beabb140e581a2090a6d4d4c6c447e5}} 
+\index{Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}!paste\+Tool\+Strip\+Menu\+Item@{paste\+Tool\+Strip\+Menu\+Item}}
+\index{paste\+Tool\+Strip\+Menu\+Item@{paste\+Tool\+Strip\+Menu\+Item}!Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}}
+\subsubsection{\texorpdfstring{paste\+Tool\+Strip\+Menu\+Item}{pasteToolStripMenuItem}}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Tool\+Strip\+Menu\+Item Cert\+Complete.\+Cert\+Complete.\+paste\+Tool\+Strip\+Menu\+Item\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_cert_complete_1_1_cert_complete_a4e90f2e4b3d0c471d47e482dc6657db8}\label{class_cert_complete_1_1_cert_complete_a4e90f2e4b3d0c471d47e482dc6657db8}} 
+\index{Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}!P\+A\+X\+\_\+\+S300@{P\+A\+X\+\_\+\+S300}}
+\index{P\+A\+X\+\_\+\+S300@{P\+A\+X\+\_\+\+S300}!Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}}
+\subsubsection{\texorpdfstring{P\+A\+X\+\_\+\+S300}{PAX\_S300}}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Radio\+Button Cert\+Complete.\+Cert\+Complete.\+P\+A\+X\+\_\+\+S300\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_cert_complete_1_1_cert_complete_a0a24d60f7e6d1bda7c2ba93d31c9a114}\label{class_cert_complete_1_1_cert_complete_a0a24d60f7e6d1bda7c2ba93d31c9a114}} 
+\index{Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}!p\+A\+X\+Tool\+Strip\+Menu\+Item@{p\+A\+X\+Tool\+Strip\+Menu\+Item}}
+\index{p\+A\+X\+Tool\+Strip\+Menu\+Item@{p\+A\+X\+Tool\+Strip\+Menu\+Item}!Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}}
+\subsubsection{\texorpdfstring{p\+A\+X\+Tool\+Strip\+Menu\+Item}{pAXToolStripMenuItem}}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Tool\+Strip\+Menu\+Item Cert\+Complete.\+Cert\+Complete.\+p\+A\+X\+Tool\+Strip\+Menu\+Item\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_cert_complete_1_1_cert_complete_a925b71e3f63e4616655e8cee3e1f57ad}\label{class_cert_complete_1_1_cert_complete_a925b71e3f63e4616655e8cee3e1f57ad}} 
+\index{Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}!preferences\+Tool\+Strip\+Menu\+Item@{preferences\+Tool\+Strip\+Menu\+Item}}
+\index{preferences\+Tool\+Strip\+Menu\+Item@{preferences\+Tool\+Strip\+Menu\+Item}!Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}}
+\subsubsection{\texorpdfstring{preferences\+Tool\+Strip\+Menu\+Item}{preferencesToolStripMenuItem}}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Tool\+Strip\+Menu\+Item Cert\+Complete.\+Cert\+Complete.\+preferences\+Tool\+Strip\+Menu\+Item\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_cert_complete_1_1_cert_complete_aa4d58d6977809cef2216480e619a13d9}\label{class_cert_complete_1_1_cert_complete_aa4d58d6977809cef2216480e619a13d9}} 
+\index{Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}!Print\+Receipt@{Print\+Receipt}}
+\index{Print\+Receipt@{Print\+Receipt}!Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}}
+\subsubsection{\texorpdfstring{Print\+Receipt}{PrintReceipt}}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Check\+Box Cert\+Complete.\+Cert\+Complete.\+Print\+Receipt\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_cert_complete_1_1_cert_complete_a629eb45333d126be3b651969b37b5308}\label{class_cert_complete_1_1_cert_complete_a629eb45333d126be3b651969b37b5308}} 
+\index{Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}!request\+Data@{request\+Data}}
+\index{request\+Data@{request\+Data}!Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}}
+\subsubsection{\texorpdfstring{request\+Data}{requestData}}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Rich\+Text\+Box Cert\+Complete.\+Cert\+Complete.\+request\+Data\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_cert_complete_1_1_cert_complete_aed4c3b9360f819cb59cc6720c4dd77d9}\label{class_cert_complete_1_1_cert_complete_aed4c3b9360f819cb59cc6720c4dd77d9}} 
+\index{Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}!result\+Data@{result\+Data}}
+\index{result\+Data@{result\+Data}!Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}}
+\subsubsection{\texorpdfstring{result\+Data}{resultData}}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Rich\+Text\+Box Cert\+Complete.\+Cert\+Complete.\+result\+Data\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_cert_complete_1_1_cert_complete_a027a03bc6f41269be77b5744b346cbd6}\label{class_cert_complete_1_1_cert_complete_a027a03bc6f41269be77b5744b346cbd6}} 
+\index{Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}!run@{run}}
+\index{run@{run}!Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}}
+\subsubsection{\texorpdfstring{run}{run}}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Button Cert\+Complete.\+Cert\+Complete.\+run\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_cert_complete_1_1_cert_complete_ad961ad31303bfdb2496fd44d45745ff1}\label{class_cert_complete_1_1_cert_complete_ad961ad31303bfdb2496fd44d45745ff1}} 
+\index{Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}!S300\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+C\+O\+N\+F\+IG@{S300\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+C\+O\+N\+F\+IG}}
+\index{S300\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+C\+O\+N\+F\+IG@{S300\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+C\+O\+N\+F\+IG}!Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}}
+\subsubsection{\texorpdfstring{S300\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+C\+O\+N\+F\+IG}{S300\_DEVICE\_CONFIG}}
+{\footnotesize\ttfamily readonly string Cert\+Complete.\+Cert\+Complete.\+S300\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+C\+O\+N\+F\+IG = \char`\"{}.\textbackslash{}\textbackslash{}lib\textbackslash{}\textbackslash{}settings\textbackslash{}\textbackslash{}\+P\+A\+X\+\_\+\+S300\+\_\+\+C\+O\+N\+F\+I\+G.\+json\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_cert_complete_1_1_cert_complete_adbe8c1e96b923c33474254fff4f99b63}\label{class_cert_complete_1_1_cert_complete_adbe8c1e96b923c33474254fff4f99b63}} 
+\index{Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}!s300\+Tool\+Strip\+Menu\+Item@{s300\+Tool\+Strip\+Menu\+Item}}
+\index{s300\+Tool\+Strip\+Menu\+Item@{s300\+Tool\+Strip\+Menu\+Item}!Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}}
+\subsubsection{\texorpdfstring{s300\+Tool\+Strip\+Menu\+Item}{s300ToolStripMenuItem}}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Tool\+Strip\+Menu\+Item Cert\+Complete.\+Cert\+Complete.\+s300\+Tool\+Strip\+Menu\+Item\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_cert_complete_1_1_cert_complete_ac8e71505fc559814f6d0e23f2c67ba91}\label{class_cert_complete_1_1_cert_complete_ac8e71505fc559814f6d0e23f2c67ba91}} 
+\index{Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}!save\+Tool\+Strip\+Menu\+Item@{save\+Tool\+Strip\+Menu\+Item}}
+\index{save\+Tool\+Strip\+Menu\+Item@{save\+Tool\+Strip\+Menu\+Item}!Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}}
+\subsubsection{\texorpdfstring{save\+Tool\+Strip\+Menu\+Item}{saveToolStripMenuItem}}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Tool\+Strip\+Menu\+Item Cert\+Complete.\+Cert\+Complete.\+save\+Tool\+Strip\+Menu\+Item\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_cert_complete_1_1_cert_complete_aabe5ae4beadab7c6de98de3b47baf498}\label{class_cert_complete_1_1_cert_complete_aabe5ae4beadab7c6de98de3b47baf498}} 
+\index{Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}!session\+Transactions@{session\+Transactions}}
+\index{session\+Transactions@{session\+Transactions}!Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}}
+\subsubsection{\texorpdfstring{session\+Transactions}{sessionTransactions}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{class_cert_complete_1_1_transaction}{Transaction}}$>$ Cert\+Complete.\+Cert\+Complete.\+session\+Transactions = new List$<$\mbox{\hyperlink{class_cert_complete_1_1_transaction}{Transaction}}$>$()}
+
+\mbox{\Hypertarget{class_cert_complete_1_1_cert_complete_a43be90efbcc884bafc8b07f821c48b6b}\label{class_cert_complete_1_1_cert_complete_a43be90efbcc884bafc8b07f821c48b6b}} 
+\index{Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}!settings\+Handler@{settings\+Handler}}
+\index{settings\+Handler@{settings\+Handler}!Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}}
+\subsubsection{\texorpdfstring{settings\+Handler}{settingsHandler}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_cert_complete_1_1_settings_handler}{Settings\+Handler}} Cert\+Complete.\+Cert\+Complete.\+settings\+Handler = \mbox{\hyperlink{class_cert_complete_1_1_settings_handler_a7c4f8eb33b1113986d52942f93e52da8}{Settings\+Handler.\+Instance}}\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_cert_complete_1_1_cert_complete_a788052da36a4c2ce24199a262cebfec8}\label{class_cert_complete_1_1_cert_complete_a788052da36a4c2ce24199a262cebfec8}} 
+\index{Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}!source@{source}}
+\index{source@{source}!Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}}
+\subsubsection{\texorpdfstring{source}{source}}
+{\footnotesize\ttfamily Cancellation\+Token\+Source Cert\+Complete.\+Cert\+Complete.\+source\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_cert_complete_1_1_cert_complete_ac7810cb16e4147c70162cc6c80fc5517}\label{class_cert_complete_1_1_cert_complete_ac7810cb16e4147c70162cc6c80fc5517}} 
+\index{Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}!table\+Layout\+Panel1@{table\+Layout\+Panel1}}
+\index{table\+Layout\+Panel1@{table\+Layout\+Panel1}!Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}}
+\subsubsection{\texorpdfstring{table\+Layout\+Panel1}{tableLayoutPanel1}}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Table\+Layout\+Panel Cert\+Complete.\+Cert\+Complete.\+table\+Layout\+Panel1\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_cert_complete_1_1_cert_complete_a20e1caea6cfe04d96bc96d678af0d3a2}\label{class_cert_complete_1_1_cert_complete_a20e1caea6cfe04d96bc96d678af0d3a2}} 
+\index{Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}!test\+Array@{test\+Array}}
+\index{test\+Array@{test\+Array}!Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}}
+\subsubsection{\texorpdfstring{test\+Array}{testArray}}
+{\footnotesize\ttfamily Newtonsoft.\+Json.\+Linq.\+J\+Token \mbox{[}$\,$\mbox{]} Cert\+Complete.\+Cert\+Complete.\+test\+Array = null\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_cert_complete_1_1_cert_complete_ad5d2d2d98102b330f95d658a185d8bfd}\label{class_cert_complete_1_1_cert_complete_ad5d2d2d98102b330f95d658a185d8bfd}} 
+\index{Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}!tests@{tests}}
+\index{tests@{tests}!Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}}
+\subsubsection{\texorpdfstring{tests}{tests}}
+{\footnotesize\ttfamily Newtonsoft.\+Json.\+Linq.\+J\+Token Cert\+Complete.\+Cert\+Complete.\+tests = null\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_cert_complete_1_1_cert_complete_a0e264ac32de8dadd9c7c4c61671aec03}\label{class_cert_complete_1_1_cert_complete_a0e264ac32de8dadd9c7c4c61671aec03}} 
+\index{Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}!test\+Tool\+Strip\+Menu\+Item@{test\+Tool\+Strip\+Menu\+Item}}
+\index{test\+Tool\+Strip\+Menu\+Item@{test\+Tool\+Strip\+Menu\+Item}!Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}}
+\subsubsection{\texorpdfstring{test\+Tool\+Strip\+Menu\+Item}{testToolStripMenuItem}}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Tool\+Strip\+Menu\+Item Cert\+Complete.\+Cert\+Complete.\+test\+Tool\+Strip\+Menu\+Item\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_cert_complete_1_1_cert_complete_a231635f4b70814e3b8e13a58c1fcb6f7}\label{class_cert_complete_1_1_cert_complete_a231635f4b70814e3b8e13a58c1fcb6f7}} 
+\index{Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}!test\+Tool\+Strip\+Menu\+Item1@{test\+Tool\+Strip\+Menu\+Item1}}
+\index{test\+Tool\+Strip\+Menu\+Item1@{test\+Tool\+Strip\+Menu\+Item1}!Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}}
+\subsubsection{\texorpdfstring{test\+Tool\+Strip\+Menu\+Item1}{testToolStripMenuItem1}}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Tool\+Strip\+Menu\+Item Cert\+Complete.\+Cert\+Complete.\+test\+Tool\+Strip\+Menu\+Item1\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_cert_complete_1_1_cert_complete_a05a613a39788f778c3877b7f73b87992}\label{class_cert_complete_1_1_cert_complete_a05a613a39788f778c3877b7f73b87992}} 
+\index{Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}!text\+Box1@{text\+Box1}}
+\index{text\+Box1@{text\+Box1}!Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}}
+\subsubsection{\texorpdfstring{text\+Box1}{textBox1}}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Text\+Box Cert\+Complete.\+Cert\+Complete.\+text\+Box1\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_cert_complete_1_1_cert_complete_a422c8734723a40be96e034f9ac7b5ad8}\label{class_cert_complete_1_1_cert_complete_a422c8734723a40be96e034f9ac7b5ad8}} 
+\index{Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}!text\+Box2@{text\+Box2}}
+\index{text\+Box2@{text\+Box2}!Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}}
+\subsubsection{\texorpdfstring{text\+Box2}{textBox2}}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Text\+Box Cert\+Complete.\+Cert\+Complete.\+text\+Box2\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_cert_complete_1_1_cert_complete_a38b6d7ce26a08d48b88e8a6ba70223c0}\label{class_cert_complete_1_1_cert_complete_a38b6d7ce26a08d48b88e8a6ba70223c0}} 
+\index{Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}!text\+Box3@{text\+Box3}}
+\index{text\+Box3@{text\+Box3}!Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}}
+\subsubsection{\texorpdfstring{text\+Box3}{textBox3}}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Text\+Box Cert\+Complete.\+Cert\+Complete.\+text\+Box3\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_cert_complete_1_1_cert_complete_ae5e7f4a6656f82746e7aa684a97c655f}\label{class_cert_complete_1_1_cert_complete_ae5e7f4a6656f82746e7aa684a97c655f}} 
+\index{Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}!text\+Box4@{text\+Box4}}
+\index{text\+Box4@{text\+Box4}!Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}}
+\subsubsection{\texorpdfstring{text\+Box4}{textBox4}}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Text\+Box Cert\+Complete.\+Cert\+Complete.\+text\+Box4\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_cert_complete_1_1_cert_complete_aad34f573c91ef12a2d4fc81afd12b0d2}\label{class_cert_complete_1_1_cert_complete_aad34f573c91ef12a2d4fc81afd12b0d2}} 
+\index{Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}!token@{token}}
+\index{token@{token}!Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}}
+\subsubsection{\texorpdfstring{token}{token}}
+{\footnotesize\ttfamily Cancellation\+Token Cert\+Complete.\+Cert\+Complete.\+token\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_cert_complete_1_1_cert_complete_a3d2276274977225d308b5eb6195e4da7}\label{class_cert_complete_1_1_cert_complete_a3d2276274977225d308b5eb6195e4da7}} 
+\index{Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}!tran\+History@{tran\+History}}
+\index{tran\+History@{tran\+History}!Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}}
+\subsubsection{\texorpdfstring{tran\+History}{tranHistory}}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+List\+Box Cert\+Complete.\+Cert\+Complete.\+tran\+History\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_cert_complete_1_1_cert_complete_ad76ef267004a2881670e37ad056c23fc}\label{class_cert_complete_1_1_cert_complete_ad76ef267004a2881670e37ad056c23fc}} 
+\index{Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}!update\+Tool\+Strip\+Menu\+Item@{update\+Tool\+Strip\+Menu\+Item}}
+\index{update\+Tool\+Strip\+Menu\+Item@{update\+Tool\+Strip\+Menu\+Item}!Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}}
+\subsubsection{\texorpdfstring{update\+Tool\+Strip\+Menu\+Item}{updateToolStripMenuItem}}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Tool\+Strip\+Menu\+Item Cert\+Complete.\+Cert\+Complete.\+update\+Tool\+Strip\+Menu\+Item\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_cert_complete_1_1_cert_complete_ae07487144f4788f7dd165a05fa41f1d3}\label{class_cert_complete_1_1_cert_complete_ae07487144f4788f7dd165a05fa41f1d3}} 
+\index{Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}!V\+E\+R\+S\+I\+O\+N\+\_\+\+N\+U\+M\+B\+ER@{V\+E\+R\+S\+I\+O\+N\+\_\+\+N\+U\+M\+B\+ER}}
+\index{V\+E\+R\+S\+I\+O\+N\+\_\+\+N\+U\+M\+B\+ER@{V\+E\+R\+S\+I\+O\+N\+\_\+\+N\+U\+M\+B\+ER}!Cert\+Complete\+::\+Cert\+Complete@{Cert\+Complete\+::\+Cert\+Complete}}
+\subsubsection{\texorpdfstring{V\+E\+R\+S\+I\+O\+N\+\_\+\+N\+U\+M\+B\+ER}{VERSION\_NUMBER}}
+{\footnotesize\ttfamily readonly string Cert\+Complete.\+Cert\+Complete.\+V\+E\+R\+S\+I\+O\+N\+\_\+\+N\+U\+M\+B\+ER = \char`\"{}0.\+2.\+3 (beta)\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_cert_complete_8cs}{Cert\+Complete.\+cs}}\item 
+\mbox{\hyperlink{_cert_complete_8_designer_8cs}{Cert\+Complete.\+Designer.\+cs}}\end{DoxyCompactItemize}

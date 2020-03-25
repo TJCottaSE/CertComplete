@@ -1,0 +1,334 @@
+\hypertarget{class_cert_complete_1_1_innowi_device}{}\section{Cert\+Complete.\+Innowi\+Device Class Reference}
+\label{class_cert_complete_1_1_innowi_device}\index{Cert\+Complete.\+Innowi\+Device@{Cert\+Complete.\+Innowi\+Device}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_cert_complete_1_1_innowi_device_ad5c2b124be7515bd8973c53400629367}{Innowi\+Device}} ()
+\begin{DoxyCompactList}\small\item\em Default Constructor \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_cert_complete_1_1_innowi_device_adf36712e4b4f7090c69a4f5b55ff1de9}{initialize\+Device}} (string Device\+Config\+File\+Path)
+\begin{DoxyCompactList}\small\item\em Initializes the device using stored config file. \end{DoxyCompactList}\item 
+async Task$<$ string $>$ \mbox{\hyperlink{class_cert_complete_1_1_innowi_device_aa50e6a501d5d70ce75a6cbe66d8f5afe}{process\+Transaction}} (Newtonsoft.\+Json.\+Linq.\+J\+Token transaction\+Data)
+\begin{DoxyCompactList}\small\item\em Reads and writes data to and from the network. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cert_complete_1_1_innowi_device_a1473af2c3c1eed973e430b84bebfd625}{start\+Listener}} ()
+\begin{DoxyCompactList}\small\item\em Starts the T\+CP listener \end{DoxyCompactList}\item 
+async Task$<$ string $>$ \mbox{\hyperlink{class_cert_complete_1_1_innowi_device_ab165bb74d2194d055a09b0ea09cdbad0}{print\+E\+M\+V\+Receipt}} ()
+\begin{DoxyCompactList}\small\item\em Creates an E\+MV compliant receipt \end{DoxyCompactList}\item 
+async Task$<$ string $>$ \mbox{\hyperlink{class_cert_complete_1_1_innowi_device_a729ebb4b3a441a7dfb218ffbd3b31c86}{print\+E\+M\+V\+Receipt\+No\+Sig}} ()
+\begin{DoxyCompactList}\small\item\em Formats Receipt data without signature line \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_cert_complete_1_1_innowi_device_aad620bfcbd0417cc415585372baa8112}{format\+E\+M\+V\+Data}} ()
+\begin{DoxyCompactList}\small\item\em Formats the E\+MV Data from the device \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_cert_complete_1_1_innowi_device_a9db23bf8f2599eea59d391bcad2b8193}{format\+Transaction\+Data}} ()
+\begin{DoxyCompactList}\small\item\em Formats the transaction data into part of a receipt. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_cert_complete_1_1_innowi_device_ae438dadbc675ddfb9a8bbf48c0a143f7}{lr\+Align}} (string Name, string Value, int Width)
+\begin{DoxyCompactList}\small\item\em Aligns key value pairs. C\+O\+N\+S\+I\+D\+ER R\+E\+F\+A\+C\+T\+O\+R\+I\+NG T\+H\+IS O\+UT TO A D\+I\+F\+F\+E\+R\+E\+NT C\+L\+A\+SS OR S\+U\+P\+E\+R\+C\+L\+A\+SS \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_cert_complete_1_1_innowi_device_a12ea6f76bf368eba8130b0e8d2a7a09a}{center\+Text}} (string Text, int Width)
+\begin{DoxyCompactList}\small\item\em Centers text in a line. C\+O\+N\+S\+I\+D\+ER R\+E\+F\+A\+C\+T\+O\+R\+I\+NG T\+H\+IS O\+UT TO A D\+I\+F\+F\+E\+R\+E\+NT C\+L\+A\+SS OR S\+U\+P\+E\+R\+C\+L\+A\+SS \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_cert_complete_1_1_innowi_device_af454a3482e7fa81495f3ea39a1e490ce}{get\+Date\+Time}} ()
+\begin{DoxyCompactList}\small\item\em Gets the current date time en-\/\+US C\+O\+N\+S\+I\+D\+ER R\+E\+F\+A\+C\+T\+O\+R\+I\+NG T\+H\+IS O\+UT TO A D\+I\+F\+F\+E\+R\+E\+NT C\+L\+A\+SS OR S\+U\+P\+E\+R\+C\+L\+A\+SS \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_cert_complete_1_1_innowi_device_afc4016ed76d1ab4ab3d8365c23800d64}{format\+Amount}} (string amount)
+\begin{DoxyCompactList}\small\item\em Formats the amount to be a standard schema namely X.\+XX C\+O\+N\+S\+I\+D\+ER R\+E\+F\+A\+C\+T\+O\+R\+I\+NG T\+H\+IS O\+UT TO A D\+I\+F\+F\+E\+R\+E\+NT C\+L\+A\+SS OR S\+U\+P\+E\+R\+C\+L\+A\+SS \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_cert_complete_1_1_innowi_device_a6be1ef3889195a5b3d3b81306c77608b}{calc\+Sub\+Total}} (string Amount, string Tax, string Tip, string Cash\+Back, string Surcharge)
+\begin{DoxyCompactList}\small\item\em Calculates the Subtotal if on exists for a given transaction. C\+O\+N\+S\+I\+D\+ER R\+E\+F\+A\+C\+T\+O\+R\+I\+NG T\+H\+IS O\+UT TO A D\+I\+F\+F\+E\+R\+E\+NT C\+L\+A\+SS OR S\+U\+P\+E\+R\+C\+L\+A\+SS \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_cert_complete_1_1_innowi_device_ae127b1812832513a8e5763df33bed803}{map\+Innowi\+Response\+To\+String}} (string value)
+\begin{DoxyCompactList}\small\item\em Maps the Innowi Response Code to a human readable result \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_cert_complete_1_1_innowi_device_afef9b74bd03eaeaf3911d5a8640c1c15}{initialized}} = false
+\item 
+bool \mbox{\hyperlink{class_cert_complete_1_1_innowi_device_aee573efa3c2a5c86451d408ccb53900d}{sig\+Required}} = false
+\item 
+string \mbox{\hyperlink{class_cert_complete_1_1_innowi_device_a6c49617cdcaf95aab72cf409943fe9c1}{I\+P\+Address}} = null
+\item 
+Int32 \mbox{\hyperlink{class_cert_complete_1_1_innowi_device_a1b640eb99fdebc43553d71b0c9c5d646}{Port}} = 0
+\item 
+Tcp\+Client \mbox{\hyperlink{class_cert_complete_1_1_innowi_device_a4adf7808e8911c0f055f8916dab3b8ee}{client}}
+\item 
+string \mbox{\hyperlink{class_cert_complete_1_1_innowi_device_a277880cdbb944699ba2e9e0c9269ea23}{response\+J\+S\+ON}} = string.\+Empty
+\item 
+string \mbox{\hyperlink{class_cert_complete_1_1_innowi_device_a035bea2cd952dc08557d7abf7e25af27}{request\+J\+S\+ON}} = string.\+Empty
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_cert_complete_1_1_innowi_device_ad5c2b124be7515bd8973c53400629367}\label{class_cert_complete_1_1_innowi_device_ad5c2b124be7515bd8973c53400629367}} 
+\index{Cert\+Complete\+::\+Innowi\+Device@{Cert\+Complete\+::\+Innowi\+Device}!Innowi\+Device@{Innowi\+Device}}
+\index{Innowi\+Device@{Innowi\+Device}!Cert\+Complete\+::\+Innowi\+Device@{Cert\+Complete\+::\+Innowi\+Device}}
+\subsubsection{\texorpdfstring{Innowi\+Device()}{InnowiDevice()}}
+{\footnotesize\ttfamily Cert\+Complete.\+Innowi\+Device.\+Innowi\+Device (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Default Constructor 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_cert_complete_1_1_innowi_device_a6be1ef3889195a5b3d3b81306c77608b}\label{class_cert_complete_1_1_innowi_device_a6be1ef3889195a5b3d3b81306c77608b}} 
+\index{Cert\+Complete\+::\+Innowi\+Device@{Cert\+Complete\+::\+Innowi\+Device}!calc\+Sub\+Total@{calc\+Sub\+Total}}
+\index{calc\+Sub\+Total@{calc\+Sub\+Total}!Cert\+Complete\+::\+Innowi\+Device@{Cert\+Complete\+::\+Innowi\+Device}}
+\subsubsection{\texorpdfstring{calc\+Sub\+Total()}{calcSubTotal()}}
+{\footnotesize\ttfamily string Cert\+Complete.\+Innowi\+Device.\+calc\+Sub\+Total (\begin{DoxyParamCaption}\item[{string}]{Amount,  }\item[{string}]{Tax,  }\item[{string}]{Tip,  }\item[{string}]{Cash\+Back,  }\item[{string}]{Surcharge }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Calculates the Subtotal if on exists for a given transaction. C\+O\+N\+S\+I\+D\+ER R\+E\+F\+A\+C\+T\+O\+R\+I\+NG T\+H\+IS O\+UT TO A D\+I\+F\+F\+E\+R\+E\+NT C\+L\+A\+SS OR S\+U\+P\+E\+R\+C\+L\+A\+SS 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Amount} & The Total Amount\\
+\hline
+{\em Tax} & The Tax Amount\\
+\hline
+{\em Tip} & The Tip Amount\\
+\hline
+{\em Cash\+Back} & The Cash Back Amount\\
+\hline
+{\em Surcharge} & The Surcharge Amount\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The Total minus any tax, tip, cashback, or surcharges.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_cert_complete_1_1_innowi_device_a12ea6f76bf368eba8130b0e8d2a7a09a}\label{class_cert_complete_1_1_innowi_device_a12ea6f76bf368eba8130b0e8d2a7a09a}} 
+\index{Cert\+Complete\+::\+Innowi\+Device@{Cert\+Complete\+::\+Innowi\+Device}!center\+Text@{center\+Text}}
+\index{center\+Text@{center\+Text}!Cert\+Complete\+::\+Innowi\+Device@{Cert\+Complete\+::\+Innowi\+Device}}
+\subsubsection{\texorpdfstring{center\+Text()}{centerText()}}
+{\footnotesize\ttfamily string Cert\+Complete.\+Innowi\+Device.\+center\+Text (\begin{DoxyParamCaption}\item[{string}]{Text,  }\item[{int}]{Width }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Centers text in a line. C\+O\+N\+S\+I\+D\+ER R\+E\+F\+A\+C\+T\+O\+R\+I\+NG T\+H\+IS O\+UT TO A D\+I\+F\+F\+E\+R\+E\+NT C\+L\+A\+SS OR S\+U\+P\+E\+R\+C\+L\+A\+SS 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Text} & Text to be centered.\\
+\hline
+{\em Width} & Total line width of the receipt in chars.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A string represention of \char`\"{}   text   \char`\"{} centered for a given width.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_cert_complete_1_1_innowi_device_afc4016ed76d1ab4ab3d8365c23800d64}\label{class_cert_complete_1_1_innowi_device_afc4016ed76d1ab4ab3d8365c23800d64}} 
+\index{Cert\+Complete\+::\+Innowi\+Device@{Cert\+Complete\+::\+Innowi\+Device}!format\+Amount@{format\+Amount}}
+\index{format\+Amount@{format\+Amount}!Cert\+Complete\+::\+Innowi\+Device@{Cert\+Complete\+::\+Innowi\+Device}}
+\subsubsection{\texorpdfstring{format\+Amount()}{formatAmount()}}
+{\footnotesize\ttfamily string Cert\+Complete.\+Innowi\+Device.\+format\+Amount (\begin{DoxyParamCaption}\item[{string}]{amount }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Formats the amount to be a standard schema namely X.\+XX C\+O\+N\+S\+I\+D\+ER R\+E\+F\+A\+C\+T\+O\+R\+I\+NG T\+H\+IS O\+UT TO A D\+I\+F\+F\+E\+R\+E\+NT C\+L\+A\+SS OR S\+U\+P\+E\+R\+C\+L\+A\+SS 
+
+
+\begin{DoxyParams}{Parameters}
+{\em amount} & The amount to be formatted.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A string representation of the Amount.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_cert_complete_1_1_innowi_device_aad620bfcbd0417cc415585372baa8112}\label{class_cert_complete_1_1_innowi_device_aad620bfcbd0417cc415585372baa8112}} 
+\index{Cert\+Complete\+::\+Innowi\+Device@{Cert\+Complete\+::\+Innowi\+Device}!format\+E\+M\+V\+Data@{format\+E\+M\+V\+Data}}
+\index{format\+E\+M\+V\+Data@{format\+E\+M\+V\+Data}!Cert\+Complete\+::\+Innowi\+Device@{Cert\+Complete\+::\+Innowi\+Device}}
+\subsubsection{\texorpdfstring{format\+E\+M\+V\+Data()}{formatEMVData()}}
+{\footnotesize\ttfamily string Cert\+Complete.\+Innowi\+Device.\+format\+E\+M\+V\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Formats the E\+MV Data from the device 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_cert_complete_1_1_innowi_device_a9db23bf8f2599eea59d391bcad2b8193}\label{class_cert_complete_1_1_innowi_device_a9db23bf8f2599eea59d391bcad2b8193}} 
+\index{Cert\+Complete\+::\+Innowi\+Device@{Cert\+Complete\+::\+Innowi\+Device}!format\+Transaction\+Data@{format\+Transaction\+Data}}
+\index{format\+Transaction\+Data@{format\+Transaction\+Data}!Cert\+Complete\+::\+Innowi\+Device@{Cert\+Complete\+::\+Innowi\+Device}}
+\subsubsection{\texorpdfstring{format\+Transaction\+Data()}{formatTransactionData()}}
+{\footnotesize\ttfamily string Cert\+Complete.\+Innowi\+Device.\+format\+Transaction\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Formats the transaction data into part of a receipt. 
+
+\begin{DoxyReturn}{Returns}
+A string representation of receipt text
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_cert_complete_1_1_innowi_device_af454a3482e7fa81495f3ea39a1e490ce}\label{class_cert_complete_1_1_innowi_device_af454a3482e7fa81495f3ea39a1e490ce}} 
+\index{Cert\+Complete\+::\+Innowi\+Device@{Cert\+Complete\+::\+Innowi\+Device}!get\+Date\+Time@{get\+Date\+Time}}
+\index{get\+Date\+Time@{get\+Date\+Time}!Cert\+Complete\+::\+Innowi\+Device@{Cert\+Complete\+::\+Innowi\+Device}}
+\subsubsection{\texorpdfstring{get\+Date\+Time()}{getDateTime()}}
+{\footnotesize\ttfamily string Cert\+Complete.\+Innowi\+Device.\+get\+Date\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Gets the current date time en-\/\+US C\+O\+N\+S\+I\+D\+ER R\+E\+F\+A\+C\+T\+O\+R\+I\+NG T\+H\+IS O\+UT TO A D\+I\+F\+F\+E\+R\+E\+NT C\+L\+A\+SS OR S\+U\+P\+E\+R\+C\+L\+A\+SS 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_cert_complete_1_1_innowi_device_adf36712e4b4f7090c69a4f5b55ff1de9}\label{class_cert_complete_1_1_innowi_device_adf36712e4b4f7090c69a4f5b55ff1de9}} 
+\index{Cert\+Complete\+::\+Innowi\+Device@{Cert\+Complete\+::\+Innowi\+Device}!initialize\+Device@{initialize\+Device}}
+\index{initialize\+Device@{initialize\+Device}!Cert\+Complete\+::\+Innowi\+Device@{Cert\+Complete\+::\+Innowi\+Device}}
+\subsubsection{\texorpdfstring{initialize\+Device()}{initializeDevice()}}
+{\footnotesize\ttfamily bool Cert\+Complete.\+Innowi\+Device.\+initialize\+Device (\begin{DoxyParamCaption}\item[{string}]{Device\+Config\+File\+Path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Initializes the device using stored config file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Device\+Config\+File\+Path} & File path of the device configuration file\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if no errors configuring device, False otherwise.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_cert_complete_1_1_innowi_device_ae438dadbc675ddfb9a8bbf48c0a143f7}\label{class_cert_complete_1_1_innowi_device_ae438dadbc675ddfb9a8bbf48c0a143f7}} 
+\index{Cert\+Complete\+::\+Innowi\+Device@{Cert\+Complete\+::\+Innowi\+Device}!lr\+Align@{lr\+Align}}
+\index{lr\+Align@{lr\+Align}!Cert\+Complete\+::\+Innowi\+Device@{Cert\+Complete\+::\+Innowi\+Device}}
+\subsubsection{\texorpdfstring{lr\+Align()}{lrAlign()}}
+{\footnotesize\ttfamily string Cert\+Complete.\+Innowi\+Device.\+lr\+Align (\begin{DoxyParamCaption}\item[{string}]{Name,  }\item[{string}]{Value,  }\item[{int}]{Width }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Aligns key value pairs. C\+O\+N\+S\+I\+D\+ER R\+E\+F\+A\+C\+T\+O\+R\+I\+NG T\+H\+IS O\+UT TO A D\+I\+F\+F\+E\+R\+E\+NT C\+L\+A\+SS OR S\+U\+P\+E\+R\+C\+L\+A\+SS 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Name} & Left side value\\
+\hline
+{\em Value} & Right side value\\
+\hline
+{\em Width} & Total line width\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+formatted lign of text.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_cert_complete_1_1_innowi_device_ae127b1812832513a8e5763df33bed803}\label{class_cert_complete_1_1_innowi_device_ae127b1812832513a8e5763df33bed803}} 
+\index{Cert\+Complete\+::\+Innowi\+Device@{Cert\+Complete\+::\+Innowi\+Device}!map\+Innowi\+Response\+To\+String@{map\+Innowi\+Response\+To\+String}}
+\index{map\+Innowi\+Response\+To\+String@{map\+Innowi\+Response\+To\+String}!Cert\+Complete\+::\+Innowi\+Device@{Cert\+Complete\+::\+Innowi\+Device}}
+\subsubsection{\texorpdfstring{map\+Innowi\+Response\+To\+String()}{mapInnowiResponseToString()}}
+{\footnotesize\ttfamily string Cert\+Complete.\+Innowi\+Device.\+map\+Innowi\+Response\+To\+String (\begin{DoxyParamCaption}\item[{string}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Maps the Innowi Response Code to a human readable result 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The Response Code to be mapped to string\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The response Code representation as a string
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_cert_complete_1_1_innowi_device_ab165bb74d2194d055a09b0ea09cdbad0}\label{class_cert_complete_1_1_innowi_device_ab165bb74d2194d055a09b0ea09cdbad0}} 
+\index{Cert\+Complete\+::\+Innowi\+Device@{Cert\+Complete\+::\+Innowi\+Device}!print\+E\+M\+V\+Receipt@{print\+E\+M\+V\+Receipt}}
+\index{print\+E\+M\+V\+Receipt@{print\+E\+M\+V\+Receipt}!Cert\+Complete\+::\+Innowi\+Device@{Cert\+Complete\+::\+Innowi\+Device}}
+\subsubsection{\texorpdfstring{print\+E\+M\+V\+Receipt()}{printEMVReceipt()}}
+{\footnotesize\ttfamily async Task$<$string$>$ Cert\+Complete.\+Innowi\+Device.\+print\+E\+M\+V\+Receipt (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Creates an E\+MV compliant receipt 
+
+\begin{DoxyReturn}{Returns}
+String representation of a receipt.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_cert_complete_1_1_innowi_device_a729ebb4b3a441a7dfb218ffbd3b31c86}\label{class_cert_complete_1_1_innowi_device_a729ebb4b3a441a7dfb218ffbd3b31c86}} 
+\index{Cert\+Complete\+::\+Innowi\+Device@{Cert\+Complete\+::\+Innowi\+Device}!print\+E\+M\+V\+Receipt\+No\+Sig@{print\+E\+M\+V\+Receipt\+No\+Sig}}
+\index{print\+E\+M\+V\+Receipt\+No\+Sig@{print\+E\+M\+V\+Receipt\+No\+Sig}!Cert\+Complete\+::\+Innowi\+Device@{Cert\+Complete\+::\+Innowi\+Device}}
+\subsubsection{\texorpdfstring{print\+E\+M\+V\+Receipt\+No\+Sig()}{printEMVReceiptNoSig()}}
+{\footnotesize\ttfamily async Task$<$string$>$ Cert\+Complete.\+Innowi\+Device.\+print\+E\+M\+V\+Receipt\+No\+Sig (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Formats Receipt data without signature line 
+
+\begin{DoxyReturn}{Returns}
+A receipt string without a signature line
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_cert_complete_1_1_innowi_device_aa50e6a501d5d70ce75a6cbe66d8f5afe}\label{class_cert_complete_1_1_innowi_device_aa50e6a501d5d70ce75a6cbe66d8f5afe}} 
+\index{Cert\+Complete\+::\+Innowi\+Device@{Cert\+Complete\+::\+Innowi\+Device}!process\+Transaction@{process\+Transaction}}
+\index{process\+Transaction@{process\+Transaction}!Cert\+Complete\+::\+Innowi\+Device@{Cert\+Complete\+::\+Innowi\+Device}}
+\subsubsection{\texorpdfstring{process\+Transaction()}{processTransaction()}}
+{\footnotesize\ttfamily async Task$<$string$>$ Cert\+Complete.\+Innowi\+Device.\+process\+Transaction (\begin{DoxyParamCaption}\item[{Newtonsoft.\+Json.\+Linq.\+J\+Token}]{transaction\+Data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Reads and writes data to and from the network. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em transaction\+Data} & J\+S\+ON representation of the transaction.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_cert_complete_1_1_innowi_device_a1473af2c3c1eed973e430b84bebfd625}\label{class_cert_complete_1_1_innowi_device_a1473af2c3c1eed973e430b84bebfd625}} 
+\index{Cert\+Complete\+::\+Innowi\+Device@{Cert\+Complete\+::\+Innowi\+Device}!start\+Listener@{start\+Listener}}
+\index{start\+Listener@{start\+Listener}!Cert\+Complete\+::\+Innowi\+Device@{Cert\+Complete\+::\+Innowi\+Device}}
+\subsubsection{\texorpdfstring{start\+Listener()}{startListener()}}
+{\footnotesize\ttfamily void Cert\+Complete.\+Innowi\+Device.\+start\+Listener (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Starts the T\+CP listener 
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_cert_complete_1_1_innowi_device_a4adf7808e8911c0f055f8916dab3b8ee}\label{class_cert_complete_1_1_innowi_device_a4adf7808e8911c0f055f8916dab3b8ee}} 
+\index{Cert\+Complete\+::\+Innowi\+Device@{Cert\+Complete\+::\+Innowi\+Device}!client@{client}}
+\index{client@{client}!Cert\+Complete\+::\+Innowi\+Device@{Cert\+Complete\+::\+Innowi\+Device}}
+\subsubsection{\texorpdfstring{client}{client}}
+{\footnotesize\ttfamily Tcp\+Client Cert\+Complete.\+Innowi\+Device.\+client\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_cert_complete_1_1_innowi_device_afef9b74bd03eaeaf3911d5a8640c1c15}\label{class_cert_complete_1_1_innowi_device_afef9b74bd03eaeaf3911d5a8640c1c15}} 
+\index{Cert\+Complete\+::\+Innowi\+Device@{Cert\+Complete\+::\+Innowi\+Device}!initialized@{initialized}}
+\index{initialized@{initialized}!Cert\+Complete\+::\+Innowi\+Device@{Cert\+Complete\+::\+Innowi\+Device}}
+\subsubsection{\texorpdfstring{initialized}{initialized}}
+{\footnotesize\ttfamily bool Cert\+Complete.\+Innowi\+Device.\+initialized = false\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_cert_complete_1_1_innowi_device_a6c49617cdcaf95aab72cf409943fe9c1}\label{class_cert_complete_1_1_innowi_device_a6c49617cdcaf95aab72cf409943fe9c1}} 
+\index{Cert\+Complete\+::\+Innowi\+Device@{Cert\+Complete\+::\+Innowi\+Device}!I\+P\+Address@{I\+P\+Address}}
+\index{I\+P\+Address@{I\+P\+Address}!Cert\+Complete\+::\+Innowi\+Device@{Cert\+Complete\+::\+Innowi\+Device}}
+\subsubsection{\texorpdfstring{I\+P\+Address}{IPAddress}}
+{\footnotesize\ttfamily string Cert\+Complete.\+Innowi\+Device.\+I\+P\+Address = null\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_cert_complete_1_1_innowi_device_a1b640eb99fdebc43553d71b0c9c5d646}\label{class_cert_complete_1_1_innowi_device_a1b640eb99fdebc43553d71b0c9c5d646}} 
+\index{Cert\+Complete\+::\+Innowi\+Device@{Cert\+Complete\+::\+Innowi\+Device}!Port@{Port}}
+\index{Port@{Port}!Cert\+Complete\+::\+Innowi\+Device@{Cert\+Complete\+::\+Innowi\+Device}}
+\subsubsection{\texorpdfstring{Port}{Port}}
+{\footnotesize\ttfamily Int32 Cert\+Complete.\+Innowi\+Device.\+Port = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_cert_complete_1_1_innowi_device_a035bea2cd952dc08557d7abf7e25af27}\label{class_cert_complete_1_1_innowi_device_a035bea2cd952dc08557d7abf7e25af27}} 
+\index{Cert\+Complete\+::\+Innowi\+Device@{Cert\+Complete\+::\+Innowi\+Device}!request\+J\+S\+ON@{request\+J\+S\+ON}}
+\index{request\+J\+S\+ON@{request\+J\+S\+ON}!Cert\+Complete\+::\+Innowi\+Device@{Cert\+Complete\+::\+Innowi\+Device}}
+\subsubsection{\texorpdfstring{request\+J\+S\+ON}{requestJSON}}
+{\footnotesize\ttfamily string Cert\+Complete.\+Innowi\+Device.\+request\+J\+S\+ON = string.\+Empty\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_cert_complete_1_1_innowi_device_a277880cdbb944699ba2e9e0c9269ea23}\label{class_cert_complete_1_1_innowi_device_a277880cdbb944699ba2e9e0c9269ea23}} 
+\index{Cert\+Complete\+::\+Innowi\+Device@{Cert\+Complete\+::\+Innowi\+Device}!response\+J\+S\+ON@{response\+J\+S\+ON}}
+\index{response\+J\+S\+ON@{response\+J\+S\+ON}!Cert\+Complete\+::\+Innowi\+Device@{Cert\+Complete\+::\+Innowi\+Device}}
+\subsubsection{\texorpdfstring{response\+J\+S\+ON}{responseJSON}}
+{\footnotesize\ttfamily string Cert\+Complete.\+Innowi\+Device.\+response\+J\+S\+ON = string.\+Empty\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_cert_complete_1_1_innowi_device_aee573efa3c2a5c86451d408ccb53900d}\label{class_cert_complete_1_1_innowi_device_aee573efa3c2a5c86451d408ccb53900d}} 
+\index{Cert\+Complete\+::\+Innowi\+Device@{Cert\+Complete\+::\+Innowi\+Device}!sig\+Required@{sig\+Required}}
+\index{sig\+Required@{sig\+Required}!Cert\+Complete\+::\+Innowi\+Device@{Cert\+Complete\+::\+Innowi\+Device}}
+\subsubsection{\texorpdfstring{sig\+Required}{sigRequired}}
+{\footnotesize\ttfamily bool Cert\+Complete.\+Innowi\+Device.\+sig\+Required = false\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_innowi_device_8cs}{Innowi\+Device.\+cs}}\end{DoxyCompactItemize}

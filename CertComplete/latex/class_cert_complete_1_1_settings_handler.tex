@@ -1,0 +1,179 @@
+\hypertarget{class_cert_complete_1_1_settings_handler}{}\section{Cert\+Complete.\+Settings\+Handler Class Reference}
+\label{class_cert_complete_1_1_settings_handler}\index{Cert\+Complete.\+Settings\+Handler@{Cert\+Complete.\+Settings\+Handler}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Color \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_cert_complete_1_1_settings_handler_afe216c240ce24c1925eaa84b8f48348c}{get\+Colors}} ()
+\begin{DoxyCompactList}\small\item\em Gets the background and foreground colors \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_cert_complete_1_1_settings_handler_add6b4bc1381202fdcb0bc8c1b4af65cc}{read\+Settings}} ()
+\begin{DoxyCompactList}\small\item\em Reads the Application \mbox{\hyperlink{class_cert_complete_1_1_preferences}{Preferences}} Settings \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_cert_complete_1_1_settings_handler_acd1a07ef04d7ed341a0b30e68ed83371}{write\+Settings}} (string path, string json\+Data)
+\begin{DoxyCompactList}\small\item\em Writes the specified settings to a settings file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static Color \mbox{\hyperlink{class_cert_complete_1_1_settings_handler_acd9d54256533190c9ae926ff60080143}{Variable\+Color}} = new Color()
+\item 
+static Color \mbox{\hyperlink{class_cert_complete_1_1_settings_handler_addc82d6a53e205bc5c9796a0a24dab04}{String\+Color}} = new Color()
+\item 
+static Color \mbox{\hyperlink{class_cert_complete_1_1_settings_handler_a458905c32f7f64339f6f675bbb13822e}{Numeric\+Color}} = new Color()
+\item 
+static Color \mbox{\hyperlink{class_cert_complete_1_1_settings_handler_a53a9339ae79b6aec5f6bb9daddf16c60}{Symbol\+Color}} = new Color()
+\item 
+static Color \mbox{\hyperlink{class_cert_complete_1_1_settings_handler_aee0063e49037dee79caca19d8b22630a}{my\+Background\+Color}} = new Color()
+\item 
+static Color \mbox{\hyperlink{class_cert_complete_1_1_settings_handler_a6e3da08cd3172bf19356ebed6bcb99fa}{my\+Text\+Color}} = new Color()
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_cert_complete_1_1_settings_handler}{Settings\+Handler}} \mbox{\hyperlink{class_cert_complete_1_1_settings_handler_a7c4f8eb33b1113986d52942f93e52da8}{Instance}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Thread Safe Singleton get instance method. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_cert_complete_1_1_settings_handler_a9bf5be6fa3187631488a9ffa46fc4b7f}{Settings\+Handler}} ()
+\begin{DoxyCompactList}\small\item\em Private Singleton Constructor \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_cert_complete_1_1_settings_handler}{Settings\+Handler}} \mbox{\hyperlink{class_cert_complete_1_1_settings_handler_a4aeaa8c6596fb57a409c1e54fc3fad45}{instance}} = null
+\item 
+static readonly object \mbox{\hyperlink{class_cert_complete_1_1_settings_handler_a08a886e39a75630726a54af44bcf826a}{padlock}} = new object()
+\item 
+static Reader\+Writer\+Lock \mbox{\hyperlink{class_cert_complete_1_1_settings_handler_a015ee72e931192b40c952cd47364d1f4}{rwl}} = new Reader\+Writer\+Lock()
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_cert_complete_1_1_settings_handler_a9bf5be6fa3187631488a9ffa46fc4b7f}\label{class_cert_complete_1_1_settings_handler_a9bf5be6fa3187631488a9ffa46fc4b7f}} 
+\index{Cert\+Complete\+::\+Settings\+Handler@{Cert\+Complete\+::\+Settings\+Handler}!Settings\+Handler@{Settings\+Handler}}
+\index{Settings\+Handler@{Settings\+Handler}!Cert\+Complete\+::\+Settings\+Handler@{Cert\+Complete\+::\+Settings\+Handler}}
+\subsubsection{\texorpdfstring{Settings\+Handler()}{SettingsHandler()}}
+{\footnotesize\ttfamily Cert\+Complete.\+Settings\+Handler.\+Settings\+Handler (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Private Singleton Constructor 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_cert_complete_1_1_settings_handler_afe216c240ce24c1925eaa84b8f48348c}\label{class_cert_complete_1_1_settings_handler_afe216c240ce24c1925eaa84b8f48348c}} 
+\index{Cert\+Complete\+::\+Settings\+Handler@{Cert\+Complete\+::\+Settings\+Handler}!get\+Colors@{get\+Colors}}
+\index{get\+Colors@{get\+Colors}!Cert\+Complete\+::\+Settings\+Handler@{Cert\+Complete\+::\+Settings\+Handler}}
+\subsubsection{\texorpdfstring{get\+Colors()}{getColors()}}
+{\footnotesize\ttfamily Color \mbox{[}$\,$\mbox{]} Cert\+Complete.\+Settings\+Handler.\+get\+Colors (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the background and foreground colors 
+
+\begin{DoxyReturn}{Returns}
+An array of the colors in the following order\+: Background, Foreground, J\+S\+O\+N\+\_\+\+Variables, J\+S\+O\+N\+\_\+\+Strings, J\+S\+O\+N\+\_\+\+Numbers, J\+S\+O\+N\+\_\+\+Symbols.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_cert_complete_1_1_settings_handler_add6b4bc1381202fdcb0bc8c1b4af65cc}\label{class_cert_complete_1_1_settings_handler_add6b4bc1381202fdcb0bc8c1b4af65cc}} 
+\index{Cert\+Complete\+::\+Settings\+Handler@{Cert\+Complete\+::\+Settings\+Handler}!read\+Settings@{read\+Settings}}
+\index{read\+Settings@{read\+Settings}!Cert\+Complete\+::\+Settings\+Handler@{Cert\+Complete\+::\+Settings\+Handler}}
+\subsubsection{\texorpdfstring{read\+Settings()}{readSettings()}}
+{\footnotesize\ttfamily static void Cert\+Complete.\+Settings\+Handler.\+read\+Settings (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Reads the Application \mbox{\hyperlink{class_cert_complete_1_1_preferences}{Preferences}} Settings 
+
+\mbox{\Hypertarget{class_cert_complete_1_1_settings_handler_acd1a07ef04d7ed341a0b30e68ed83371}\label{class_cert_complete_1_1_settings_handler_acd1a07ef04d7ed341a0b30e68ed83371}} 
+\index{Cert\+Complete\+::\+Settings\+Handler@{Cert\+Complete\+::\+Settings\+Handler}!write\+Settings@{write\+Settings}}
+\index{write\+Settings@{write\+Settings}!Cert\+Complete\+::\+Settings\+Handler@{Cert\+Complete\+::\+Settings\+Handler}}
+\subsubsection{\texorpdfstring{write\+Settings()}{writeSettings()}}
+{\footnotesize\ttfamily static void Cert\+Complete.\+Settings\+Handler.\+write\+Settings (\begin{DoxyParamCaption}\item[{string}]{path,  }\item[{string}]{json\+Data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Writes the specified settings to a settings file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & The file path of the settings file with file name included.\\
+\hline
+{\em json\+Data} & The J\+S\+ON structured settings data.\\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_cert_complete_1_1_settings_handler_a4aeaa8c6596fb57a409c1e54fc3fad45}\label{class_cert_complete_1_1_settings_handler_a4aeaa8c6596fb57a409c1e54fc3fad45}} 
+\index{Cert\+Complete\+::\+Settings\+Handler@{Cert\+Complete\+::\+Settings\+Handler}!instance@{instance}}
+\index{instance@{instance}!Cert\+Complete\+::\+Settings\+Handler@{Cert\+Complete\+::\+Settings\+Handler}}
+\subsubsection{\texorpdfstring{instance}{instance}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_cert_complete_1_1_settings_handler}{Settings\+Handler}} Cert\+Complete.\+Settings\+Handler.\+instance = null\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_cert_complete_1_1_settings_handler_aee0063e49037dee79caca19d8b22630a}\label{class_cert_complete_1_1_settings_handler_aee0063e49037dee79caca19d8b22630a}} 
+\index{Cert\+Complete\+::\+Settings\+Handler@{Cert\+Complete\+::\+Settings\+Handler}!my\+Background\+Color@{my\+Background\+Color}}
+\index{my\+Background\+Color@{my\+Background\+Color}!Cert\+Complete\+::\+Settings\+Handler@{Cert\+Complete\+::\+Settings\+Handler}}
+\subsubsection{\texorpdfstring{my\+Background\+Color}{myBackgroundColor}}
+{\footnotesize\ttfamily Color Cert\+Complete.\+Settings\+Handler.\+my\+Background\+Color = new Color()\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_cert_complete_1_1_settings_handler_a6e3da08cd3172bf19356ebed6bcb99fa}\label{class_cert_complete_1_1_settings_handler_a6e3da08cd3172bf19356ebed6bcb99fa}} 
+\index{Cert\+Complete\+::\+Settings\+Handler@{Cert\+Complete\+::\+Settings\+Handler}!my\+Text\+Color@{my\+Text\+Color}}
+\index{my\+Text\+Color@{my\+Text\+Color}!Cert\+Complete\+::\+Settings\+Handler@{Cert\+Complete\+::\+Settings\+Handler}}
+\subsubsection{\texorpdfstring{my\+Text\+Color}{myTextColor}}
+{\footnotesize\ttfamily Color Cert\+Complete.\+Settings\+Handler.\+my\+Text\+Color = new Color()\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_cert_complete_1_1_settings_handler_a458905c32f7f64339f6f675bbb13822e}\label{class_cert_complete_1_1_settings_handler_a458905c32f7f64339f6f675bbb13822e}} 
+\index{Cert\+Complete\+::\+Settings\+Handler@{Cert\+Complete\+::\+Settings\+Handler}!Numeric\+Color@{Numeric\+Color}}
+\index{Numeric\+Color@{Numeric\+Color}!Cert\+Complete\+::\+Settings\+Handler@{Cert\+Complete\+::\+Settings\+Handler}}
+\subsubsection{\texorpdfstring{Numeric\+Color}{NumericColor}}
+{\footnotesize\ttfamily Color Cert\+Complete.\+Settings\+Handler.\+Numeric\+Color = new Color()\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_cert_complete_1_1_settings_handler_a08a886e39a75630726a54af44bcf826a}\label{class_cert_complete_1_1_settings_handler_a08a886e39a75630726a54af44bcf826a}} 
+\index{Cert\+Complete\+::\+Settings\+Handler@{Cert\+Complete\+::\+Settings\+Handler}!padlock@{padlock}}
+\index{padlock@{padlock}!Cert\+Complete\+::\+Settings\+Handler@{Cert\+Complete\+::\+Settings\+Handler}}
+\subsubsection{\texorpdfstring{padlock}{padlock}}
+{\footnotesize\ttfamily readonly object Cert\+Complete.\+Settings\+Handler.\+padlock = new object()\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_cert_complete_1_1_settings_handler_a015ee72e931192b40c952cd47364d1f4}\label{class_cert_complete_1_1_settings_handler_a015ee72e931192b40c952cd47364d1f4}} 
+\index{Cert\+Complete\+::\+Settings\+Handler@{Cert\+Complete\+::\+Settings\+Handler}!rwl@{rwl}}
+\index{rwl@{rwl}!Cert\+Complete\+::\+Settings\+Handler@{Cert\+Complete\+::\+Settings\+Handler}}
+\subsubsection{\texorpdfstring{rwl}{rwl}}
+{\footnotesize\ttfamily Reader\+Writer\+Lock Cert\+Complete.\+Settings\+Handler.\+rwl = new Reader\+Writer\+Lock()\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_cert_complete_1_1_settings_handler_addc82d6a53e205bc5c9796a0a24dab04}\label{class_cert_complete_1_1_settings_handler_addc82d6a53e205bc5c9796a0a24dab04}} 
+\index{Cert\+Complete\+::\+Settings\+Handler@{Cert\+Complete\+::\+Settings\+Handler}!String\+Color@{String\+Color}}
+\index{String\+Color@{String\+Color}!Cert\+Complete\+::\+Settings\+Handler@{Cert\+Complete\+::\+Settings\+Handler}}
+\subsubsection{\texorpdfstring{String\+Color}{StringColor}}
+{\footnotesize\ttfamily Color Cert\+Complete.\+Settings\+Handler.\+String\+Color = new Color()\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_cert_complete_1_1_settings_handler_a53a9339ae79b6aec5f6bb9daddf16c60}\label{class_cert_complete_1_1_settings_handler_a53a9339ae79b6aec5f6bb9daddf16c60}} 
+\index{Cert\+Complete\+::\+Settings\+Handler@{Cert\+Complete\+::\+Settings\+Handler}!Symbol\+Color@{Symbol\+Color}}
+\index{Symbol\+Color@{Symbol\+Color}!Cert\+Complete\+::\+Settings\+Handler@{Cert\+Complete\+::\+Settings\+Handler}}
+\subsubsection{\texorpdfstring{Symbol\+Color}{SymbolColor}}
+{\footnotesize\ttfamily Color Cert\+Complete.\+Settings\+Handler.\+Symbol\+Color = new Color()\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_cert_complete_1_1_settings_handler_acd9d54256533190c9ae926ff60080143}\label{class_cert_complete_1_1_settings_handler_acd9d54256533190c9ae926ff60080143}} 
+\index{Cert\+Complete\+::\+Settings\+Handler@{Cert\+Complete\+::\+Settings\+Handler}!Variable\+Color@{Variable\+Color}}
+\index{Variable\+Color@{Variable\+Color}!Cert\+Complete\+::\+Settings\+Handler@{Cert\+Complete\+::\+Settings\+Handler}}
+\subsubsection{\texorpdfstring{Variable\+Color}{VariableColor}}
+{\footnotesize\ttfamily Color Cert\+Complete.\+Settings\+Handler.\+Variable\+Color = new Color()\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_cert_complete_1_1_settings_handler_a7c4f8eb33b1113986d52942f93e52da8}\label{class_cert_complete_1_1_settings_handler_a7c4f8eb33b1113986d52942f93e52da8}} 
+\index{Cert\+Complete\+::\+Settings\+Handler@{Cert\+Complete\+::\+Settings\+Handler}!Instance@{Instance}}
+\index{Instance@{Instance}!Cert\+Complete\+::\+Settings\+Handler@{Cert\+Complete\+::\+Settings\+Handler}}
+\subsubsection{\texorpdfstring{Instance}{Instance}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_cert_complete_1_1_settings_handler}{Settings\+Handler}} Cert\+Complete.\+Settings\+Handler.\+Instance\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}}
+
+
+
+Thread Safe Singleton get instance method. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_settings_handler_8cs}{Settings\+Handler.\+cs}}\end{DoxyCompactItemize}

@@ -1,0 +1,288 @@
+\hypertarget{class_cert_complete_1_1_receipt_printer}{}\section{Cert\+Complete.\+Receipt\+Printer Class Reference}
+\label{class_cert_complete_1_1_receipt_printer}\index{Cert\+Complete.\+Receipt\+Printer@{Cert\+Complete.\+Receipt\+Printer}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_cert_complete_1_1_receipt_printer_a70fb4378ea2d0f6857fa4e44036ba513}{Receipt\+Printer}} ()
+\begin{DoxyCompactList}\small\item\em Default Constructor that sets up some common receipt data. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cert_complete_1_1_receipt_printer_a075af10a7b8bb31b0df5499bddb0554a}{set\+Receipt\+Header}} (string header)
+\begin{DoxyCompactList}\small\item\em Sets the Receipt Header \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cert_complete_1_1_receipt_printer_ab2d4ed5e88261754c3fc64710fa65a64}{set\+Transaction\+Data}} (string Transaction\+Text)
+\begin{DoxyCompactList}\small\item\em Sets the \mbox{\hyperlink{class_cert_complete_1_1_transaction}{Transaction}} data of the receipt. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cert_complete_1_1_receipt_printer_af557b68b0786ec70501f8d56c39c1168}{set\+Transaction\+Data}} (string Base\+Text, string E\+M\+V\+Text)
+\begin{DoxyCompactList}\small\item\em Sets the Base Receipt Text plus E\+MV data. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cert_complete_1_1_receipt_printer_a839da01b4b8a916893de53cb862638fb}{set\+Receipt\+Footer}} (string Footer)
+\begin{DoxyCompactList}\small\item\em Sets the Receipt Footer \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_cert_complete_1_1_receipt_printer_a0d9f01abe1b38c21bf8d169c3319c5cf}{get\+Merchant\+Receipt}} ()
+\begin{DoxyCompactList}\small\item\em Gets the Merchant receipt \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_cert_complete_1_1_receipt_printer_a841afc646b9a729855e815aad55fc833}{get\+Merchant\+Receipt\+No\+Sig}} ()
+\begin{DoxyCompactList}\small\item\em Gets the Merchant receipt \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_cert_complete_1_1_receipt_printer_a9e2870661b5826b3ad12f415b36a91d3}{get\+Customer\+Receipt}} ()
+\begin{DoxyCompactList}\small\item\em Gets the Customer Receipt \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_cert_complete_1_1_receipt_printer_a9bf88eebc2aa0a15a6c17be08e2f4ffe}{get\+Customer\+Receipt\+No\+Sig}} ()
+\begin{DoxyCompactList}\small\item\em Gets the Customer Receipt \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_cert_complete_1_1_receipt_printer_af48884b7e27f8c5dd115880a7ae4ee35}{get\+Receipts}} ()
+\begin{DoxyCompactList}\small\item\em Gets both the Merchant and Customer Receipts \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_cert_complete_1_1_receipt_printer_a98603c743b4fc78d8a9a57bc01b3c107}{get\+Receipts\+No\+Sig}} ()
+\begin{DoxyCompactList}\small\item\em Gets a no signature line receipt. \end{DoxyCompactList}\item 
+override string \mbox{\hyperlink{class_cert_complete_1_1_receipt_printer_a5feb1b4895e079a595f0b01cac5fc6da}{To\+String}} ()
+\begin{DoxyCompactList}\small\item\em Override the the \mbox{\hyperlink{class_cert_complete_1_1_receipt_printer_a5feb1b4895e079a595f0b01cac5fc6da}{To\+String()}} method to return both Merchant and Customer Receipts. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_cert_complete_1_1_receipt_printer_a37048f7fb5c13d6238e6377651421191}{To\+String\+No\+Sig}} ()
+\begin{DoxyCompactList}\small\item\em No signature version of the receipts \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cert_complete_1_1_receipt_printer_a528e5c04e9215d15b4ec49d63c3e1ebb}{Response}} (Payment\+Response resp)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_cert_complete_1_1_receipt_printer_adab8ac5c3f5125a8230bd502ab126ab8}{Receipt\+Header}}
+\item 
+string \mbox{\hyperlink{class_cert_complete_1_1_receipt_printer_a36c59964a9dba0f7ffadbe7823ba6245}{Receipt\+Text}}
+\item 
+string \mbox{\hyperlink{class_cert_complete_1_1_receipt_printer_a85b838450824fb1bf6dbbc2b20fae68b}{Receipt\+Agreement}}
+\item 
+string \mbox{\hyperlink{class_cert_complete_1_1_receipt_printer_a13619f772b44c80ffb151d44babb1b05}{Receipt\+Signature}}
+\item 
+string \mbox{\hyperlink{class_cert_complete_1_1_receipt_printer_a2661eef00300f1e6df07ef732bdd960f}{Merchant\+Copy}}
+\item 
+string \mbox{\hyperlink{class_cert_complete_1_1_receipt_printer_a33bfa50396db109992fa910208bd0583}{Customer\+Copy}}
+\item 
+string \mbox{\hyperlink{class_cert_complete_1_1_receipt_printer_ab8205ae0948513a29915e9df0583d68c}{Receipt\+Footer}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_cert_complete_1_1_receipt_printer_a70fb4378ea2d0f6857fa4e44036ba513}\label{class_cert_complete_1_1_receipt_printer_a70fb4378ea2d0f6857fa4e44036ba513}} 
+\index{Cert\+Complete\+::\+Receipt\+Printer@{Cert\+Complete\+::\+Receipt\+Printer}!Receipt\+Printer@{Receipt\+Printer}}
+\index{Receipt\+Printer@{Receipt\+Printer}!Cert\+Complete\+::\+Receipt\+Printer@{Cert\+Complete\+::\+Receipt\+Printer}}
+\subsubsection{\texorpdfstring{Receipt\+Printer()}{ReceiptPrinter()}}
+{\footnotesize\ttfamily Cert\+Complete.\+Receipt\+Printer.\+Receipt\+Printer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Default Constructor that sets up some common receipt data. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_cert_complete_1_1_receipt_printer_a9e2870661b5826b3ad12f415b36a91d3}\label{class_cert_complete_1_1_receipt_printer_a9e2870661b5826b3ad12f415b36a91d3}} 
+\index{Cert\+Complete\+::\+Receipt\+Printer@{Cert\+Complete\+::\+Receipt\+Printer}!get\+Customer\+Receipt@{get\+Customer\+Receipt}}
+\index{get\+Customer\+Receipt@{get\+Customer\+Receipt}!Cert\+Complete\+::\+Receipt\+Printer@{Cert\+Complete\+::\+Receipt\+Printer}}
+\subsubsection{\texorpdfstring{get\+Customer\+Receipt()}{getCustomerReceipt()}}
+{\footnotesize\ttfamily string Cert\+Complete.\+Receipt\+Printer.\+get\+Customer\+Receipt (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the Customer Receipt 
+
+\begin{DoxyReturn}{Returns}
+A string representation of the Customer receipt.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_cert_complete_1_1_receipt_printer_a9bf88eebc2aa0a15a6c17be08e2f4ffe}\label{class_cert_complete_1_1_receipt_printer_a9bf88eebc2aa0a15a6c17be08e2f4ffe}} 
+\index{Cert\+Complete\+::\+Receipt\+Printer@{Cert\+Complete\+::\+Receipt\+Printer}!get\+Customer\+Receipt\+No\+Sig@{get\+Customer\+Receipt\+No\+Sig}}
+\index{get\+Customer\+Receipt\+No\+Sig@{get\+Customer\+Receipt\+No\+Sig}!Cert\+Complete\+::\+Receipt\+Printer@{Cert\+Complete\+::\+Receipt\+Printer}}
+\subsubsection{\texorpdfstring{get\+Customer\+Receipt\+No\+Sig()}{getCustomerReceiptNoSig()}}
+{\footnotesize\ttfamily string Cert\+Complete.\+Receipt\+Printer.\+get\+Customer\+Receipt\+No\+Sig (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the Customer Receipt 
+
+\begin{DoxyReturn}{Returns}
+A string representation of the Customer receipt.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_cert_complete_1_1_receipt_printer_a0d9f01abe1b38c21bf8d169c3319c5cf}\label{class_cert_complete_1_1_receipt_printer_a0d9f01abe1b38c21bf8d169c3319c5cf}} 
+\index{Cert\+Complete\+::\+Receipt\+Printer@{Cert\+Complete\+::\+Receipt\+Printer}!get\+Merchant\+Receipt@{get\+Merchant\+Receipt}}
+\index{get\+Merchant\+Receipt@{get\+Merchant\+Receipt}!Cert\+Complete\+::\+Receipt\+Printer@{Cert\+Complete\+::\+Receipt\+Printer}}
+\subsubsection{\texorpdfstring{get\+Merchant\+Receipt()}{getMerchantReceipt()}}
+{\footnotesize\ttfamily string Cert\+Complete.\+Receipt\+Printer.\+get\+Merchant\+Receipt (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the Merchant receipt 
+
+\begin{DoxyReturn}{Returns}
+A string representation of the Merchant Receipt
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_cert_complete_1_1_receipt_printer_a841afc646b9a729855e815aad55fc833}\label{class_cert_complete_1_1_receipt_printer_a841afc646b9a729855e815aad55fc833}} 
+\index{Cert\+Complete\+::\+Receipt\+Printer@{Cert\+Complete\+::\+Receipt\+Printer}!get\+Merchant\+Receipt\+No\+Sig@{get\+Merchant\+Receipt\+No\+Sig}}
+\index{get\+Merchant\+Receipt\+No\+Sig@{get\+Merchant\+Receipt\+No\+Sig}!Cert\+Complete\+::\+Receipt\+Printer@{Cert\+Complete\+::\+Receipt\+Printer}}
+\subsubsection{\texorpdfstring{get\+Merchant\+Receipt\+No\+Sig()}{getMerchantReceiptNoSig()}}
+{\footnotesize\ttfamily string Cert\+Complete.\+Receipt\+Printer.\+get\+Merchant\+Receipt\+No\+Sig (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the Merchant receipt 
+
+\begin{DoxyReturn}{Returns}
+A string representation of the Merchant Receipt
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_cert_complete_1_1_receipt_printer_af48884b7e27f8c5dd115880a7ae4ee35}\label{class_cert_complete_1_1_receipt_printer_af48884b7e27f8c5dd115880a7ae4ee35}} 
+\index{Cert\+Complete\+::\+Receipt\+Printer@{Cert\+Complete\+::\+Receipt\+Printer}!get\+Receipts@{get\+Receipts}}
+\index{get\+Receipts@{get\+Receipts}!Cert\+Complete\+::\+Receipt\+Printer@{Cert\+Complete\+::\+Receipt\+Printer}}
+\subsubsection{\texorpdfstring{get\+Receipts()}{getReceipts()}}
+{\footnotesize\ttfamily string Cert\+Complete.\+Receipt\+Printer.\+get\+Receipts (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets both the Merchant and Customer Receipts 
+
+\begin{DoxyReturn}{Returns}
+A string with both Merchant and Customer Receipts.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_cert_complete_1_1_receipt_printer_a98603c743b4fc78d8a9a57bc01b3c107}\label{class_cert_complete_1_1_receipt_printer_a98603c743b4fc78d8a9a57bc01b3c107}} 
+\index{Cert\+Complete\+::\+Receipt\+Printer@{Cert\+Complete\+::\+Receipt\+Printer}!get\+Receipts\+No\+Sig@{get\+Receipts\+No\+Sig}}
+\index{get\+Receipts\+No\+Sig@{get\+Receipts\+No\+Sig}!Cert\+Complete\+::\+Receipt\+Printer@{Cert\+Complete\+::\+Receipt\+Printer}}
+\subsubsection{\texorpdfstring{get\+Receipts\+No\+Sig()}{getReceiptsNoSig()}}
+{\footnotesize\ttfamily string Cert\+Complete.\+Receipt\+Printer.\+get\+Receipts\+No\+Sig (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets a no signature line receipt. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_cert_complete_1_1_receipt_printer_a528e5c04e9215d15b4ec49d63c3e1ebb}\label{class_cert_complete_1_1_receipt_printer_a528e5c04e9215d15b4ec49d63c3e1ebb}} 
+\index{Cert\+Complete\+::\+Receipt\+Printer@{Cert\+Complete\+::\+Receipt\+Printer}!Response@{Response}}
+\index{Response@{Response}!Cert\+Complete\+::\+Receipt\+Printer@{Cert\+Complete\+::\+Receipt\+Printer}}
+\subsubsection{\texorpdfstring{Response()}{Response()}}
+{\footnotesize\ttfamily void Cert\+Complete.\+Receipt\+Printer.\+Response (\begin{DoxyParamCaption}\item[{Payment\+Response}]{resp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_cert_complete_1_1_receipt_printer_a839da01b4b8a916893de53cb862638fb}\label{class_cert_complete_1_1_receipt_printer_a839da01b4b8a916893de53cb862638fb}} 
+\index{Cert\+Complete\+::\+Receipt\+Printer@{Cert\+Complete\+::\+Receipt\+Printer}!set\+Receipt\+Footer@{set\+Receipt\+Footer}}
+\index{set\+Receipt\+Footer@{set\+Receipt\+Footer}!Cert\+Complete\+::\+Receipt\+Printer@{Cert\+Complete\+::\+Receipt\+Printer}}
+\subsubsection{\texorpdfstring{set\+Receipt\+Footer()}{setReceiptFooter()}}
+{\footnotesize\ttfamily void Cert\+Complete.\+Receipt\+Printer.\+set\+Receipt\+Footer (\begin{DoxyParamCaption}\item[{string}]{Footer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the Receipt Footer 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Footer} & The footer text.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_cert_complete_1_1_receipt_printer_a075af10a7b8bb31b0df5499bddb0554a}\label{class_cert_complete_1_1_receipt_printer_a075af10a7b8bb31b0df5499bddb0554a}} 
+\index{Cert\+Complete\+::\+Receipt\+Printer@{Cert\+Complete\+::\+Receipt\+Printer}!set\+Receipt\+Header@{set\+Receipt\+Header}}
+\index{set\+Receipt\+Header@{set\+Receipt\+Header}!Cert\+Complete\+::\+Receipt\+Printer@{Cert\+Complete\+::\+Receipt\+Printer}}
+\subsubsection{\texorpdfstring{set\+Receipt\+Header()}{setReceiptHeader()}}
+{\footnotesize\ttfamily void Cert\+Complete.\+Receipt\+Printer.\+set\+Receipt\+Header (\begin{DoxyParamCaption}\item[{string}]{header }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the Receipt Header 
+
+
+\begin{DoxyParams}{Parameters}
+{\em header} & The header string.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_cert_complete_1_1_receipt_printer_ab2d4ed5e88261754c3fc64710fa65a64}\label{class_cert_complete_1_1_receipt_printer_ab2d4ed5e88261754c3fc64710fa65a64}} 
+\index{Cert\+Complete\+::\+Receipt\+Printer@{Cert\+Complete\+::\+Receipt\+Printer}!set\+Transaction\+Data@{set\+Transaction\+Data}}
+\index{set\+Transaction\+Data@{set\+Transaction\+Data}!Cert\+Complete\+::\+Receipt\+Printer@{Cert\+Complete\+::\+Receipt\+Printer}}
+\subsubsection{\texorpdfstring{set\+Transaction\+Data()}{setTransactionData()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Cert\+Complete.\+Receipt\+Printer.\+set\+Transaction\+Data (\begin{DoxyParamCaption}\item[{string}]{Transaction\+Text }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the \mbox{\hyperlink{class_cert_complete_1_1_transaction}{Transaction}} data of the receipt. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Transaction\+Text} & The transaction data.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_cert_complete_1_1_receipt_printer_af557b68b0786ec70501f8d56c39c1168}\label{class_cert_complete_1_1_receipt_printer_af557b68b0786ec70501f8d56c39c1168}} 
+\index{Cert\+Complete\+::\+Receipt\+Printer@{Cert\+Complete\+::\+Receipt\+Printer}!set\+Transaction\+Data@{set\+Transaction\+Data}}
+\index{set\+Transaction\+Data@{set\+Transaction\+Data}!Cert\+Complete\+::\+Receipt\+Printer@{Cert\+Complete\+::\+Receipt\+Printer}}
+\subsubsection{\texorpdfstring{set\+Transaction\+Data()}{setTransactionData()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Cert\+Complete.\+Receipt\+Printer.\+set\+Transaction\+Data (\begin{DoxyParamCaption}\item[{string}]{Base\+Text,  }\item[{string}]{E\+M\+V\+Text }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the Base Receipt Text plus E\+MV data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Base\+Text} & The base receipt text.\\
+\hline
+{\em E\+M\+V\+Text} & The E\+MV data text.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_cert_complete_1_1_receipt_printer_a5feb1b4895e079a595f0b01cac5fc6da}\label{class_cert_complete_1_1_receipt_printer_a5feb1b4895e079a595f0b01cac5fc6da}} 
+\index{Cert\+Complete\+::\+Receipt\+Printer@{Cert\+Complete\+::\+Receipt\+Printer}!To\+String@{To\+String}}
+\index{To\+String@{To\+String}!Cert\+Complete\+::\+Receipt\+Printer@{Cert\+Complete\+::\+Receipt\+Printer}}
+\subsubsection{\texorpdfstring{To\+String()}{ToString()}}
+{\footnotesize\ttfamily override string Cert\+Complete.\+Receipt\+Printer.\+To\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Override the the \mbox{\hyperlink{class_cert_complete_1_1_receipt_printer_a5feb1b4895e079a595f0b01cac5fc6da}{To\+String()}} method to return both Merchant and Customer Receipts. 
+
+\begin{DoxyReturn}{Returns}
+A string with both Merchant and Customer Receipts.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_cert_complete_1_1_receipt_printer_a37048f7fb5c13d6238e6377651421191}\label{class_cert_complete_1_1_receipt_printer_a37048f7fb5c13d6238e6377651421191}} 
+\index{Cert\+Complete\+::\+Receipt\+Printer@{Cert\+Complete\+::\+Receipt\+Printer}!To\+String\+No\+Sig@{To\+String\+No\+Sig}}
+\index{To\+String\+No\+Sig@{To\+String\+No\+Sig}!Cert\+Complete\+::\+Receipt\+Printer@{Cert\+Complete\+::\+Receipt\+Printer}}
+\subsubsection{\texorpdfstring{To\+String\+No\+Sig()}{ToStringNoSig()}}
+{\footnotesize\ttfamily string Cert\+Complete.\+Receipt\+Printer.\+To\+String\+No\+Sig (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+No signature version of the receipts 
+
+\begin{DoxyReturn}{Returns}
+A receipt without a signature line.
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_cert_complete_1_1_receipt_printer_a33bfa50396db109992fa910208bd0583}\label{class_cert_complete_1_1_receipt_printer_a33bfa50396db109992fa910208bd0583}} 
+\index{Cert\+Complete\+::\+Receipt\+Printer@{Cert\+Complete\+::\+Receipt\+Printer}!Customer\+Copy@{Customer\+Copy}}
+\index{Customer\+Copy@{Customer\+Copy}!Cert\+Complete\+::\+Receipt\+Printer@{Cert\+Complete\+::\+Receipt\+Printer}}
+\subsubsection{\texorpdfstring{Customer\+Copy}{CustomerCopy}}
+{\footnotesize\ttfamily string Cert\+Complete.\+Receipt\+Printer.\+Customer\+Copy\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_cert_complete_1_1_receipt_printer_a2661eef00300f1e6df07ef732bdd960f}\label{class_cert_complete_1_1_receipt_printer_a2661eef00300f1e6df07ef732bdd960f}} 
+\index{Cert\+Complete\+::\+Receipt\+Printer@{Cert\+Complete\+::\+Receipt\+Printer}!Merchant\+Copy@{Merchant\+Copy}}
+\index{Merchant\+Copy@{Merchant\+Copy}!Cert\+Complete\+::\+Receipt\+Printer@{Cert\+Complete\+::\+Receipt\+Printer}}
+\subsubsection{\texorpdfstring{Merchant\+Copy}{MerchantCopy}}
+{\footnotesize\ttfamily string Cert\+Complete.\+Receipt\+Printer.\+Merchant\+Copy\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_cert_complete_1_1_receipt_printer_a85b838450824fb1bf6dbbc2b20fae68b}\label{class_cert_complete_1_1_receipt_printer_a85b838450824fb1bf6dbbc2b20fae68b}} 
+\index{Cert\+Complete\+::\+Receipt\+Printer@{Cert\+Complete\+::\+Receipt\+Printer}!Receipt\+Agreement@{Receipt\+Agreement}}
+\index{Receipt\+Agreement@{Receipt\+Agreement}!Cert\+Complete\+::\+Receipt\+Printer@{Cert\+Complete\+::\+Receipt\+Printer}}
+\subsubsection{\texorpdfstring{Receipt\+Agreement}{ReceiptAgreement}}
+{\footnotesize\ttfamily string Cert\+Complete.\+Receipt\+Printer.\+Receipt\+Agreement\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_cert_complete_1_1_receipt_printer_ab8205ae0948513a29915e9df0583d68c}\label{class_cert_complete_1_1_receipt_printer_ab8205ae0948513a29915e9df0583d68c}} 
+\index{Cert\+Complete\+::\+Receipt\+Printer@{Cert\+Complete\+::\+Receipt\+Printer}!Receipt\+Footer@{Receipt\+Footer}}
+\index{Receipt\+Footer@{Receipt\+Footer}!Cert\+Complete\+::\+Receipt\+Printer@{Cert\+Complete\+::\+Receipt\+Printer}}
+\subsubsection{\texorpdfstring{Receipt\+Footer}{ReceiptFooter}}
+{\footnotesize\ttfamily string Cert\+Complete.\+Receipt\+Printer.\+Receipt\+Footer\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_cert_complete_1_1_receipt_printer_adab8ac5c3f5125a8230bd502ab126ab8}\label{class_cert_complete_1_1_receipt_printer_adab8ac5c3f5125a8230bd502ab126ab8}} 
+\index{Cert\+Complete\+::\+Receipt\+Printer@{Cert\+Complete\+::\+Receipt\+Printer}!Receipt\+Header@{Receipt\+Header}}
+\index{Receipt\+Header@{Receipt\+Header}!Cert\+Complete\+::\+Receipt\+Printer@{Cert\+Complete\+::\+Receipt\+Printer}}
+\subsubsection{\texorpdfstring{Receipt\+Header}{ReceiptHeader}}
+{\footnotesize\ttfamily string Cert\+Complete.\+Receipt\+Printer.\+Receipt\+Header\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_cert_complete_1_1_receipt_printer_a13619f772b44c80ffb151d44babb1b05}\label{class_cert_complete_1_1_receipt_printer_a13619f772b44c80ffb151d44babb1b05}} 
+\index{Cert\+Complete\+::\+Receipt\+Printer@{Cert\+Complete\+::\+Receipt\+Printer}!Receipt\+Signature@{Receipt\+Signature}}
+\index{Receipt\+Signature@{Receipt\+Signature}!Cert\+Complete\+::\+Receipt\+Printer@{Cert\+Complete\+::\+Receipt\+Printer}}
+\subsubsection{\texorpdfstring{Receipt\+Signature}{ReceiptSignature}}
+{\footnotesize\ttfamily string Cert\+Complete.\+Receipt\+Printer.\+Receipt\+Signature\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_cert_complete_1_1_receipt_printer_a36c59964a9dba0f7ffadbe7823ba6245}\label{class_cert_complete_1_1_receipt_printer_a36c59964a9dba0f7ffadbe7823ba6245}} 
+\index{Cert\+Complete\+::\+Receipt\+Printer@{Cert\+Complete\+::\+Receipt\+Printer}!Receipt\+Text@{Receipt\+Text}}
+\index{Receipt\+Text@{Receipt\+Text}!Cert\+Complete\+::\+Receipt\+Printer@{Cert\+Complete\+::\+Receipt\+Printer}}
+\subsubsection{\texorpdfstring{Receipt\+Text}{ReceiptText}}
+{\footnotesize\ttfamily string Cert\+Complete.\+Receipt\+Printer.\+Receipt\+Text\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_receipt_printer_8cs}{Receipt\+Printer.\+cs}}\end{DoxyCompactItemize}

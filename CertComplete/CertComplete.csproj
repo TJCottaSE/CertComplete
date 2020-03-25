@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{75175A25-8E3D-48D7-AEE8-65201AEEA683}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>CertComplete</RootNamespace>
+    <AssemblyName>CertComplete</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup>
+    <Reference Include="itextsharp, Version=5.5.13.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\iTextSharp.5.5.13\lib\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\..\..\Desktop\FormSim\FormSim\bin\Debug\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="PaymentSDKNET_1.0.6.0, Version=1.0.6.0, Culture=neutral, PublicKeyToken=41ea1a3b7c57b5da, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\PaymentSDKNET_1.0.6.0.dll</HintPath>
+    </Reference>
+    <Reference Include="POSLink, Version=1.0.6682.28311, Culture=neutral, PublicKeyToken=f3876d2e4b7eb819, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Desktop\PAX SDK and demo\POSLink_.NET_V1.01.06_20181212_Samples\C#\.Net4.0\POSLinkTest\bin\x64\Release\POSLink.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CertComplete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CertComplete.Designer.cs">
+      <DependentUpon>CertComplete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InnowiDevice.cs" />
+    <Compile Include="Innowi_Settings_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Innowi_Settings_Form.Designer.cs">
+      <DependentUpon>Innowi_Settings_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LogWriter.cs" />
+    <Compile Include="PAXDevice.cs" />
+    <Compile Include="PAX_Settings_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PAX_Settings_Form.Designer.cs">
+      <DependentUpon>PAX_Settings_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Preferences.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Preferences.Designer.cs">
+      <DependentUpon>Preferences.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReceiptPrinter.cs" />
+    <Compile Include="RichTextBoxExensions.cs" />
+    <Compile Include="SettingsHandler.cs" />
+    <Compile Include="Test_Creation_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Test_Creation_Form.Designer.cs">
+      <DependentUpon>Test_Creation_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction.cs" />
+    <EmbeddedResource Include="CertComplete.resx">
+      <DependentUpon>CertComplete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Innowi_Settings_Form.resx">
+      <DependentUpon>Innowi_Settings_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PAX_Settings_Form.resx">
+      <DependentUpon>PAX_Settings_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preferences.resx">
+      <DependentUpon>Preferences.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Test_Creation_Form.resx">
+      <DependentUpon>Test_Creation_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="lib\settings\INNOWI_CHECOUTM_CONFIG.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="lib\settings\PAX_S300_CONFIG.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="lib\tests\Auth ForceAuth with code.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="lib\tests\Auth Incremental Capture.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="lib\tests\Basic Auth Capture.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="lib\tests\Basic Decline.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="lib\tests\Basic Refund Void.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="lib\tests\Basic Refund.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="lib\tests\Basic Sale 2.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="lib\tests\Basic Sale Void.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="lib\tests\Basic Sale.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Welcome.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PostBuildEvent>call C:\Users\t_cota\source\repos\CertComplete\CertComplete\docScript.bat</PostBuildEvent>
+  </PropertyGroup>
+</Project>

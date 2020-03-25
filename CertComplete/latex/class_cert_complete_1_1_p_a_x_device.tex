@@ -1,0 +1,615 @@
+\hypertarget{class_cert_complete_1_1_p_a_x_device}{}\section{Cert\+Complete.\+P\+A\+X\+Device Class Reference}
+\label{class_cert_complete_1_1_p_a_x_device}\index{Cert\+Complete.\+P\+A\+X\+Device@{Cert\+Complete.\+P\+A\+X\+Device}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_cert_complete_1_1_p_a_x_device_aae9ac50b3ddf02d37aac79c78015d005}{P\+A\+X\+Device}} ()
+\begin{DoxyCompactList}\small\item\em Default Constructor \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_cert_complete_1_1_p_a_x_device_a3e48b4555be54f0e2a9c2b2434664cdf}{initialize\+Device}} (string Device\+Config\+File\+Path)
+\begin{DoxyCompactList}\small\item\em Initializes the device using stored config file. \end{DoxyCompactList}\item 
+async Task$<$ string $>$ \mbox{\hyperlink{class_cert_complete_1_1_p_a_x_device_a532c04c7e9cf54509efa3dd9a9692311}{process\+Transaction}} (Newtonsoft.\+Json.\+Linq.\+J\+Token transaction\+Data)
+\begin{DoxyCompactList}\small\item\em Processes a transaction with the given data supplied by the J\+S\+ON component. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_cert_complete_1_1_p_a_x_device_a6ae58cbf3aca1cbd8c00070343145f1b}{get\+Original\+Reference\+Number}} ()
+\begin{DoxyCompactList}\small\item\em Gets the Orig\+Ref\+Num used for sending subsequent data. \end{DoxyCompactList}\item 
+async Task$<$ string $>$ \mbox{\hyperlink{class_cert_complete_1_1_p_a_x_device_a3015c00ac78960de4f0bf54d45c76879}{print\+E\+M\+V\+Receipt}} ()
+\begin{DoxyCompactList}\small\item\em Builds and formats a receipt based on the current response in memory. \end{DoxyCompactList}\item 
+async Task$<$ string $>$ \mbox{\hyperlink{class_cert_complete_1_1_p_a_x_device_adc3aa4a5692d3b8dd61a15668b516546}{print\+E\+M\+V\+Receipt\+No\+Sig}} ()
+\begin{DoxyCompactList}\small\item\em Builds and formats a receipt based on the current response in memory. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_cert_complete_1_1_p_a_x_device_af902321272f9e358d1db15fcf89b413f}{format\+Transaction\+Data}} ()
+\begin{DoxyCompactList}\small\item\em Formats the transaction data from the response. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_cert_complete_1_1_p_a_x_device_a3fa86d4dfd6fde3e513c90edf86a6b4e}{format\+E\+M\+V\+Data}} ()
+\begin{DoxyCompactList}\small\item\em Formats the E\+MV data from the response. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_cert_complete_1_1_p_a_x_device_a85cc4efeb960df15a9dde1685b6c6310}{line\+Space}} (string Name, string Value, int Width)
+\begin{DoxyCompactList}\small\item\em Builds a receipt line item. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_cert_complete_1_1_p_a_x_device_aa0eec7259f73a2109e7a0b9107d64cf6}{center\+Text}} (string Text, int Width)
+\begin{DoxyCompactList}\small\item\em Centers text in a line. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_cert_complete_1_1_p_a_x_device_a54cc04faf61b6e9a46363bb7a501124b}{parse\+Trans\+Type}} (int Trans\+Type)
+\begin{DoxyCompactList}\small\item\em Parses the transaction type out of P\+AX A\+PI into human readable value. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_cert_complete_1_1_p_a_x_device_a1cd769ca0a4f2aeadaf1995355b2f0a9}{parse\+Tender\+Type}} (int Tender\+Type)
+\begin{DoxyCompactList}\small\item\em Parses the tender type out of the P\+AX A\+PI into a human readable value. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_cert_complete_1_1_p_a_x_device_a527f014f8af57586caf64ec0af8f4eb9}{format\+Date\+Time}} (string Date\+Time)
+\begin{DoxyCompactList}\small\item\em Formats the timestamp from the device for receipt printing. If no timestamp exists then todays date and time will be used. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_cert_complete_1_1_p_a_x_device_ae4a13ce8b706ba5362cb5a32dcb53d7d}{parse\+Entry\+Method}} (string Ext\+Data)
+\begin{DoxyCompactList}\small\item\em Parses out the Entry Method returned from the P\+AX A\+PI for a given transaction request. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_cert_complete_1_1_p_a_x_device_a1abb8bb168000ff0cb11399c6c8c5f1a}{format\+Amount}} (string amount)
+\begin{DoxyCompactList}\small\item\em Formats the amount to be a standard schema namely X.\+XX \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_cert_complete_1_1_p_a_x_device_aa53343951e87adb1f4e505dc39f2f571}{parse\+E\+X\+T\+Value}} (string E\+X\+T\+Data, string value)
+\begin{DoxyCompactList}\small\item\em Parses out a given value from E\+XT Data in the transaction response. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_cert_complete_1_1_p_a_x_device_a10e0f2fea2074b0dc4220b454c88c503}{calc\+Sub\+Total}} (string Amount, string Tax, string Tip, string Cash\+Back, string Surcharge)
+\begin{DoxyCompactList}\small\item\em Calculates the Subtotal if on exists for a given transaction. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_cert_complete_1_1_p_a_x_device_ad8a43be342885c17b32795363812dfb6}{parse\+C\+VM}} (string C\+VM)
+\begin{DoxyCompactList}\small\item\em Parses out the C\+VM value into a human readable form. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cert_complete_1_1_p_a_x_device_a1a237ea9b4ed7954011c7fea25a2d067}{set\+Com\+Settings}} (string Destination\+IP, string Destination\+Port, string Serial\+Port, string Baud\+Rate, string Communication\+Type, string Time\+Out)
+\item 
+void \mbox{\hyperlink{class_cert_complete_1_1_p_a_x_device_a9c1158002efaafb7bbab49c98273964d}{set\+Request\+Type}} (string Tender\+Type, string Transaction\+Type)
+\item 
+void \mbox{\hyperlink{class_cert_complete_1_1_p_a_x_device_a6c71f48ffd9e8fed9d65366467238fd6}{set\+Pay\+Link\+Settings}} (string Amount, string E\+C\+R\+Ref\+Num, string Clerk, string Invoice, string Street, string Tax, string Tip, string Zip, string Surcharge, string Cash\+Back, string Orig\+Ref\+Num)
+\item 
+void \mbox{\hyperlink{class_cert_complete_1_1_p_a_x_device_a3251f2ea687cab2567bfb4a24ec50aa8}{set\+Ext\+Data}} (string Customer\+Code, string Product\+Description, string Destination\+Zip\+Code, string First\+Name, string Last\+Name, string Token)
+\begin{DoxyCompactList}\small\item\em 3.\+5 Set Ext\+Data $<$\+X\+M\+L$>$ \end{DoxyCompactList}\item 
+P\+O\+S\+Link.\+Process\+Trans\+Result \mbox{\hyperlink{class_cert_complete_1_1_p_a_x_device_a28711bc71dba66a4a6abf24e09941cbe}{execute\+Transaction}} (P\+O\+S\+Link.\+Payment\+Request \mbox{\hyperlink{class_cert_complete_1_1_p_a_x_device_a101e6e34494845a82d2834c79fce5554}{request}})
+\item 
+string \mbox{\hyperlink{class_cert_complete_1_1_p_a_x_device_a3869b5b02f12f7369468fcd0e3353700}{handle\+Response}} (P\+O\+S\+Link.\+Process\+Trans\+Result \mbox{\hyperlink{class_cert_complete_1_1_p_a_x_device_a71de9bbbc884a048ba0a7c99a423325c}{result}})
+\item 
+string \mbox{\hyperlink{class_cert_complete_1_1_p_a_x_device_a18d132a18ea2c19154be3c762b7b4342}{decimal\+Remover}} (string Amount)
+\begin{DoxyCompactList}\small\item\em Removes decimal points from a string. \end{DoxyCompactList}\item 
+string \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_cert_complete_1_1_p_a_x_device_ac404eca26b52ca9becaba9d29594e09a}{parse\+Transaction\+Details}} (Newtonsoft.\+Json.\+Linq.\+J\+Token transaction\+Data)
+\begin{DoxyCompactList}\small\item\em Builds a data array with transaction data from the J\+S\+ON request. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+P\+O\+S\+Link.\+Pos\+Link \mbox{\hyperlink{class_cert_complete_1_1_p_a_x_device_a4100c53ceec220b6148ce00412775bcc}{pax\+Device}} = new P\+O\+S\+Link.\+Pos\+Link()
+\item 
+P\+O\+S\+Link.\+Process\+Trans\+Result \mbox{\hyperlink{class_cert_complete_1_1_p_a_x_device_a71de9bbbc884a048ba0a7c99a423325c}{result}} = new P\+O\+S\+Link.\+Process\+Trans\+Result()
+\item 
+P\+O\+S\+Link.\+Comm\+Setting \mbox{\hyperlink{class_cert_complete_1_1_p_a_x_device_ae0fd2ac9f3d111a94efdf3415dcd63c7}{com}} = new P\+O\+S\+Link.\+Comm\+Setting()
+\item 
+P\+O\+S\+Link.\+Payment\+Request \mbox{\hyperlink{class_cert_complete_1_1_p_a_x_device_a101e6e34494845a82d2834c79fce5554}{request}} = new P\+O\+S\+Link.\+Payment\+Request()
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_cert_complete_1_1_p_a_x_device_aae9ac50b3ddf02d37aac79c78015d005}\label{class_cert_complete_1_1_p_a_x_device_aae9ac50b3ddf02d37aac79c78015d005}} 
+\index{Cert\+Complete\+::\+P\+A\+X\+Device@{Cert\+Complete\+::\+P\+A\+X\+Device}!P\+A\+X\+Device@{P\+A\+X\+Device}}
+\index{P\+A\+X\+Device@{P\+A\+X\+Device}!Cert\+Complete\+::\+P\+A\+X\+Device@{Cert\+Complete\+::\+P\+A\+X\+Device}}
+\subsubsection{\texorpdfstring{P\+A\+X\+Device()}{PAXDevice()}}
+{\footnotesize\ttfamily Cert\+Complete.\+P\+A\+X\+Device.\+P\+A\+X\+Device (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Default Constructor 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_cert_complete_1_1_p_a_x_device_a10e0f2fea2074b0dc4220b454c88c503}\label{class_cert_complete_1_1_p_a_x_device_a10e0f2fea2074b0dc4220b454c88c503}} 
+\index{Cert\+Complete\+::\+P\+A\+X\+Device@{Cert\+Complete\+::\+P\+A\+X\+Device}!calc\+Sub\+Total@{calc\+Sub\+Total}}
+\index{calc\+Sub\+Total@{calc\+Sub\+Total}!Cert\+Complete\+::\+P\+A\+X\+Device@{Cert\+Complete\+::\+P\+A\+X\+Device}}
+\subsubsection{\texorpdfstring{calc\+Sub\+Total()}{calcSubTotal()}}
+{\footnotesize\ttfamily string Cert\+Complete.\+P\+A\+X\+Device.\+calc\+Sub\+Total (\begin{DoxyParamCaption}\item[{string}]{Amount,  }\item[{string}]{Tax,  }\item[{string}]{Tip,  }\item[{string}]{Cash\+Back,  }\item[{string}]{Surcharge }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Calculates the Subtotal if on exists for a given transaction. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Amount} & The Total Amount\\
+\hline
+{\em Tax} & The Tax Amount\\
+\hline
+{\em Tip} & The Tip Amount\\
+\hline
+{\em Cash\+Back} & The Cash Back Amount\\
+\hline
+{\em Surcharge} & The Surcharge Amount\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The Total minus any tax, tip, cashback, or surcharges.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_cert_complete_1_1_p_a_x_device_aa0eec7259f73a2109e7a0b9107d64cf6}\label{class_cert_complete_1_1_p_a_x_device_aa0eec7259f73a2109e7a0b9107d64cf6}} 
+\index{Cert\+Complete\+::\+P\+A\+X\+Device@{Cert\+Complete\+::\+P\+A\+X\+Device}!center\+Text@{center\+Text}}
+\index{center\+Text@{center\+Text}!Cert\+Complete\+::\+P\+A\+X\+Device@{Cert\+Complete\+::\+P\+A\+X\+Device}}
+\subsubsection{\texorpdfstring{center\+Text()}{centerText()}}
+{\footnotesize\ttfamily string Cert\+Complete.\+P\+A\+X\+Device.\+center\+Text (\begin{DoxyParamCaption}\item[{string}]{Text,  }\item[{int}]{Width }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Centers text in a line. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Text} & Text to be centered.\\
+\hline
+{\em Width} & Total line width of the receipt in chars.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A string represention of \char`\"{}   text   \char`\"{} centered for a given width.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_cert_complete_1_1_p_a_x_device_a18d132a18ea2c19154be3c762b7b4342}\label{class_cert_complete_1_1_p_a_x_device_a18d132a18ea2c19154be3c762b7b4342}} 
+\index{Cert\+Complete\+::\+P\+A\+X\+Device@{Cert\+Complete\+::\+P\+A\+X\+Device}!decimal\+Remover@{decimal\+Remover}}
+\index{decimal\+Remover@{decimal\+Remover}!Cert\+Complete\+::\+P\+A\+X\+Device@{Cert\+Complete\+::\+P\+A\+X\+Device}}
+\subsubsection{\texorpdfstring{decimal\+Remover()}{decimalRemover()}}
+{\footnotesize\ttfamily string Cert\+Complete.\+P\+A\+X\+Device.\+decimal\+Remover (\begin{DoxyParamCaption}\item[{string}]{Amount }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Removes decimal points from a string. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Amount} & The amount string to have decimal points removed from.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A string with no decimal points.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_cert_complete_1_1_p_a_x_device_a28711bc71dba66a4a6abf24e09941cbe}\label{class_cert_complete_1_1_p_a_x_device_a28711bc71dba66a4a6abf24e09941cbe}} 
+\index{Cert\+Complete\+::\+P\+A\+X\+Device@{Cert\+Complete\+::\+P\+A\+X\+Device}!execute\+Transaction@{execute\+Transaction}}
+\index{execute\+Transaction@{execute\+Transaction}!Cert\+Complete\+::\+P\+A\+X\+Device@{Cert\+Complete\+::\+P\+A\+X\+Device}}
+\subsubsection{\texorpdfstring{execute\+Transaction()}{executeTransaction()}}
+{\footnotesize\ttfamily P\+O\+S\+Link.\+Process\+Trans\+Result Cert\+Complete.\+P\+A\+X\+Device.\+execute\+Transaction (\begin{DoxyParamCaption}\item[{P\+O\+S\+Link.\+Payment\+Request}]{request }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+
+
+
+\begin{DoxyEnumerate}
+\item Execute the \mbox{\hyperlink{class_cert_complete_1_1_transaction}{Transaction}} 
+\end{DoxyEnumerate}
+
+
+\begin{DoxyParams}{Parameters}
+{\em request} & A populated Request Object\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A transaction result object.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_cert_complete_1_1_p_a_x_device_a1abb8bb168000ff0cb11399c6c8c5f1a}\label{class_cert_complete_1_1_p_a_x_device_a1abb8bb168000ff0cb11399c6c8c5f1a}} 
+\index{Cert\+Complete\+::\+P\+A\+X\+Device@{Cert\+Complete\+::\+P\+A\+X\+Device}!format\+Amount@{format\+Amount}}
+\index{format\+Amount@{format\+Amount}!Cert\+Complete\+::\+P\+A\+X\+Device@{Cert\+Complete\+::\+P\+A\+X\+Device}}
+\subsubsection{\texorpdfstring{format\+Amount()}{formatAmount()}}
+{\footnotesize\ttfamily string Cert\+Complete.\+P\+A\+X\+Device.\+format\+Amount (\begin{DoxyParamCaption}\item[{string}]{amount }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Formats the amount to be a standard schema namely X.\+XX 
+
+
+\begin{DoxyParams}{Parameters}
+{\em amount} & The amount to be formatted.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A string representation of the Amount.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_cert_complete_1_1_p_a_x_device_a527f014f8af57586caf64ec0af8f4eb9}\label{class_cert_complete_1_1_p_a_x_device_a527f014f8af57586caf64ec0af8f4eb9}} 
+\index{Cert\+Complete\+::\+P\+A\+X\+Device@{Cert\+Complete\+::\+P\+A\+X\+Device}!format\+Date\+Time@{format\+Date\+Time}}
+\index{format\+Date\+Time@{format\+Date\+Time}!Cert\+Complete\+::\+P\+A\+X\+Device@{Cert\+Complete\+::\+P\+A\+X\+Device}}
+\subsubsection{\texorpdfstring{format\+Date\+Time()}{formatDateTime()}}
+{\footnotesize\ttfamily string Cert\+Complete.\+P\+A\+X\+Device.\+format\+Date\+Time (\begin{DoxyParamCaption}\item[{string}]{Date\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Formats the timestamp from the device for receipt printing. If no timestamp exists then todays date and time will be used. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Date\+Time} & Date\+Time string in P\+AX format\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A formated Date\+Time string for receipt printing
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_cert_complete_1_1_p_a_x_device_a3fa86d4dfd6fde3e513c90edf86a6b4e}\label{class_cert_complete_1_1_p_a_x_device_a3fa86d4dfd6fde3e513c90edf86a6b4e}} 
+\index{Cert\+Complete\+::\+P\+A\+X\+Device@{Cert\+Complete\+::\+P\+A\+X\+Device}!format\+E\+M\+V\+Data@{format\+E\+M\+V\+Data}}
+\index{format\+E\+M\+V\+Data@{format\+E\+M\+V\+Data}!Cert\+Complete\+::\+P\+A\+X\+Device@{Cert\+Complete\+::\+P\+A\+X\+Device}}
+\subsubsection{\texorpdfstring{format\+E\+M\+V\+Data()}{formatEMVData()}}
+{\footnotesize\ttfamily string Cert\+Complete.\+P\+A\+X\+Device.\+format\+E\+M\+V\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Formats the E\+MV data from the response. 
+
+\begin{DoxyReturn}{Returns}
+A string representation of the E\+MV data formatted 40 chars wide.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_cert_complete_1_1_p_a_x_device_af902321272f9e358d1db15fcf89b413f}\label{class_cert_complete_1_1_p_a_x_device_af902321272f9e358d1db15fcf89b413f}} 
+\index{Cert\+Complete\+::\+P\+A\+X\+Device@{Cert\+Complete\+::\+P\+A\+X\+Device}!format\+Transaction\+Data@{format\+Transaction\+Data}}
+\index{format\+Transaction\+Data@{format\+Transaction\+Data}!Cert\+Complete\+::\+P\+A\+X\+Device@{Cert\+Complete\+::\+P\+A\+X\+Device}}
+\subsubsection{\texorpdfstring{format\+Transaction\+Data()}{formatTransactionData()}}
+{\footnotesize\ttfamily string Cert\+Complete.\+P\+A\+X\+Device.\+format\+Transaction\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Formats the transaction data from the response. 
+
+\begin{DoxyReturn}{Returns}
+A string representation of the transaction data formatted 40 chars wide.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_cert_complete_1_1_p_a_x_device_a6ae58cbf3aca1cbd8c00070343145f1b}\label{class_cert_complete_1_1_p_a_x_device_a6ae58cbf3aca1cbd8c00070343145f1b}} 
+\index{Cert\+Complete\+::\+P\+A\+X\+Device@{Cert\+Complete\+::\+P\+A\+X\+Device}!get\+Original\+Reference\+Number@{get\+Original\+Reference\+Number}}
+\index{get\+Original\+Reference\+Number@{get\+Original\+Reference\+Number}!Cert\+Complete\+::\+P\+A\+X\+Device@{Cert\+Complete\+::\+P\+A\+X\+Device}}
+\subsubsection{\texorpdfstring{get\+Original\+Reference\+Number()}{getOriginalReferenceNumber()}}
+{\footnotesize\ttfamily int Cert\+Complete.\+P\+A\+X\+Device.\+get\+Original\+Reference\+Number (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the Orig\+Ref\+Num used for sending subsequent data. 
+
+\begin{DoxyReturn}{Returns}
+The original reference number if available, 0 otherwise.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_cert_complete_1_1_p_a_x_device_a3869b5b02f12f7369468fcd0e3353700}\label{class_cert_complete_1_1_p_a_x_device_a3869b5b02f12f7369468fcd0e3353700}} 
+\index{Cert\+Complete\+::\+P\+A\+X\+Device@{Cert\+Complete\+::\+P\+A\+X\+Device}!handle\+Response@{handle\+Response}}
+\index{handle\+Response@{handle\+Response}!Cert\+Complete\+::\+P\+A\+X\+Device@{Cert\+Complete\+::\+P\+A\+X\+Device}}
+\subsubsection{\texorpdfstring{handle\+Response()}{handleResponse()}}
+{\footnotesize\ttfamily string Cert\+Complete.\+P\+A\+X\+Device.\+handle\+Response (\begin{DoxyParamCaption}\item[{P\+O\+S\+Link.\+Process\+Trans\+Result}]{result }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+
+
+
+\begin{DoxyEnumerate}
+\item Handle Response 
+\end{DoxyEnumerate}
+
+
+\begin{DoxyParams}{Parameters}
+{\em result} & The \mbox{\hyperlink{class_cert_complete_1_1_transaction}{Transaction}} result\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A string representation of the response object.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_cert_complete_1_1_p_a_x_device_a3e48b4555be54f0e2a9c2b2434664cdf}\label{class_cert_complete_1_1_p_a_x_device_a3e48b4555be54f0e2a9c2b2434664cdf}} 
+\index{Cert\+Complete\+::\+P\+A\+X\+Device@{Cert\+Complete\+::\+P\+A\+X\+Device}!initialize\+Device@{initialize\+Device}}
+\index{initialize\+Device@{initialize\+Device}!Cert\+Complete\+::\+P\+A\+X\+Device@{Cert\+Complete\+::\+P\+A\+X\+Device}}
+\subsubsection{\texorpdfstring{initialize\+Device()}{initializeDevice()}}
+{\footnotesize\ttfamily bool Cert\+Complete.\+P\+A\+X\+Device.\+initialize\+Device (\begin{DoxyParamCaption}\item[{string}]{Device\+Config\+File\+Path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Initializes the device using stored config file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Device\+Config\+File\+Path} & File path of the device configuration file\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if no errors configuring device, False otherwise.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_cert_complete_1_1_p_a_x_device_a85cc4efeb960df15a9dde1685b6c6310}\label{class_cert_complete_1_1_p_a_x_device_a85cc4efeb960df15a9dde1685b6c6310}} 
+\index{Cert\+Complete\+::\+P\+A\+X\+Device@{Cert\+Complete\+::\+P\+A\+X\+Device}!line\+Space@{line\+Space}}
+\index{line\+Space@{line\+Space}!Cert\+Complete\+::\+P\+A\+X\+Device@{Cert\+Complete\+::\+P\+A\+X\+Device}}
+\subsubsection{\texorpdfstring{line\+Space()}{lineSpace()}}
+{\footnotesize\ttfamily string Cert\+Complete.\+P\+A\+X\+Device.\+line\+Space (\begin{DoxyParamCaption}\item[{string}]{Name,  }\item[{string}]{Value,  }\item[{int}]{Width }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Builds a receipt line item. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Name} & Left aligned Key in a key value pair to be printed.\\
+\hline
+{\em Value} & Right aligned Value in a key value pair to be printed\\
+\hline
+{\em Width} & Total line width of the receipt in chars.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A string representation of \char`\"{}\+Name     Value\char`\"{} of a given width.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_cert_complete_1_1_p_a_x_device_ad8a43be342885c17b32795363812dfb6}\label{class_cert_complete_1_1_p_a_x_device_ad8a43be342885c17b32795363812dfb6}} 
+\index{Cert\+Complete\+::\+P\+A\+X\+Device@{Cert\+Complete\+::\+P\+A\+X\+Device}!parse\+C\+VM@{parse\+C\+VM}}
+\index{parse\+C\+VM@{parse\+C\+VM}!Cert\+Complete\+::\+P\+A\+X\+Device@{Cert\+Complete\+::\+P\+A\+X\+Device}}
+\subsubsection{\texorpdfstring{parse\+C\+V\+M()}{parseCVM()}}
+{\footnotesize\ttfamily string Cert\+Complete.\+P\+A\+X\+Device.\+parse\+C\+VM (\begin{DoxyParamCaption}\item[{string}]{C\+VM }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Parses out the C\+VM value into a human readable form. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em C\+VM} & The C\+VM value\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A human readable form for C\+VM.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_cert_complete_1_1_p_a_x_device_ae4a13ce8b706ba5362cb5a32dcb53d7d}\label{class_cert_complete_1_1_p_a_x_device_ae4a13ce8b706ba5362cb5a32dcb53d7d}} 
+\index{Cert\+Complete\+::\+P\+A\+X\+Device@{Cert\+Complete\+::\+P\+A\+X\+Device}!parse\+Entry\+Method@{parse\+Entry\+Method}}
+\index{parse\+Entry\+Method@{parse\+Entry\+Method}!Cert\+Complete\+::\+P\+A\+X\+Device@{Cert\+Complete\+::\+P\+A\+X\+Device}}
+\subsubsection{\texorpdfstring{parse\+Entry\+Method()}{parseEntryMethod()}}
+{\footnotesize\ttfamily string Cert\+Complete.\+P\+A\+X\+Device.\+parse\+Entry\+Method (\begin{DoxyParamCaption}\item[{string}]{Ext\+Data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Parses out the Entry Method returned from the P\+AX A\+PI for a given transaction request. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Ext\+Data} & X\+ML style data block returned from transaction result.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A string representation of the Entry Method for the transaction.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_cert_complete_1_1_p_a_x_device_aa53343951e87adb1f4e505dc39f2f571}\label{class_cert_complete_1_1_p_a_x_device_aa53343951e87adb1f4e505dc39f2f571}} 
+\index{Cert\+Complete\+::\+P\+A\+X\+Device@{Cert\+Complete\+::\+P\+A\+X\+Device}!parse\+E\+X\+T\+Value@{parse\+E\+X\+T\+Value}}
+\index{parse\+E\+X\+T\+Value@{parse\+E\+X\+T\+Value}!Cert\+Complete\+::\+P\+A\+X\+Device@{Cert\+Complete\+::\+P\+A\+X\+Device}}
+\subsubsection{\texorpdfstring{parse\+E\+X\+T\+Value()}{parseEXTValue()}}
+{\footnotesize\ttfamily string Cert\+Complete.\+P\+A\+X\+Device.\+parse\+E\+X\+T\+Value (\begin{DoxyParamCaption}\item[{string}]{E\+X\+T\+Data,  }\item[{string}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Parses out a given value from E\+XT Data in the transaction response. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em E\+X\+T\+Data} & The whole E\+X\+T\+Data block returned from a transaction.\\
+\hline
+{\em value} & The value to parse out.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_cert_complete_1_1_p_a_x_device_a1cd769ca0a4f2aeadaf1995355b2f0a9}\label{class_cert_complete_1_1_p_a_x_device_a1cd769ca0a4f2aeadaf1995355b2f0a9}} 
+\index{Cert\+Complete\+::\+P\+A\+X\+Device@{Cert\+Complete\+::\+P\+A\+X\+Device}!parse\+Tender\+Type@{parse\+Tender\+Type}}
+\index{parse\+Tender\+Type@{parse\+Tender\+Type}!Cert\+Complete\+::\+P\+A\+X\+Device@{Cert\+Complete\+::\+P\+A\+X\+Device}}
+\subsubsection{\texorpdfstring{parse\+Tender\+Type()}{parseTenderType()}}
+{\footnotesize\ttfamily string Cert\+Complete.\+P\+A\+X\+Device.\+parse\+Tender\+Type (\begin{DoxyParamCaption}\item[{int}]{Tender\+Type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Parses the tender type out of the P\+AX A\+PI into a human readable value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Tender\+Type} & Integer value representing a tender type\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A human readable tender type.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_cert_complete_1_1_p_a_x_device_ac404eca26b52ca9becaba9d29594e09a}\label{class_cert_complete_1_1_p_a_x_device_ac404eca26b52ca9becaba9d29594e09a}} 
+\index{Cert\+Complete\+::\+P\+A\+X\+Device@{Cert\+Complete\+::\+P\+A\+X\+Device}!parse\+Transaction\+Details@{parse\+Transaction\+Details}}
+\index{parse\+Transaction\+Details@{parse\+Transaction\+Details}!Cert\+Complete\+::\+P\+A\+X\+Device@{Cert\+Complete\+::\+P\+A\+X\+Device}}
+\subsubsection{\texorpdfstring{parse\+Transaction\+Details()}{parseTransactionDetails()}}
+{\footnotesize\ttfamily string \mbox{[}$\,$\mbox{]} Cert\+Complete.\+P\+A\+X\+Device.\+parse\+Transaction\+Details (\begin{DoxyParamCaption}\item[{Newtonsoft.\+Json.\+Linq.\+J\+Token}]{transaction\+Data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Builds a data array with transaction data from the J\+S\+ON request. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em transaction\+Data} & J\+S\+ON representation of a request.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A string array with values pulled from the J\+S\+ON.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_cert_complete_1_1_p_a_x_device_a54cc04faf61b6e9a46363bb7a501124b}\label{class_cert_complete_1_1_p_a_x_device_a54cc04faf61b6e9a46363bb7a501124b}} 
+\index{Cert\+Complete\+::\+P\+A\+X\+Device@{Cert\+Complete\+::\+P\+A\+X\+Device}!parse\+Trans\+Type@{parse\+Trans\+Type}}
+\index{parse\+Trans\+Type@{parse\+Trans\+Type}!Cert\+Complete\+::\+P\+A\+X\+Device@{Cert\+Complete\+::\+P\+A\+X\+Device}}
+\subsubsection{\texorpdfstring{parse\+Trans\+Type()}{parseTransType()}}
+{\footnotesize\ttfamily string Cert\+Complete.\+P\+A\+X\+Device.\+parse\+Trans\+Type (\begin{DoxyParamCaption}\item[{int}]{Trans\+Type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Parses the transaction type out of P\+AX A\+PI into human readable value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Trans\+Type} & Integer value representing a transaction type\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A human readable transaction type.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_cert_complete_1_1_p_a_x_device_a3015c00ac78960de4f0bf54d45c76879}\label{class_cert_complete_1_1_p_a_x_device_a3015c00ac78960de4f0bf54d45c76879}} 
+\index{Cert\+Complete\+::\+P\+A\+X\+Device@{Cert\+Complete\+::\+P\+A\+X\+Device}!print\+E\+M\+V\+Receipt@{print\+E\+M\+V\+Receipt}}
+\index{print\+E\+M\+V\+Receipt@{print\+E\+M\+V\+Receipt}!Cert\+Complete\+::\+P\+A\+X\+Device@{Cert\+Complete\+::\+P\+A\+X\+Device}}
+\subsubsection{\texorpdfstring{print\+E\+M\+V\+Receipt()}{printEMVReceipt()}}
+{\footnotesize\ttfamily async Task$<$string$>$ Cert\+Complete.\+P\+A\+X\+Device.\+print\+E\+M\+V\+Receipt (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Builds and formats a receipt based on the current response in memory. 
+
+\begin{DoxyReturn}{Returns}
+A formatted receipt
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_cert_complete_1_1_p_a_x_device_adc3aa4a5692d3b8dd61a15668b516546}\label{class_cert_complete_1_1_p_a_x_device_adc3aa4a5692d3b8dd61a15668b516546}} 
+\index{Cert\+Complete\+::\+P\+A\+X\+Device@{Cert\+Complete\+::\+P\+A\+X\+Device}!print\+E\+M\+V\+Receipt\+No\+Sig@{print\+E\+M\+V\+Receipt\+No\+Sig}}
+\index{print\+E\+M\+V\+Receipt\+No\+Sig@{print\+E\+M\+V\+Receipt\+No\+Sig}!Cert\+Complete\+::\+P\+A\+X\+Device@{Cert\+Complete\+::\+P\+A\+X\+Device}}
+\subsubsection{\texorpdfstring{print\+E\+M\+V\+Receipt\+No\+Sig()}{printEMVReceiptNoSig()}}
+{\footnotesize\ttfamily async Task$<$string$>$ Cert\+Complete.\+P\+A\+X\+Device.\+print\+E\+M\+V\+Receipt\+No\+Sig (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Builds and formats a receipt based on the current response in memory. 
+
+\begin{DoxyReturn}{Returns}
+A formatted receipt
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_cert_complete_1_1_p_a_x_device_a532c04c7e9cf54509efa3dd9a9692311}\label{class_cert_complete_1_1_p_a_x_device_a532c04c7e9cf54509efa3dd9a9692311}} 
+\index{Cert\+Complete\+::\+P\+A\+X\+Device@{Cert\+Complete\+::\+P\+A\+X\+Device}!process\+Transaction@{process\+Transaction}}
+\index{process\+Transaction@{process\+Transaction}!Cert\+Complete\+::\+P\+A\+X\+Device@{Cert\+Complete\+::\+P\+A\+X\+Device}}
+\subsubsection{\texorpdfstring{process\+Transaction()}{processTransaction()}}
+{\footnotesize\ttfamily async Task$<$string$>$ Cert\+Complete.\+P\+A\+X\+Device.\+process\+Transaction (\begin{DoxyParamCaption}\item[{Newtonsoft.\+Json.\+Linq.\+J\+Token}]{transaction\+Data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Processes a transaction with the given data supplied by the J\+S\+ON component. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em transaction\+Data} & A J\+S\+ON object containing the parameters to be sent in the transaction\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A string with the assembled response from Shift4 and the device.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_cert_complete_1_1_p_a_x_device_a1a237ea9b4ed7954011c7fea25a2d067}\label{class_cert_complete_1_1_p_a_x_device_a1a237ea9b4ed7954011c7fea25a2d067}} 
+\index{Cert\+Complete\+::\+P\+A\+X\+Device@{Cert\+Complete\+::\+P\+A\+X\+Device}!set\+Com\+Settings@{set\+Com\+Settings}}
+\index{set\+Com\+Settings@{set\+Com\+Settings}!Cert\+Complete\+::\+P\+A\+X\+Device@{Cert\+Complete\+::\+P\+A\+X\+Device}}
+\subsubsection{\texorpdfstring{set\+Com\+Settings()}{setComSettings()}}
+{\footnotesize\ttfamily void Cert\+Complete.\+P\+A\+X\+Device.\+set\+Com\+Settings (\begin{DoxyParamCaption}\item[{string}]{Destination\+IP,  }\item[{string}]{Destination\+Port,  }\item[{string}]{Serial\+Port,  }\item[{string}]{Baud\+Rate,  }\item[{string}]{Communication\+Type,  }\item[{string}]{Time\+Out }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+
+
+
+\begin{DoxyEnumerate}
+\item Set the Connection Settings for talking to the device 
+\end{DoxyEnumerate}
+
+
+\begin{DoxyParams}{Parameters}
+{\em Destination\+IP} & The IP Address of the P\+AX Device\\
+\hline
+{\em Destination\+Port} & The Port the device is listening on\\
+\hline
+{\em Serial\+Port} & The serial port of the device\\
+\hline
+{\em Baud\+Rate} & The Baud Rate\\
+\hline
+{\em Communication\+Type} & The Communication type\\
+\hline
+{\em Time\+Out} & The amount of time to wait before a timeout occurs\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_cert_complete_1_1_p_a_x_device_a3251f2ea687cab2567bfb4a24ec50aa8}\label{class_cert_complete_1_1_p_a_x_device_a3251f2ea687cab2567bfb4a24ec50aa8}} 
+\index{Cert\+Complete\+::\+P\+A\+X\+Device@{Cert\+Complete\+::\+P\+A\+X\+Device}!set\+Ext\+Data@{set\+Ext\+Data}}
+\index{set\+Ext\+Data@{set\+Ext\+Data}!Cert\+Complete\+::\+P\+A\+X\+Device@{Cert\+Complete\+::\+P\+A\+X\+Device}}
+\subsubsection{\texorpdfstring{set\+Ext\+Data()}{setExtData()}}
+{\footnotesize\ttfamily void Cert\+Complete.\+P\+A\+X\+Device.\+set\+Ext\+Data (\begin{DoxyParamCaption}\item[{string}]{Customer\+Code,  }\item[{string}]{Product\+Description,  }\item[{string}]{Destination\+Zip\+Code,  }\item[{string}]{First\+Name,  }\item[{string}]{Last\+Name,  }\item[{string}]{Token }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+3.\+5 Set Ext\+Data $<$\+X\+M\+L$>$ 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Customer\+Code} & The Customer Reference\\
+\hline
+{\em Product\+Description} & The Product Description\\
+\hline
+{\em Destination\+Zip\+Code} & The Destination Zip Code\\
+\hline
+{\em First\+Name} & Customer First Name\\
+\hline
+{\em Last\+Name} & Customer Last Name\\
+\hline
+{\em Token} & The Shift4 Token\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_cert_complete_1_1_p_a_x_device_a6c71f48ffd9e8fed9d65366467238fd6}\label{class_cert_complete_1_1_p_a_x_device_a6c71f48ffd9e8fed9d65366467238fd6}} 
+\index{Cert\+Complete\+::\+P\+A\+X\+Device@{Cert\+Complete\+::\+P\+A\+X\+Device}!set\+Pay\+Link\+Settings@{set\+Pay\+Link\+Settings}}
+\index{set\+Pay\+Link\+Settings@{set\+Pay\+Link\+Settings}!Cert\+Complete\+::\+P\+A\+X\+Device@{Cert\+Complete\+::\+P\+A\+X\+Device}}
+\subsubsection{\texorpdfstring{set\+Pay\+Link\+Settings()}{setPayLinkSettings()}}
+{\footnotesize\ttfamily void Cert\+Complete.\+P\+A\+X\+Device.\+set\+Pay\+Link\+Settings (\begin{DoxyParamCaption}\item[{string}]{Amount,  }\item[{string}]{E\+C\+R\+Ref\+Num,  }\item[{string}]{Clerk,  }\item[{string}]{Invoice,  }\item[{string}]{Street,  }\item[{string}]{Tax,  }\item[{string}]{Tip,  }\item[{string}]{Zip,  }\item[{string}]{Surcharge,  }\item[{string}]{Cash\+Back,  }\item[{string}]{Orig\+Ref\+Num }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+
+
+
+\begin{DoxyEnumerate}
+\item Set the Pay\+Link Settings 
+\end{DoxyEnumerate}
+
+
+\begin{DoxyParams}{Parameters}
+{\em Amount} & The Total Amount of the \mbox{\hyperlink{class_cert_complete_1_1_transaction}{Transaction}}\\
+\hline
+{\em E\+C\+R\+Ref\+Num} & The Reference Number form the Interface\\
+\hline
+{\em Clerk} & The Clerk Number\\
+\hline
+{\em Invoice} & The Invoice Number\\
+\hline
+{\em Street} & The Billing Address\\
+\hline
+{\em Tax} & The Tax Amount\\
+\hline
+{\em Tip} & The Tip Amount\\
+\hline
+{\em Zip} & The Billing Zip Code\\
+\hline
+{\em Surcharge} & The Surcharge Amount\\
+\hline
+{\em Cash\+Back} & The Cashback Amount\\
+\hline
+{\em Orig\+Ref\+Num} & The Original transaction number from the device.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_cert_complete_1_1_p_a_x_device_a9c1158002efaafb7bbab49c98273964d}\label{class_cert_complete_1_1_p_a_x_device_a9c1158002efaafb7bbab49c98273964d}} 
+\index{Cert\+Complete\+::\+P\+A\+X\+Device@{Cert\+Complete\+::\+P\+A\+X\+Device}!set\+Request\+Type@{set\+Request\+Type}}
+\index{set\+Request\+Type@{set\+Request\+Type}!Cert\+Complete\+::\+P\+A\+X\+Device@{Cert\+Complete\+::\+P\+A\+X\+Device}}
+\subsubsection{\texorpdfstring{set\+Request\+Type()}{setRequestType()}}
+{\footnotesize\ttfamily void Cert\+Complete.\+P\+A\+X\+Device.\+set\+Request\+Type (\begin{DoxyParamCaption}\item[{string}]{Tender\+Type,  }\item[{string}]{Transaction\+Type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+
+
+
+\begin{DoxyEnumerate}
+\item Set the Payment Request Settings 
+\end{DoxyEnumerate}
+
+
+\begin{DoxyParams}{Parameters}
+{\em Tender\+Type} & The Tender Type\\
+\hline
+{\em Transaction\+Type} & The Transactino Type\\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_cert_complete_1_1_p_a_x_device_ae0fd2ac9f3d111a94efdf3415dcd63c7}\label{class_cert_complete_1_1_p_a_x_device_ae0fd2ac9f3d111a94efdf3415dcd63c7}} 
+\index{Cert\+Complete\+::\+P\+A\+X\+Device@{Cert\+Complete\+::\+P\+A\+X\+Device}!com@{com}}
+\index{com@{com}!Cert\+Complete\+::\+P\+A\+X\+Device@{Cert\+Complete\+::\+P\+A\+X\+Device}}
+\subsubsection{\texorpdfstring{com}{com}}
+{\footnotesize\ttfamily P\+O\+S\+Link.\+Comm\+Setting Cert\+Complete.\+P\+A\+X\+Device.\+com = new P\+O\+S\+Link.\+Comm\+Setting()\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_cert_complete_1_1_p_a_x_device_a4100c53ceec220b6148ce00412775bcc}\label{class_cert_complete_1_1_p_a_x_device_a4100c53ceec220b6148ce00412775bcc}} 
+\index{Cert\+Complete\+::\+P\+A\+X\+Device@{Cert\+Complete\+::\+P\+A\+X\+Device}!pax\+Device@{pax\+Device}}
+\index{pax\+Device@{pax\+Device}!Cert\+Complete\+::\+P\+A\+X\+Device@{Cert\+Complete\+::\+P\+A\+X\+Device}}
+\subsubsection{\texorpdfstring{pax\+Device}{paxDevice}}
+{\footnotesize\ttfamily P\+O\+S\+Link.\+Pos\+Link Cert\+Complete.\+P\+A\+X\+Device.\+pax\+Device = new P\+O\+S\+Link.\+Pos\+Link()\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_cert_complete_1_1_p_a_x_device_a101e6e34494845a82d2834c79fce5554}\label{class_cert_complete_1_1_p_a_x_device_a101e6e34494845a82d2834c79fce5554}} 
+\index{Cert\+Complete\+::\+P\+A\+X\+Device@{Cert\+Complete\+::\+P\+A\+X\+Device}!request@{request}}
+\index{request@{request}!Cert\+Complete\+::\+P\+A\+X\+Device@{Cert\+Complete\+::\+P\+A\+X\+Device}}
+\subsubsection{\texorpdfstring{request}{request}}
+{\footnotesize\ttfamily P\+O\+S\+Link.\+Payment\+Request Cert\+Complete.\+P\+A\+X\+Device.\+request = new P\+O\+S\+Link.\+Payment\+Request()\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_cert_complete_1_1_p_a_x_device_a71de9bbbc884a048ba0a7c99a423325c}\label{class_cert_complete_1_1_p_a_x_device_a71de9bbbc884a048ba0a7c99a423325c}} 
+\index{Cert\+Complete\+::\+P\+A\+X\+Device@{Cert\+Complete\+::\+P\+A\+X\+Device}!result@{result}}
+\index{result@{result}!Cert\+Complete\+::\+P\+A\+X\+Device@{Cert\+Complete\+::\+P\+A\+X\+Device}}
+\subsubsection{\texorpdfstring{result}{result}}
+{\footnotesize\ttfamily P\+O\+S\+Link.\+Process\+Trans\+Result Cert\+Complete.\+P\+A\+X\+Device.\+result = new P\+O\+S\+Link.\+Process\+Trans\+Result()\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_p_a_x_device_8cs}{P\+A\+X\+Device.\+cs}}\end{DoxyCompactItemize}

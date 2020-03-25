@@ -1,0 +1,131 @@
+\subsection*{Creating Transactions}
+
+\subsubsection*{Single Part Transactions}
+
+In order to create a transaction the recommended way is to use the test creation tool. ~\newline
+ Select {\bfseries File-\/$>$New-\/$>$Test} to open the test creation window. ~\newline
+
+
+
+
+{\itshape Mandatory Fields}~\newline
+
+\begin{DoxyItemize}
+\item {\itshape Test Number} -\/ This can be any arbitrary integer number.~\newline
+
+\item {\itshape Test Name} -\/ A name for the test. Suggestion\+: Use the test sequence to help identify tests with different control flows.~\newline
+
+\item {\itshape Test Sequence 1.} -\/ The type of transaction request. eg. Auth, Capture, Void.~\newline
+
+\item {\itshape Part 1 Card Type} -\/ Credit or Debit.~\newline
+
+\item {\itshape Primary Amount} -\/ The amount of the transaction {\bfseries without} tax or tip.~\newline
+ ~\newline
+ {\itshape All other fields are Optional}
+\end{DoxyItemize}
+
+Select {\bfseries File-\/$>$Save} and save your test to a directory of your choosing. Then you may close the window, edit your test, or create a new test entirely.
+
+\subsubsection*{Multi-\/\+Part Transactions}
+
+Follow the same instructions for Single Part Transactions above to get started. Then you will want to add aditional details to Test Sequence 2.~\newline
+ ~\newline
+ {\itshape Example}~\newline
+ Let\textquotesingle{}s say you want to test an Auth Capture flow. To do this we set up Test Sequence 1 as an Authorization. Next we set up Test Sequence 2 to be a capture. See below\+: ~\newline
+
+
+
+
+{\itshape Mandatory Fields}~\newline
+
+\begin{DoxyItemize}
+\item {\itshape Test Number} -\/ This can be any arbitrary integer number.~\newline
+
+\item {\itshape Test Name} -\/ A name for the test. Suggestion\+: Use the test sequence to help identify tests with different control flows.~\newline
+
+\item {\itshape Test Sequence 1.} -\/ The type of transaction request. eg. Auth, Capture, Void.~\newline
+
+\item {\itshape Part 1 Card Type} -\/ Credit or Debit.~\newline
+
+\item {\itshape Primary Amount} -\/ The amount of the transaction {\bfseries without} tax or tip.~\newline
+ ~\newline
+ {\itshape All other fields are Optional}
+\end{DoxyItemize}
+
+Again select {\bfseries File-\/$>$Save} and save your test to a directory of your choosing. Then you may close the window, edit your test, or create a new test entirely.
+
+\subsection*{Running a Test}
+
+In order to run a test transaction from the main screen select {\bfseries File-\/$>$Import-\/$>$Test} and select a test to run. Tests are stored in J\+S\+ON format and have multiple subcomponents. See the Understanding the J\+S\+ON Structure section below.~\newline
+
+
+Select the device you would like to send the transaction to, in this case I have chosen the P\+AX S300.~\newline
+ Check if you would like to an E\+MV compliant receipt. (So far supports T\+S\+YS spec.)~\newline
+ Then click Run, and follow the on screen prompts from the device. ~\newline
+ 
+
+\subsubsection*{Understanding the Output}
+
+The output is separated into two sections.~\newline
+ The top right pane shows the transaction history and color codes various response types.~\newline
+ The bottom right pane shows the values returned from the device A\+PI in a more raw format, adding each additional request sequentially to the pane.~\newline
+
+
+\subsubsection*{E\+MV Receipts}
+
+If you selected to Print E\+MV Receipts, an E\+MV compliant Customer and Merchant Receipt will be automatically built for you. Upon transaction completion from the device, a dialog box will prompt you where you would like to save your recepts as P\+DF. Simply select a location and click Save.~\newline
+
+
+\subsection*{Configuring Devices}
+
+To configure a device, select {\bfseries Edit-\/$>$Device Configuration-\/$>$\mbox{[}Device Manufacturer\mbox{]}-\/$>$\mbox{[}Device Type\mbox{]}}. This opens a settings dialog with potential options.
+
+\subsubsection*{Configuring P\+AX S300}
+
+For the S300 Device set the settings as shown if not already done so, but make sure to set the IP address to the IP address of the device. (Yours will likely be different from shown)~\newline
+
+
+
+
+\subsubsection*{Configuring Innowi Chec\+Out M}
+
+The first thing to do is to ensure that you have the Innowi Proxy program running on the device. You can acquire the latest version \href{https://drive.google.com/open?id=1tLhps5Omh3cAksSa9tZ0VLZi6SMUOsn3}{\tt here}.~\newline
+
+
+For the Chec\+Out M device, set the settings as shown if not already done so. Ensure that the IP address is the address of the device. At this time it is recommended to N\+OT change the default port of 13000.~\newline
+
+
+
+
+\subsection*{Understanding the J\+S\+ON Structure}
+
+ The J\+S\+ON structure 5 main components. ~\newline
+ {\bfseries Test\+Number} -\/ This is used as a unique identifier. At present it doesn\textquotesingle{}t relate to much, but the idea is to tie it to specific processor test numbers for cross reference.~\newline
+ {\bfseries Test\+Name} -\/ This is the name identifying the test. This can be whatever you like that helps you remember what the test is for or is doing.~\newline
+ {\bfseries Device\+Type} -\/ This is used to differentiate which device dll is called for processing. It is suggested not to change this. (Note\+: This is automatically filled in by the test builder.)~\newline
+ {\bfseries Test\+Sequence} -\/ This is used to identify the general sequence of a test. For example Auth Capture flows. Since each Auth and Capture are separate requests issued to the device, they are called out specifically here. (Note\+: Each Test\+Sequence item should have a corresponding Test\+Sequence\+Data Object)~\newline
+ {\bfseries Test\+Sequence\+Data} -\/ This array of sequence data represents the parameters that are sent to the device\textquotesingle{}s A\+PI. While it is possible to edit these fields and values correctly, great care should be taken when doing so as this may cause unexpected behavior.~\newline
+ ~\newline
+ Each of the Test\+Sequence\+Data Object Values have certain restrictions, but the nature of those restrictions are device A\+PI dependent. For this reason it is suggested to use the test builder when building initial tests for a given device as error condition checking is performed by the test builder.~\newline
+
+
+\subsection*{Contact and Suggestions}
+
+If you would like to reach the developer please send emails to \href{mailto:tcotta@shift4.com}{\tt tcotta@shift4.\+com}.
+
+\subsubsection*{Bug Reporting}
+
+Please send bug reports to the developer. For best results please send the following\+: ~\newline
+
+\begin{DoxyItemize}
+\item A brief description of bug.
+\item A statement, document, or other form of preconditions
+\item A statement, document, or other form of postconditions
+\item A screenshot of the particular screen on which the error occurs if possible.
+\end{DoxyItemize}
+
+\subsubsection*{Suggestions \& Feature Requests}
+
+Please send suggestions and Feature requests to the developer with Subject\+: \mbox{\hyperlink{namespace_cert_complete}{Cert\+Complete}} Feature Request.
+
+Testing Random Updates 

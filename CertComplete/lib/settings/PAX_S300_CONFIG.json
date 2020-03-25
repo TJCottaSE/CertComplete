@@ -1,0 +1,8 @@
+{
+    "DestinationIP": "10.0.33.102",
+    "DestinationPort": "10009",
+    "SerialPort": "COM1",
+    "BaudRate": "9600",
+    "CommType": "TCP",
+    "TimeOut": "-1"
+}

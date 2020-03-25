@@ -1,0 +1,31 @@
+{
+    "TestNumber": 14577597,
+    "TestName": "Basic Auth Capture",
+    "DeviceType": "PAX S300",
+    "TestSequence": [
+        "Auth", "Capture"
+    ],
+    "TestSequenceData": [
+        {
+            "CardType": "Credit",
+            "TransactionType": "Auth",
+            "PrimaryAmount": 16.99,
+            "TaxAmount": 0,
+            "Clerk": 1455,
+            "Invoice": 104559,
+            "StreetAddress": "65 Main St.",
+            "BillingZipCode": 89101,
+            "DestinationZipCode": 89178,
+            "CustomerFirstName": "John",
+            "CustomerLastName": "Smith",
+            "CustomerReference": "2334DDKPL8",
+            "ProductDescriptor": "Chinese Food"
+        },
+        {
+            "CardType": "Credit",
+            "TransactionType": "Postauth",
+            "PrimaryAmount": 21.99,
+            "SecondaryAmount": 5.00
+        }
+    ]
+}

@@ -1,0 +1,200 @@
+\hypertarget{class_cert_complete_1_1_transaction}{}\section{Cert\+Complete.\+Transaction Class Reference}
+\label{class_cert_complete_1_1_transaction}\index{Cert\+Complete.\+Transaction@{Cert\+Complete.\+Transaction}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_cert_complete_1_1_transaction_afb2b05f628573e5439852eca5b5b80f1}{Transaction}} ()
+\begin{DoxyCompactList}\small\item\em Default Constructor \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_cert_complete_1_1_transaction_ae860fc76ec20cde74cdcaef8b2ba58f0}{Transaction}} (string \mbox{\hyperlink{class_cert_complete_1_1_transaction_ac85e595374528d6dd86fc8826609a20e}{request}})
+\begin{DoxyCompactList}\small\item\em Alternate Constructor \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_cert_complete_1_1_transaction_a8802a829baacf5773d7e85f66d419c59}{Transaction}} (string \mbox{\hyperlink{class_cert_complete_1_1_transaction_ac85e595374528d6dd86fc8826609a20e}{request}}, string \mbox{\hyperlink{class_cert_complete_1_1_transaction_aa514d482b586e66c3cb7d557563efc73}{response}})
+\begin{DoxyCompactList}\small\item\em Alternate Constructor \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_cert_complete_1_1_transaction_a4256176bcd42868e04a1382b6ca6416e}{Transaction}} (string \mbox{\hyperlink{class_cert_complete_1_1_transaction_ac85e595374528d6dd86fc8826609a20e}{request}}, int sub\+Request\+Number, string \mbox{\hyperlink{class_cert_complete_1_1_transaction_aa514d482b586e66c3cb7d557563efc73}{response}})
+\begin{DoxyCompactList}\small\item\em Alternate Constructor \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_cert_complete_1_1_transaction_abda5b8ce085a80ebfe344248df2d7daf}{request\+To\+String}} (Newtonsoft.\+Json.\+Linq.\+J\+Token req)
+\begin{DoxyCompactList}\small\item\em Builds a string representation of a transaction for the \mbox{\hyperlink{class_cert_complete_1_1_transaction}{Transaction}} History Box. \end{DoxyCompactList}\item 
+override string \mbox{\hyperlink{class_cert_complete_1_1_transaction_a5535efa45706c133127a346d8c33543a}{To\+String}} ()
+\begin{DoxyCompactList}\small\item\em Overrides the default \mbox{\hyperlink{class_cert_complete_1_1_transaction_a5535efa45706c133127a346d8c33543a}{To\+String()}} operation with custom output. request\+To\+String(\+Newtonsoft.\+Json.\+Linq.\+J\+Token) \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_cert_complete_1_1_transaction_a2db04cc750f0ec20bd8be5071deb16fe}{map\+Innowi\+Response\+To\+String}} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_cert_complete_1_1_transaction_ac85e595374528d6dd86fc8826609a20e}{request}}
+\item 
+string \mbox{\hyperlink{class_cert_complete_1_1_transaction_aa514d482b586e66c3cb7d557563efc73}{response}}
+\item 
+string \mbox{\hyperlink{class_cert_complete_1_1_transaction_a75d502cc315af50677734ff7e2bfa640}{output\+String}}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_cert_complete_1_1_transaction_a2c329cf1cedbc043c8b419774fab7a7a}{P\+A\+X\+\_\+\+Request\+\_\+to\+String}} (Newtonsoft.\+Json.\+Linq.\+J\+Token req)
+\begin{DoxyCompactList}\small\item\em Translates a P\+AX request into a transaction history item. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_cert_complete_1_1_transaction_a761f3d08f20e2574b72c9ba7e88ebedb}{Innowi\+\_\+\+Request\+\_\+to\+String}} (Newtonsoft.\+Json.\+Linq.\+J\+Token req)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Newtonsoft.\+Json.\+Linq.\+J\+Object \mbox{\hyperlink{class_cert_complete_1_1_transaction_a12fd763cddcfee8900bbc87b2473bdf5}{complete\+Request}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_cert_complete_1_1_transaction_afb2b05f628573e5439852eca5b5b80f1}\label{class_cert_complete_1_1_transaction_afb2b05f628573e5439852eca5b5b80f1}} 
+\index{Cert\+Complete\+::\+Transaction@{Cert\+Complete\+::\+Transaction}!Transaction@{Transaction}}
+\index{Transaction@{Transaction}!Cert\+Complete\+::\+Transaction@{Cert\+Complete\+::\+Transaction}}
+\subsubsection{\texorpdfstring{Transaction()}{Transaction()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily Cert\+Complete.\+Transaction.\+Transaction (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Default Constructor 
+
+\mbox{\Hypertarget{class_cert_complete_1_1_transaction_ae860fc76ec20cde74cdcaef8b2ba58f0}\label{class_cert_complete_1_1_transaction_ae860fc76ec20cde74cdcaef8b2ba58f0}} 
+\index{Cert\+Complete\+::\+Transaction@{Cert\+Complete\+::\+Transaction}!Transaction@{Transaction}}
+\index{Transaction@{Transaction}!Cert\+Complete\+::\+Transaction@{Cert\+Complete\+::\+Transaction}}
+\subsubsection{\texorpdfstring{Transaction()}{Transaction()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily Cert\+Complete.\+Transaction.\+Transaction (\begin{DoxyParamCaption}\item[{string}]{request }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Alternate Constructor 
+
+
+\begin{DoxyParams}{Parameters}
+{\em request} & A string representation of the individual request.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_cert_complete_1_1_transaction_a8802a829baacf5773d7e85f66d419c59}\label{class_cert_complete_1_1_transaction_a8802a829baacf5773d7e85f66d419c59}} 
+\index{Cert\+Complete\+::\+Transaction@{Cert\+Complete\+::\+Transaction}!Transaction@{Transaction}}
+\index{Transaction@{Transaction}!Cert\+Complete\+::\+Transaction@{Cert\+Complete\+::\+Transaction}}
+\subsubsection{\texorpdfstring{Transaction()}{Transaction()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily Cert\+Complete.\+Transaction.\+Transaction (\begin{DoxyParamCaption}\item[{string}]{request,  }\item[{string}]{response }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Alternate Constructor 
+
+
+\begin{DoxyParams}{Parameters}
+{\em request} & A string representation of the individual request.\\
+\hline
+{\em response} & A string representation of the response to the request.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_cert_complete_1_1_transaction_a4256176bcd42868e04a1382b6ca6416e}\label{class_cert_complete_1_1_transaction_a4256176bcd42868e04a1382b6ca6416e}} 
+\index{Cert\+Complete\+::\+Transaction@{Cert\+Complete\+::\+Transaction}!Transaction@{Transaction}}
+\index{Transaction@{Transaction}!Cert\+Complete\+::\+Transaction@{Cert\+Complete\+::\+Transaction}}
+\subsubsection{\texorpdfstring{Transaction()}{Transaction()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily Cert\+Complete.\+Transaction.\+Transaction (\begin{DoxyParamCaption}\item[{string}]{request,  }\item[{int}]{sub\+Request\+Number,  }\item[{string}]{response }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Alternate Constructor 
+
+
+\begin{DoxyParams}{Parameters}
+{\em request} & The full transaction sequence.\\
+\hline
+{\em sub\+Request\+Number} & The integer representation of the ordered transaction components.\\
+\hline
+{\em response} & The response from the transaction request.\\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_cert_complete_1_1_transaction_a761f3d08f20e2574b72c9ba7e88ebedb}\label{class_cert_complete_1_1_transaction_a761f3d08f20e2574b72c9ba7e88ebedb}} 
+\index{Cert\+Complete\+::\+Transaction@{Cert\+Complete\+::\+Transaction}!Innowi\+\_\+\+Request\+\_\+to\+String@{Innowi\+\_\+\+Request\+\_\+to\+String}}
+\index{Innowi\+\_\+\+Request\+\_\+to\+String@{Innowi\+\_\+\+Request\+\_\+to\+String}!Cert\+Complete\+::\+Transaction@{Cert\+Complete\+::\+Transaction}}
+\subsubsection{\texorpdfstring{Innowi\+\_\+\+Request\+\_\+to\+String()}{Innowi\_Request\_toString()}}
+{\footnotesize\ttfamily string Cert\+Complete.\+Transaction.\+Innowi\+\_\+\+Request\+\_\+to\+String (\begin{DoxyParamCaption}\item[{Newtonsoft.\+Json.\+Linq.\+J\+Token}]{req }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_cert_complete_1_1_transaction_a2db04cc750f0ec20bd8be5071deb16fe}\label{class_cert_complete_1_1_transaction_a2db04cc750f0ec20bd8be5071deb16fe}} 
+\index{Cert\+Complete\+::\+Transaction@{Cert\+Complete\+::\+Transaction}!map\+Innowi\+Response\+To\+String@{map\+Innowi\+Response\+To\+String}}
+\index{map\+Innowi\+Response\+To\+String@{map\+Innowi\+Response\+To\+String}!Cert\+Complete\+::\+Transaction@{Cert\+Complete\+::\+Transaction}}
+\subsubsection{\texorpdfstring{map\+Innowi\+Response\+To\+String()}{mapInnowiResponseToString()}}
+{\footnotesize\ttfamily string Cert\+Complete.\+Transaction.\+map\+Innowi\+Response\+To\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_cert_complete_1_1_transaction_a2c329cf1cedbc043c8b419774fab7a7a}\label{class_cert_complete_1_1_transaction_a2c329cf1cedbc043c8b419774fab7a7a}} 
+\index{Cert\+Complete\+::\+Transaction@{Cert\+Complete\+::\+Transaction}!P\+A\+X\+\_\+\+Request\+\_\+to\+String@{P\+A\+X\+\_\+\+Request\+\_\+to\+String}}
+\index{P\+A\+X\+\_\+\+Request\+\_\+to\+String@{P\+A\+X\+\_\+\+Request\+\_\+to\+String}!Cert\+Complete\+::\+Transaction@{Cert\+Complete\+::\+Transaction}}
+\subsubsection{\texorpdfstring{P\+A\+X\+\_\+\+Request\+\_\+to\+String()}{PAX\_Request\_toString()}}
+{\footnotesize\ttfamily string Cert\+Complete.\+Transaction.\+P\+A\+X\+\_\+\+Request\+\_\+to\+String (\begin{DoxyParamCaption}\item[{Newtonsoft.\+Json.\+Linq.\+J\+Token}]{req }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Translates a P\+AX request into a transaction history item. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em req} & The transaction requst.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A string representation of a P\+AX transaction.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_cert_complete_1_1_transaction_abda5b8ce085a80ebfe344248df2d7daf}\label{class_cert_complete_1_1_transaction_abda5b8ce085a80ebfe344248df2d7daf}} 
+\index{Cert\+Complete\+::\+Transaction@{Cert\+Complete\+::\+Transaction}!request\+To\+String@{request\+To\+String}}
+\index{request\+To\+String@{request\+To\+String}!Cert\+Complete\+::\+Transaction@{Cert\+Complete\+::\+Transaction}}
+\subsubsection{\texorpdfstring{request\+To\+String()}{requestToString()}}
+{\footnotesize\ttfamily string Cert\+Complete.\+Transaction.\+request\+To\+String (\begin{DoxyParamCaption}\item[{Newtonsoft.\+Json.\+Linq.\+J\+Token}]{req }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Builds a string representation of a transaction for the \mbox{\hyperlink{class_cert_complete_1_1_transaction}{Transaction}} History Box. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em req} & The request to stringify.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A string representation of the transaction.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_cert_complete_1_1_transaction_a5535efa45706c133127a346d8c33543a}\label{class_cert_complete_1_1_transaction_a5535efa45706c133127a346d8c33543a}} 
+\index{Cert\+Complete\+::\+Transaction@{Cert\+Complete\+::\+Transaction}!To\+String@{To\+String}}
+\index{To\+String@{To\+String}!Cert\+Complete\+::\+Transaction@{Cert\+Complete\+::\+Transaction}}
+\subsubsection{\texorpdfstring{To\+String()}{ToString()}}
+{\footnotesize\ttfamily override string Cert\+Complete.\+Transaction.\+To\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Overrides the default \mbox{\hyperlink{class_cert_complete_1_1_transaction_a5535efa45706c133127a346d8c33543a}{To\+String()}} operation with custom output. request\+To\+String(\+Newtonsoft.\+Json.\+Linq.\+J\+Token) 
+
+\begin{DoxyReturn}{Returns}
+String representation of the transaction.
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_cert_complete_1_1_transaction_a12fd763cddcfee8900bbc87b2473bdf5}\label{class_cert_complete_1_1_transaction_a12fd763cddcfee8900bbc87b2473bdf5}} 
+\index{Cert\+Complete\+::\+Transaction@{Cert\+Complete\+::\+Transaction}!complete\+Request@{complete\+Request}}
+\index{complete\+Request@{complete\+Request}!Cert\+Complete\+::\+Transaction@{Cert\+Complete\+::\+Transaction}}
+\subsubsection{\texorpdfstring{complete\+Request}{completeRequest}}
+{\footnotesize\ttfamily Newtonsoft.\+Json.\+Linq.\+J\+Object Cert\+Complete.\+Transaction.\+complete\+Request\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_cert_complete_1_1_transaction_a75d502cc315af50677734ff7e2bfa640}\label{class_cert_complete_1_1_transaction_a75d502cc315af50677734ff7e2bfa640}} 
+\index{Cert\+Complete\+::\+Transaction@{Cert\+Complete\+::\+Transaction}!output\+String@{output\+String}}
+\index{output\+String@{output\+String}!Cert\+Complete\+::\+Transaction@{Cert\+Complete\+::\+Transaction}}
+\subsubsection{\texorpdfstring{output\+String}{outputString}}
+{\footnotesize\ttfamily string Cert\+Complete.\+Transaction.\+output\+String}
+
+\mbox{\Hypertarget{class_cert_complete_1_1_transaction_ac85e595374528d6dd86fc8826609a20e}\label{class_cert_complete_1_1_transaction_ac85e595374528d6dd86fc8826609a20e}} 
+\index{Cert\+Complete\+::\+Transaction@{Cert\+Complete\+::\+Transaction}!request@{request}}
+\index{request@{request}!Cert\+Complete\+::\+Transaction@{Cert\+Complete\+::\+Transaction}}
+\subsubsection{\texorpdfstring{request}{request}}
+{\footnotesize\ttfamily string Cert\+Complete.\+Transaction.\+request}
+
+\mbox{\Hypertarget{class_cert_complete_1_1_transaction_aa514d482b586e66c3cb7d557563efc73}\label{class_cert_complete_1_1_transaction_aa514d482b586e66c3cb7d557563efc73}} 
+\index{Cert\+Complete\+::\+Transaction@{Cert\+Complete\+::\+Transaction}!response@{response}}
+\index{response@{response}!Cert\+Complete\+::\+Transaction@{Cert\+Complete\+::\+Transaction}}
+\subsubsection{\texorpdfstring{response}{response}}
+{\footnotesize\ttfamily string Cert\+Complete.\+Transaction.\+response}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_transaction_8cs}{Transaction.\+cs}}\end{DoxyCompactItemize}
